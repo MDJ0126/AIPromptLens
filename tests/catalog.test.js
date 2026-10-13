@@ -16,7 +16,7 @@ test('Search, selection, composer, language and persistence interactions',()=>{
  function el(id){if(elements.has(id))return elements.get(id);const obj={value:'',innerHTML:'',textContent:'',hidden:false,disabled:false,dataset:{},setAttribute(){},classList:{toggle(){},add(){},remove(){}},append(){},remove(){},select(){},showModal(){this.open=true;},close(){this.open=false;},removeAttribute(){},addEventListener(type,fn){listeners.set(id+':'+type,fn);}};elements.set(id,obj);return obj;}
  const doc={getElementById:el,createElement:()=>el('temp'),querySelector:s=>el(s),querySelectorAll:()=>[],addEventListener(){},body:{append(){},classList:{toggle(){},add(){}}},activeElement:{tagName:'BODY'}};
  const ctx=vm.createContext({document:doc,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),navigator:{clipboard:{writeText:async()=>{}}},setTimeout:()=>0,clearTimeout(){}});
- vm.runInContext(source+'\n'+fs.readFileSync('site/app.js','utf8')+'\nglobalThis.api={toggleSelected,visibleTerms,composePrompt};',ctx);
+ vm.runInContext(fs.readFileSync('site/clipboard.js','utf8')+'\n'+source+'\n'+fs.readFileSync('site/app.js','utf8')+'\nglobalThis.api={toggleSelected,visibleTerms,composePrompt};',ctx);
  assert.equal(ctx.api.visibleTerms().length,340);
  const renderedIds=()=>[...el('cards').innerHTML.matchAll(/data-detail="(\d+)"/g)].map(m=>Number(m[1]));
  const page=n=>listeners.get('pagination:click')({target:{closest:()=>({dataset:{page:String(n)},disabled:false})}});

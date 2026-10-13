@@ -55,16 +55,18 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class TrailExample : MonoBehaviour {
+public class TrailExample : MonoBehaviour
+{
     public TrailRenderer trail;
-    public void BeginSwing() {
+    public void BeginSwing()
+    {
         if (!trail) return;
         trail.Clear();
         trail.time = 0.15f;
         trail.emitting = true;
     }
-    public void EndSwing() {
+    public void EndSwing()
+    {
         if (trail) trail.emitting = false;
     }
 }
@@ -75,13 +77,14 @@ public class TrailExample : MonoBehaviour {
 ```cpp
 USplineComponent* TrailPath = nullptr;
 TArray<FVector> Points;
-void SampleTrail(FVector TipPosition) {
+void SampleTrail(FVector TipPosition)
+{
     if (!TrailPath) return;
     Points.Add(TipPosition);
     if (Points.Num() > 12) Points.RemoveAt(0);
     TrailPath->ClearSplinePoints(false);
     for (FVector Point : Points)
-        TrailPath->AddSplinePoint(Point, ESplineCoordinateSpace::World, false);
+    TrailPath->AddSplinePoint(Point, ESplineCoordinateSpace::World, false);
     TrailPath->UpdateSpline();
 }
 ```

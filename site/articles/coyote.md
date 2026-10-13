@@ -52,12 +52,16 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class CoyoteExample : MonoBehaviour {
+public class CoyoteExample : MonoBehaviour
+{
     float lastGrounded = float.NegativeInfinity;
     bool used;
-    public bool TryJump(bool grounded, bool pressed) {
-        if (grounded) { lastGrounded = Time.time; used = false; }
+    public bool TryJump(bool grounded, bool pressed)
+    {
+        if (grounded)
+        {
+            lastGrounded = Time.time; used = false;
+        }
         if (!pressed || used || Time.time - lastGrounded > 0.12f) return false;
         used = true;
         return true; // 호출 측에서 수직 속도를 설정합니다.
@@ -70,9 +74,13 @@ public class CoyoteExample : MonoBehaviour {
 ```cpp
 double LastGrounded = -1e9;
 bool bUsed = false;
-bool TryCoyoteJump(bool bGrounded, bool bPressed) {
+bool TryCoyoteJump(bool bGrounded, bool bPressed)
+{
     double Now = GetWorld()->GetTimeSeconds();
-    if (bGrounded) { LastGrounded = Now; bUsed = false; }
+    if (bGrounded)
+    {
+        LastGrounded = Now; bUsed = false;
+    }
     if (!bPressed || bUsed || Now - LastGrounded > 0.12) return false;
     bUsed = true;
     LaunchCharacter(FVector(0, 0, 500), false, true);

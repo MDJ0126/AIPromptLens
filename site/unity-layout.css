@@ -165,3 +165,16 @@ html[data-theme=dark] .cards .card-actions{border-top-color:#4b4b4b}
 html[data-theme=dark] .cards .card-actions .card-copy{background:#2c2c2c;color:#eee;border-right-color:#4b4b4b!important}
 html[data-theme=dark] .cards .card-actions .card-copy:hover{background:#3d361b;color:#f5cf36}
 @media(max-width:720px){.cards .card-actions{margin-left:-10px;margin-right:-10px;margin-bottom:-10px}.cards .card-actions button{font-size:11px;min-height:48px}}
+
+/* Shared top-right copy control for highlighted code and prompts. */
+.copy-block-header,.code-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.copy-block-header h4,.copy-block-header .eyebrow{margin:0;}
+.block-copy{flex-shrink:0;min-width:54px;min-height:32px;padding:5px 10px;border:1px solid #d5d5d5;border-radius:5px;background:#fff;color:#262626;font-family:inherit;font-size:12px;font-weight:600;line-height:1.4;cursor:pointer;}
+.block-copy:hover{background:#ffdf54;border-color:#c9ac32;color:#161616;}
+.block-copy:disabled{opacity:.45;cursor:default;}
+.code-bar:before{display:none;}
+.code-bar .block-copy{background:#303030;border-color:#545454;color:#f2f2f2;}
+.code-bar .block-copy:hover{background:#ffdf54;border-color:#ffdf54;color:#161616;}
+.prompt-block{margin-top:26px;padding:16px;background:var(--surface,#f7f7f7);border-radius:6px;}
+.prompt-block blockquote{margin:16px 0 0;white-space:pre-wrap;}
+.prompt-box .copy-block-header{margin-bottom:16px;}

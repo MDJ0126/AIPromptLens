@@ -51,10 +51,11 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class HitExample : MonoBehaviour {
+public class HitExample : MonoBehaviour
+{
     public Animator attacker, victim;
-    IEnumerator HitStop() {
+    IEnumerator HitStop()
+    {
         if (!attacker || !victim) yield break;
         float a = attacker.speed, v = victim.speed;
         attacker.speed = victim.speed = 0f;
@@ -71,12 +72,14 @@ public class HitExample : MonoBehaviour {
 USkeletalMeshComponent* AttackerMesh = nullptr;
 USkeletalMeshComponent* VictimMesh = nullptr;
 FTimerHandle ResumeTimer;
-void StartHitStop() {
+void StartHitStop()
+{
     if (!AttackerMesh || !VictimMesh || GetWorldTimerManager().IsTimerActive(ResumeTimer)) return;
     AttackerMesh->bPauseAnims = VictimMesh->bPauseAnims = true;
     GetWorldTimerManager().SetTimer(ResumeTimer, this, &AMyActor::EndHitStop, 0.06f, false);
 }
-void EndHitStop() {
+void EndHitStop()
+{
     if (AttackerMesh) AttackerMesh->bPauseAnims = false;
     if (VictimMesh) VictimMesh->bPauseAnims = false;
 }

@@ -50,15 +50,17 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class KnockExample : MonoBehaviour {
+public class KnockExample : MonoBehaviour
+{
     public CharacterController body;
     Vector3 knockVelocity;
-    public void Knockback(Vector3 direction) {
+    public void Knockback(Vector3 direction)
+    {
         direction.y = 0f;
         knockVelocity = direction.normalized * 6f;
     }
-    void Update() {
+    void Update()
+    {
         if (!body) return;
         body.Move(knockVelocity * Time.deltaTime);
         knockVelocity = Vector3.MoveTowards(knockVelocity, Vector3.zero, 12f * Time.deltaTime);
@@ -69,7 +71,8 @@ public class KnockExample : MonoBehaviour {
 ## Unreal
 
 ```cpp
-void Knockback(ACharacter* Victim, FVector Direction) {
+void Knockback(ACharacter* Victim, FVector Direction)
+{
     if (!Victim) return;
     Direction.Z = 0;
     Victim->LaunchCharacter(Direction.GetSafeNormal() * 600.f, true, false);

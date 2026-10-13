@@ -52,9 +52,10 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class RimExample : MonoBehaviour {
-    public float RimFactor(Vector3 normal, Vector3 viewDirection) {
+public class RimExample : MonoBehaviour
+{
+    public float RimFactor(Vector3 normal, Vector3 viewDirection)
+    {
         float facing = Mathf.Clamp01(Vector3.Dot(normal.normalized, viewDirection.normalized));
         return Mathf.Pow(1f - facing, 3f);
     }
@@ -64,7 +65,8 @@ public class RimExample : MonoBehaviour {
 ## Unreal
 
 ```cpp
-float RimFactor(FVector Normal, FVector ViewDirection) {
+float RimFactor(FVector Normal, FVector ViewDirection)
+{
     float Facing = FMath::Clamp(FVector::DotProduct(Normal.GetSafeNormal(), ViewDirection.GetSafeNormal()), 0.f, 1.f);
     return FMath::Pow(1.f - Facing, 3.f);
 }

@@ -50,17 +50,19 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class SwingExample : MonoBehaviour {
+public class SwingExample : MonoBehaviour
+{
     public Transform anchor;
     public float ropeLength = 5f;
     Vector3 velocity;
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
         if (!anchor) return;
         velocity += Physics.gravity * Time.fixedDeltaTime;
         Vector3 next = transform.position + velocity * Time.fixedDeltaTime;
         Vector3 radial = next - anchor.position;
-        if (radial.magnitude > ropeLength) {
+        if (radial.magnitude > ropeLength)
+        {
             Vector3 n = radial.normalized;
             next = anchor.position + n * ropeLength;
             velocity -= n * Mathf.Max(0, Vector3.Dot(velocity, n));
@@ -76,11 +78,13 @@ public class SwingExample : MonoBehaviour {
 FVector Anchor = FVector::ZeroVector;
 FVector Velocity = FVector::ZeroVector;
 float RopeLength = 500;
-void UpdateSwing(float Dt) {
+void UpdateSwing(float Dt)
+{
     Velocity.Z += GetWorld()->GetGravityZ() * Dt;
     FVector Next = GetActorLocation() + Velocity * Dt;
     FVector Radial = Next - Anchor;
-    if (Radial.Size() > RopeLength) {
+    if (Radial.Size() > RopeLength)
+    {
         FVector N = Radial.GetSafeNormal();
         Next = Anchor + N * RopeLength;
         Velocity -= N * FMath::Max(0.f, FVector::DotProduct(Velocity, N));

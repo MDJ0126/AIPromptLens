@@ -9,3 +9,19 @@ async function copyToClipboard(text){
  let copied=false;try{field.focus({preventScroll:true});field.select();copied=document.execCommand('copy');}catch{}finally{field.remove();if(active&&typeof active.focus==='function')active.focus({preventScroll:true});if(selection){selection.removeAllRanges();for(const range of ranges)selection.addRange(range);}}
  return copied;
 }
+
+// The same control is used for code and both prompt panels.
+function bindCopyButton(button, getText)
+{
+ button.className = 'block-copy';
+ button.textContent = '복사';
+ button.setAttribute('type', 'button');
+ button.addEventListener('click', async () =>
+ {
+  const copied = await copyToClipboard(getText());
+  button.textContent = copied ? '복사됨' : '복사';
+  toast(copied ? '클립보드에 복사했습니다.' : '복사 권한이 없습니다. 내용을 직접 선택해 주세요.');
+  setTimeout(() => { button.textContent = '복사'; }, 1600);
+ });
+ return button;
+}

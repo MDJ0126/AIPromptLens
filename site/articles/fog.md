@@ -55,9 +55,10 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class FogExample : MonoBehaviour {
-    public Color ApplyFog(Color surface, Color fog, float distance) {
+public class FogExample : MonoBehaviour
+{
+    public Color ApplyFog(Color surface, Color fog, float distance)
+    {
         float factor = Mathf.InverseLerp(10f, 80f, distance);
         return Color.Lerp(surface, fog, factor);
     }
@@ -67,7 +68,8 @@ public class FogExample : MonoBehaviour {
 ## Unreal
 
 ```cpp
-FLinearColor ApplyFog(FLinearColor Surface, FLinearColor Fog, float Distance) {
+FLinearColor ApplyFog(FLinearColor Surface, FLinearColor Fog, float Distance)
+{
     float Factor = FMath::Clamp((Distance - 1000.f) / 7000.f, 0.f, 1.f);
     return FMath::Lerp(Surface, Fog, Factor);
 }

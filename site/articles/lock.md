@@ -52,10 +52,11 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class LockExample : MonoBehaviour {
+public class LockExample : MonoBehaviour
+{
     public Transform player, target;
-    void LateUpdate() {
+    void LateUpdate()
+    {
         if (!player || !target) return;
         Vector3 center = (player.position + target.position) * 0.5f;
         Vector3 direction = (target.position - player.position).normalized;
@@ -70,7 +71,8 @@ public class LockExample : MonoBehaviour {
 ```cpp
 AActor* Player = nullptr;
 AActor* Target = nullptr;
-void UpdateLockOn() {
+void UpdateLockOn()
+{
     if (!Player || !Target) return;
     FVector P = Player->GetActorLocation(), T = Target->GetActorLocation();
     FVector Center = (P + T) * 0.5f;

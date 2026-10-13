@@ -52,9 +52,10 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class VisionExample : MonoBehaviour {
-    public bool CanSee(Transform eye, Transform target, LayerMask walls) {
+public class VisionExample : MonoBehaviour
+{
+    public bool CanSee(Transform eye, Transform target, LayerMask walls)
+    {
         Vector3 delta = target.position - eye.position;
         if (delta.sqrMagnitude > 100f) return false;
         if (Vector3.Angle(eye.forward, delta) > 45f) return false;
@@ -66,7 +67,8 @@ public class VisionExample : MonoBehaviour {
 ## Unreal
 
 ```cpp
-bool CanSee(AActor* Target) {
+bool CanSee(AActor* Target)
+{
     if (!Target) return false;
     FVector Eye = GetActorLocation() + FVector(0, 0, 160);
     FVector Delta = Target->GetActorLocation() - Eye;

@@ -40,19 +40,19 @@ test('Engine tabs, code copy and out-of-order article loads use the correct arti
  requests.get('articles/dash.md')({ok:true,text:async()=>fs.readFileSync('site/articles/dash.md','utf8')});await second;
  assert.equal(el('article-review').children[0].textContent,'최근 업데이트 · '+article('dash').reviewedAt);assert.equal(el('article-review').children[1].textContent,article('dash').reviewScope);
  requests.get('articles/hit.md')({ok:true,text:async()=>fs.readFileSync('site/articles/hit.md','utf8')});await first;
- await el('copy-code').handlers.click();assert.ok(copy[0].includes('DashExample'));assert.ok(!copy[0].includes('HitExample'));
+ await el('article-code').children.at(-1).children[0].children[1].handlers.click();assert.ok(copy[0].includes('DashExample'));assert.ok(!copy[0].includes('HitExample'));
  el('article-engines').handlers.click({target:{closest:()=>({dataset:{articleEngine:'Unreal'}})}});
- await el('copy-code').handlers.click();assert.ok(copy[1].includes('UpdateDash'));assert.ok(!copy[1].includes('MonoBehaviour'));
+ await el('article-code').children.at(-1).children[0].children[1].handlers.click();assert.ok(copy[1].includes('UpdateDash'));assert.ok(!copy[1].includes('MonoBehaviour'));
  vm.runInContext(['catalog.js','demos.js','concepts.js','asset-art.js','covers.js','suggestions.js','daily.js','app.js'].map(file=>fs.readFileSync('site/'+file,'utf8')).join('\n'),ctx);
  await vm.runInContext('openDetail(4)',ctx);
  assert.equal(el('detail').open,true);
  assert.equal(el('article-file').href,'articles/hit.md');
- await el('copy-code').handlers.click();assert.ok(copy[2].includes('HitExample'));
+ await el('article-code').children.at(-1).children[0].children[1].handlers.click();assert.ok(copy[2].includes('HitExample'));
  el('article-engines').handlers.click({target:{closest:()=>({dataset:{articleEngine:'Unreal'}})}});
- await el('copy-code').handlers.click();assert.ok(copy[3].includes('StartHitStop'));
+ await el('article-code').children.at(-1).children[0].children[1].handlers.click();assert.ok(copy[3].includes('StartHitStop'));
  const conceptual=ctx.ui.loadArticle(article('baked-lighting'));
  requests.get('articles/baked-lighting.md')({ok:true,text:async()=>fs.readFileSync('site/articles/baked-lighting.md','utf8')});await conceptual;
- assert.equal(el('article-engines').hidden,true);assert.equal(el('copy-code').hidden,true);assert.equal(el('article-heading-title').textContent,'개념과 선택 기준');
+ assert.equal(el('article-engines').hidden,true);assert.equal(el('article-code').innerHTML,'');assert.equal(el('article-heading-title').textContent,'개념과 선택 기준');
  await ctx.ui.loadArticle(article('hit'));assert.equal(el('article-engines').hidden,false);
 
 
@@ -71,3 +71,11 @@ test('Syntax coloring preserves every example and recognizes comments, keywords 
  assert.ok(tokens.some(t=>t.kind==='string'&&t.text.includes('<img')));
 });
 
+
+test('Every example opening brace occupies its own line',()=>{
+ const {tokenizeCode}=require('../site/syntax.js');
+ for(const file of files)for(const block of parseArticle(fs.readFileSync('site/articles/'+file,'utf8')).blocks.filter(b=>b.type==='code')){
+  const plain=tokenizeCode(block.text).map(t=>['string','comment'].includes(t.kind)?t.text.replace(/[^\n]/g,' '):t.text).join('');
+  for(const line of plain.split('\n'))if(line.includes('{'))assert.equal(line.trim(),'{',file);
+ }
+});

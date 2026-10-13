@@ -77,6 +77,7 @@ function renderComposer(){
  $('detail-compose').hidden=selected.size===0;
  $('selection').innerHTML=selected.size?[...selected].map(id=>{const t=terms.find(t=>t.id===id);return '<span class="selected-chip">'+t.name+'<button data-remove="'+id+'" aria-label="'+t.name+' 빼기">×</button></span>';}).join(''):'<div class="selection-empty"><span>⊕</span>카드의 + 버튼을 눌러<br>첫 번째 표현을 담아 보세요.</div>';
  $('prompt').textContent=composePrompt();$('copy').disabled=!selected.size;
+ const detailTerm=terms.find(t=>t.id===detailId);if(detailTerm)$('detail-example').textContent=promptForTerms([detailTerm]);
  document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===language));
 
 }
@@ -120,9 +121,9 @@ $('composer-nav').addEventListener('click',()=>setView('composer'));
 $('reset-filters').addEventListener('click',()=>{category='all';filter='all';savedOnly=false;$('search').value='';document.querySelectorAll('[data-filter]').forEach(b=>{const active=b.dataset.filter==='all';b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});renderCategories();renderCards();});
 $('clear').addEventListener('click',()=>{selected.clear();persist();syncCardButtons();renderComposer();toast('선택한 표현을 초기화했습니다.');});
 async function copyPromptText(text){const copied=await copyToClipboard(text);toast(copied?'프롬프트를 복사했습니다.':'복사 권한이 없습니다. 프롬프트 내용을 직접 선택해 주세요.');}
-$('copy').addEventListener('click',()=>copyPromptText(composePrompt()));
+bindCopyButton($('copy'),()=>$('prompt').textContent);
 $('close-detail').addEventListener('click',()=>$('detail').close());
-$('detail-copy-prompt').addEventListener('click',()=>{const term=terms.find(t=>t.id===detailId);if(term)return copyPromptText(promptForTerms([term]));});
+bindCopyButton($('detail-copy-prompt'),()=>$('detail-example').textContent);
 $('detail').addEventListener('click',e=>{if(e.target===$('detail')){const r=$('detail').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('detail').close();}});
 document.addEventListener('keydown',e=>{if((e.key==='/'||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'))&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!$('detail').open&&activeView!=='composer'){e.preventDefault();$('search').focus();}});
 renderCategories();renderCards();renderComposer();renderDailyRecommendation();

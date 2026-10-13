@@ -55,10 +55,11 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class IsoExample : MonoBehaviour {
+public class IsoExample : MonoBehaviour
+{
     public Transform player;
-    void LateUpdate() {
+    void LateUpdate()
+    {
         if (!player) return;
         Camera cam = GetComponent<Camera>();
         cam.orthographic = true;
@@ -74,7 +75,8 @@ public class IsoExample : MonoBehaviour {
 ```cpp
 UCameraComponent* Camera = nullptr;
 AActor* Player = nullptr;
-void UpdateCamera() {
+void UpdateCamera()
+{
     if (!Camera || !Player) return;
     Camera->SetProjectionMode(ECameraProjectionMode::Orthographic);
     Camera->SetOrthoWidth(1600.f);

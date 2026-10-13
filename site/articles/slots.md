@@ -50,18 +50,21 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class SlotsExample : MonoBehaviour {
+public class SlotsExample : MonoBehaviour
+{
     bool[] occupied = new bool[8];
-    public int ReserveSlot() {
-        for (int i = 0; i < occupied.Length; i++) {
+    public int ReserveSlot()
+    {
+        for (int i = 0; i < occupied.Length; i++)
+        {
             if (occupied[i]) continue;
             occupied[i] = true;
             return i;
         }
         return -1; // 빈 자리가 없으면 대기합니다.
     }
-    public void ReleaseSlot(int index) {
+    public void ReleaseSlot(int index)
+    {
         if (index >= 0 && index < occupied.Length) occupied[index] = false;
     }
 }
@@ -70,16 +73,23 @@ public class SlotsExample : MonoBehaviour {
 ## Unreal
 
 ```cpp
-TArray<bool> Occupied = { false, false, false, false, false, false, false, false };
-int32 ReserveSlot() {
-    for (int32 i = 0; i < Occupied.Num(); ++i) {
+TArray<bool> Occupied =
+{
+    false, false, false, false, false, false, false, false
+}
+;
+int32 ReserveSlot()
+{
+    for (int32 i = 0; i < Occupied.Num(); ++i)
+    {
         if (Occupied[i]) continue;
         Occupied[i] = true;
         return i;
     }
     return INDEX_NONE;
 }
-void ReleaseSlot(int32 Index) {
+void ReleaseSlot(int32 Index)
+{
     if (Occupied.IsValidIndex(Index)) Occupied[Index] = false;
 }
 ```

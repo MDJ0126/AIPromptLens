@@ -51,10 +51,11 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class JumpExample : MonoBehaviour {
+public class JumpExample : MonoBehaviour
+{
     float requested = float.NegativeInfinity;
-    public bool TryBufferedJump(bool pressed, bool grounded) {
+    public bool TryBufferedJump(bool pressed, bool grounded)
+    {
         if (pressed) requested = Time.time;
         if (!grounded || Time.time - requested > 0.15f) return false;
         requested = float.NegativeInfinity;
@@ -67,7 +68,8 @@ public class JumpExample : MonoBehaviour {
 
 ```cpp
 double Requested = -1e9;
-bool TryBufferedJump(bool bPressed, bool bGrounded) {
+bool TryBufferedJump(bool bPressed, bool bGrounded)
+{
     double Now = GetWorld()->GetTimeSeconds();
     if (bPressed) Requested = Now;
     if (!bGrounded || Now - Requested > 0.15) return false;

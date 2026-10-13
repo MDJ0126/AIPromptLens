@@ -53,10 +53,11 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class GuidanceExample : MonoBehaviour {
+public class GuidanceExample : MonoBehaviour
+{
     public Light doorwayLight;
-    public void HighlightDoor() {
+    public void HighlightDoor()
+    {
         if (!doorwayLight) return;
         doorwayLight.enabled = true;
         doorwayLight.color = new Color(1f, 0.8f, 0.45f);
@@ -69,7 +70,8 @@ public class GuidanceExample : MonoBehaviour {
 
 ```cpp
 UPointLightComponent* DoorLight = nullptr;
-void HighlightDoor() {
+void HighlightDoor()
+{
     if (!DoorLight) return;
     DoorLight->SetVisibility(true);
     DoorLight->SetLightColor(FLinearColor(1.f, 0.8f, 0.45f));

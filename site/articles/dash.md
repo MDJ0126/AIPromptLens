@@ -53,17 +53,19 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class DashExample : MonoBehaviour {
+public class DashExample : MonoBehaviour
+{
     public CharacterController body;
     Vector3 direction;
     float remaining;
-    public void StartDash(Vector3 input) {
+    public void StartDash(Vector3 input)
+    {
         input.y = 0;
         direction = input.normalized;
         remaining = 0.15f;
     }
-    void Update() {
+    void Update()
+    {
         if (!body || remaining <= 0) return;
         float dt = Mathf.Min(Time.deltaTime, remaining);
         body.Move(direction * 14f * dt);
@@ -77,12 +79,14 @@ public class DashExample : MonoBehaviour {
 ```cpp
 FVector DashDirection = FVector::ZeroVector;
 float Remaining = 0;
-void StartDash(FVector Input) {
+void StartDash(FVector Input)
+{
     Input.Z = 0;
     DashDirection = Input.GetSafeNormal();
     Remaining = 0.15f;
 }
-void UpdateDash(float DeltaTime) {
+void UpdateDash(float DeltaTime)
+{
     if (Remaining <= 0) return;
     float Step = FMath::Min(DeltaTime, Remaining);
     AddActorWorldOffset(DashDirection * 1400.f * Step, true);

@@ -52,10 +52,11 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class LandmarkExample : MonoBehaviour {
+public class LandmarkExample : MonoBehaviour
+{
     public Transform landmark;
-    public void PlaceLandmark(Vector3 position) {
+    public void PlaceLandmark(Vector3 position)
+    {
         if (!landmark) return;
         landmark.position = position;
         landmark.localScale = Vector3.one * 3f;
@@ -67,7 +68,8 @@ public class LandmarkExample : MonoBehaviour {
 
 ```cpp
 AActor* Landmark = nullptr;
-void PlaceLandmark(FVector Position) {
+void PlaceLandmark(FVector Position)
+{
     if (!Landmark) return;
     Landmark->SetActorLocation(Position);
     Landmark->SetActorScale3D(FVector(3.f));

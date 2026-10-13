@@ -52,10 +52,11 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class ShoulderExample : MonoBehaviour {
+public class ShoulderExample : MonoBehaviour
+{
     public Transform player;
-    void LateUpdate() {
+    void LateUpdate()
+    {
         if (!player) return;
         transform.position = player.TransformPoint(new Vector3(0.6f, 1.6f, -3f));
         transform.LookAt(player.position + player.forward * 10f + Vector3.up * 1.6f);
@@ -67,7 +68,8 @@ public class ShoulderExample : MonoBehaviour {
 
 ```cpp
 AActor* Player = nullptr;
-void UpdateCamera() {
+void UpdateCamera()
+{
     if (!Player) return;
     SetActorLocation(Player->GetActorTransform().TransformPosition(FVector(-300, 60, 160)));
     FVector Aim = Player->GetActorLocation() + Player->GetActorForwardVector() * 1000 + FVector(0, 0, 160);

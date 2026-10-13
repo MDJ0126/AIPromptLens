@@ -54,11 +54,13 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class ArenaExample : MonoBehaviour {
+public class ArenaExample : MonoBehaviour
+{
     public GameObject coverPrefab;
-    public void BuildArena(Vector3 center) {
-        for (int i = 0; i < 4; i++) {
+    public void BuildArena(Vector3 center)
+    {
+        for (int i = 0; i < 4; i++)
+        {
             float angle = i * Mathf.PI * 0.5f;
             Vector3 offset = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * 8f;
             Instantiate(coverPrefab, center + offset, Quaternion.identity);
@@ -71,9 +73,11 @@ public class ArenaExample : MonoBehaviour {
 
 ```cpp
 TSubclassOf<AActor> CoverClass;
-void BuildArena(FVector Center) {
+void BuildArena(FVector Center)
+{
     if (!CoverClass) return;
-    for (int32 i = 0; i < 4; ++i) {
+    for (int32 i = 0; i < 4; ++i)
+    {
         float Angle = i * PI * 0.5f;
         FVector Offset(FMath::Cos(Angle) * 800, FMath::Sin(Angle) * 800, 0);
         GetWorld()->SpawnActor<AActor>(CoverClass, Center + Offset, FRotator::ZeroRotator);

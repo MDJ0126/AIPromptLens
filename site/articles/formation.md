@@ -49,9 +49,10 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class FormationExample : MonoBehaviour {
-    public Vector3 FormationPosition(int index, Transform center) {
+public class FormationExample : MonoBehaviour
+{
+    public Vector3 FormationPosition(int index, Transform center)
+    {
         int columns = 4;
         float spacing = 2f;
         int row = index / columns, column = index % columns;
@@ -64,7 +65,8 @@ public class FormationExample : MonoBehaviour {
 ## Unreal
 
 ```cpp
-FVector FormationPosition(int32 Index, const FTransform& Center) {
+FVector FormationPosition(int32 Index, const FTransform& Center)
+{
     int32 Columns = 4;
     float Spacing = 200.f;
     int32 Row = Index / Columns, Column = Index % Columns;

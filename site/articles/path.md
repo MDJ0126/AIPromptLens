@@ -52,10 +52,11 @@
 ```csharp
 using UnityEngine;
 using System.Collections;
-
-public class PathExample : MonoBehaviour {
+public class PathExample : MonoBehaviour
+{
     public UnityEngine.AI.NavMeshAgent agent;
-    public bool MoveTo(Vector3 goal) {
+    public bool MoveTo(Vector3 goal)
+    {
         if (!agent || !agent.isOnNavMesh) return false;
         return agent.SetDestination(goal);
     }
@@ -65,7 +66,8 @@ public class PathExample : MonoBehaviour {
 ## Unreal
 
 ```cpp
-void MoveTo(AAIController* AI, FVector Goal) {
+void MoveTo(AAIController* AI, FVector Goal)
+{
     if (!AI) return;
     AI->MoveToLocation(Goal, 50.f);
 }
