@@ -29,9 +29,9 @@ test('Search, selection, composer, language and persistence interactions',()=>{
  listeners.get('categories:click')({target:{closest:()=>({dataset:{category:terms[0].category}})}});
  assert.deepEqual(renderedIds(),Array.from(terms.filter(t=>t.category===terms[0].category).slice(0,24),t=>t.id));
  listeners.get('categories:click')({target:{closest:()=>({dataset:{category:'all'}})}});
- page(2);el('search').value='어깨';ctx.api.toggleSelected(4);
+ page(2);el('search').value='어깨';listeners.get('.chips:click')({target:{closest:()=>({dataset:{filter:'all'}})}});
  assert.equal(renderedIds().length,1);assert.equal(el('pagination').hidden,true);
- ctx.api.toggleSelected(4);el('search').value='';listeners.get('reset-filters:click')();
+ el('search').value='';listeners.get('reset-filters:click')();
  assert.equal(renderedIds().length,24);
 
  for(const genre of ['action','rpg','shooter','platformer','strategy','puzzle','horror','adventure','simulation','racing','sports','rhythm']){listeners.get('.chips:click')({target:{closest:()=>({dataset:{filter:genre}})}});const visible=ctx.api.visibleTerms();assert.ok(visible.length>0);assert.ok(visible.every(term=>term.genres.includes(genre)));}
@@ -47,7 +47,7 @@ assert.equal(el('copy').disabled,true);
 
  listeners.get('composer-nav:click')();assert.equal(el('main').hidden,true);assert.equal(el('composer-panel').hidden,false);
  listeners.get('explore-nav:click')();assert.equal(el('main').hidden,false);assert.equal(el('composer-panel').hidden,true);
- ctx.api.toggleSelected(4);assert.ok(el('prompt').textContent.includes('동작을 짧게 멈추는'));
+ const beforeSelectionMarkup=el('cards').innerHTML;ctx.api.toggleSelected(4);assert.equal(el('cards').innerHTML,beforeSelectionMarkup,'Adding a term must not replace preview markup');assert.ok(el('prompt').textContent.includes('동작을 짧게 멈추는'));
  assert.equal(JSON.parse(storage.get('promptlens-v1')).selected[0],4);
  listeners.get('composer-nav:click')();assert.ok(el('prompt').textContent.includes('動作')||el('prompt').textContent.includes('동작'));assert.equal(el('composer-nav-count').textContent,1);
  listeners.get('explore-nav:click')();assert.equal(el('selection-count').textContent,1);

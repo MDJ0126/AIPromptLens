@@ -48,3 +48,11 @@ html[data-theme="dark"] .category.active{background:#21375c!important;color:#a9c
 .bookmark-icon path{fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;transition:fill .2s ease}
 .card .save.saved{background:#fff0b8!important;color:#956b0c!important}.save.saved .bookmark-icon path{fill:#ffda66}
 html[data-theme="dark"] .card .save.saved{background:#544323!important;color:#ffda66!important}
+
+/* Persistent cart: choosing terms never replaces preview nodes. */
+main{padding-bottom:126px}footer{margin-bottom:20px}.card .add{width:auto;min-width:62px;height:30px;padding:0 9px;font-size:11px;white-space:nowrap}
+.prompt-cart{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);width:min(660px,calc(100% - 36px));z-index:20;display:flex;align-items:center;gap:15px;padding:15px 18px;border:1px solid var(--line);border-radius:13px;background:var(--panel);box-shadow:0 10px 45px #071b3630;color:var(--text)}
+.prompt-cart[hidden]{display:none}.cart-icon{display:grid;place-items:center;background:#eaf0ff;color:#2463eb;border-radius:8px;width:40px;height:40px;flex-shrink:0}.cart-copy{min-width:0;flex:1}.cart-copy strong{font-size:13px}.cart-copy strong span{background:#ffda66;color:#463912;display:inline-block;margin-left:6px;padding:1px 7px;border-radius:5px;font-family:Consolas,monospace}.cart-copy p{font-size:11px;color:var(--muted);margin:3px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#cart-open{border:0;border-radius:7px;background:#2463eb;color:#fff;font-size:12px;font-weight:600;padding:11px 14px;white-space:nowrap}.composer-back{background:none;border:0;color:var(--accent);padding:0;margin-bottom:22px;font-size:12px}.detail-compose{display:block;margin:12px auto 0;background:transparent;border:1px solid var(--line);border-radius:6px;padding:11px 15px;color:var(--accent);font-size:12px}.detail-compose[hidden]{display:none}
+#toast{bottom:108px}
+@media(max-width:720px){.prompt-cart{bottom:12px;padding:12px;gap:10px}.cart-icon{display:none}.cart-copy strong{font-size:12px}.cart-copy p{font-size:10px}#cart-open{font-size:11px;padding:10px}.composer-heading h2{font-size:23px!important}.prompt-cart .cart-copy{min-width:0}#toast{bottom:98px}}

@@ -30,19 +30,21 @@ function renderCards(){
  const pageItems=items.slice((currentPage-1)*PAGE_SIZE,currentPage*PAGE_SIZE);
  renderPagination(items.length);
  $('section-title').textContent=label+' ';const count=document.createElement('span');count.textContent=items.length;$('section-title').append(count);
- $('cards').innerHTML=pageItems.map(t=>'<article class="card"><div class="preview">'+cardIllustration(t)+'<span class="preview-label">'+t.en.toUpperCase()+'</span><button class="save '+(saved.has(t.id)?'saved':'')+'" data-save="'+t.id+'" aria-label="'+t.name+' 저장" aria-pressed="'+saved.has(t.id)+'">'+bookmarkIcon()+'</button></div><div class="card-body"><p class="card-category">'+categories.find(c=>c.id===t.category).name+'</p><h3><button class="card-title-link" aria-haspopup="dialog" data-detail="'+t.id+'">'+t.name+'</button></h3><p class="term-en">'+t.en+'</p><p class="card-desc">'+t.desc+'</p><div class="card-actions"><button class="add '+(selected.has(t.id)?'selected':'')+'" data-add="'+t.id+'" aria-label="'+t.name+' '+(selected.has(t.id)?'빼기':'담기')+'" aria-pressed="'+selected.has(t.id)+'">'+(selected.has(t.id)?'✓':'+')+'</button></div></div></article>').join('');
+ $('cards').innerHTML=pageItems.map(t=>'<article class="card"><div class="preview">'+cardIllustration(t)+'<span class="preview-label">'+t.en.toUpperCase()+'</span><button class="save '+(saved.has(t.id)?'saved':'')+'" data-save="'+t.id+'" aria-label="'+t.name+' 저장" aria-pressed="'+saved.has(t.id)+'">'+bookmarkIcon()+'</button></div><div class="card-body"><p class="card-category">'+categories.find(c=>c.id===t.category).name+'</p><h3><button class="card-title-link" aria-haspopup="dialog" data-detail="'+t.id+'">'+t.name+'</button></h3><p class="term-en">'+t.en+'</p><p class="card-desc">'+t.desc+'</p><div class="card-actions"><button class="add '+(selected.has(t.id)?'selected':'')+'" data-add="'+t.id+'" aria-label="'+t.name+' '+(selected.has(t.id)?'빼기':'담기')+'" aria-pressed="'+selected.has(t.id)+'">'+(selected.has(t.id)?'✓ 담김':'+ 담기')+'</button></div></div></article>').join('');
  $('empty').hidden=items.length>0;$('saved-count').textContent=saved.size;
  renderNavigation();
 }
 function renderNavigation(){
  for(const [id,view] of [['explore-nav','explore'],['saved-nav','saved'],['composer-nav','composer']]){const active=activeView===view;$(id).classList.toggle('nav-active',active);$(id).setAttribute('aria-pressed',String(active));}
  $('composer-nav-count').textContent=selected.size;
+ $('saved-count').textContent=saved.size;
 }
 function setView(view){
  activeView=view;const composing=view==='composer';
  $('main').hidden=composing;$('explorer-sidebar').hidden=composing;$('composer-panel').hidden=!composing;
  $('workspace-layout').classList.toggle('composer-view',composing);
- if(!composing){savedOnly=view==='saved';renderCards();}renderNavigation();
+ if(!composing){const nextSaved=view==='saved';if(savedOnly!==nextSaved){savedOnly=nextSaved;renderCards();}}
+ $('prompt-cart').hidden=composing;renderNavigation();
 }
 function composePrompt(){
  const list=[...selected].map(id=>terms.find(t=>t.id===id)),idea=$('idea').value.trim(),engine=$('engine').value;
@@ -56,12 +58,19 @@ function renderComposer(){
  renderNavigation();
  renderSuggestions();
  $('selection-count').textContent=selected.size;
+ $('cart-count').textContent=selected.size;
+ $('cart-summary').textContent=selected.size?[...selected].slice(-2).map(id=>terms.find(t=>t.id===id).name).join(' · ')+(selected.size>2?' 외 '+(selected.size-2)+'개':''):'카드에서 기술을 담고 요청 문장으로 만들어 보세요.';
+ $('detail-compose').hidden=selected.size===0;
  $('selection').innerHTML=selected.size?[...selected].map(id=>{const t=terms.find(t=>t.id===id);return '<span class="selected-chip">'+t.name+'<button data-remove="'+id+'" aria-label="'+t.name+' 빼기">×</button></span>';}).join(''):'<div class="selection-empty"><span>⊕</span>카드의 + 버튼을 눌러<br>첫 번째 표현을 담아 보세요.</div>';
  $('prompt').textContent=composePrompt();$('copy').disabled=!selected.size&&!$('idea').value.trim();
  document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===language));
- if(detailId!==null)$('detail-add').textContent=selected.has(detailId)?'프롬프트에서 빼기 −':'프롬프트에 담기 ＋';
+ if(detailId!==null)$('detail-add').textContent=selected.has(detailId)?'장바구니에서 빼기 −':'기술 장바구니에 담기 ＋';
 }
-function toggleSelected(id){if(selected.has(id))selected.delete(id);else selected.add(id);persist();renderCards();renderComposer();}
+function syncCardButtons(){
+ document.querySelectorAll('#cards [data-add]').forEach(button=>{const id=Number(button.dataset.add),term=terms.find(t=>t.id===id),active=selected.has(id);button.classList.toggle('selected',active);button.setAttribute('aria-pressed',String(active));button.setAttribute('aria-label',term.name+' '+(active?'빼기':'담기'));button.textContent=active?'✓ 담김':'+ 담기';});
+ document.querySelectorAll('#cards [data-save]').forEach(button=>{const active=saved.has(Number(button.dataset.save));button.classList.toggle('saved',active);button.setAttribute('aria-pressed',String(active));});
+}
+function toggleSelected(id){if(!terms.some(t=>t.id===id))return;const adding=!selected.has(id);if(adding)selected.add(id);else selected.delete(id);persist();syncCardButtons();renderComposer();if(adding)toast('기술 장바구니에 담았습니다. 하단에서 담은 기술을 확인하세요.');}
 function openDetail(id){
  const t=terms.find(t=>t.id===id);detailId=id;
  $('detail-category').textContent=categories.find(c=>c.id===t.category).name;
@@ -78,7 +87,7 @@ $('pagination').addEventListener('click',e=>{
  if(typeof $('section-title').scrollIntoView==='function')$('section-title').scrollIntoView({block:'start',behavior:'auto'});
 });
 $('categories').addEventListener('click',e=>{const b=e.target.closest('[data-category]');if(!b)return;category=b.dataset.category;renderCategories();renderCards();});
-$('cards').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.add!==undefined)toggleSelected(Number(b.dataset.add));if(b.dataset.detail!==undefined)openDetail(Number(b.dataset.detail));if(b.dataset.save!==undefined){const id=Number(b.dataset.save);saved.has(id)?saved.delete(id):saved.add(id);persist();renderCards();}});
+$('cards').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.add!==undefined)toggleSelected(Number(b.dataset.add));if(b.dataset.detail!==undefined)openDetail(Number(b.dataset.detail));if(b.dataset.save!==undefined){const id=Number(b.dataset.save);saved.has(id)?saved.delete(id):saved.add(id);persist();if(savedOnly)renderCards();else{syncCardButtons();renderNavigation();}}});
 $('selection').addEventListener('click',e=>{const b=e.target.closest('[data-remove]');if(b)toggleSelected(Number(b.dataset.remove));});
 document.querySelector('.chips').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>{const active=b.dataset.filter===filter;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});renderCards();});
 // Search results update on suggestion selection or Enter, not on every keystroke.
@@ -87,9 +96,12 @@ $('engine').addEventListener('change',()=>{persist();renderComposer();});
 document.querySelector('.language').addEventListener('click',e=>{const b=e.target.closest('[data-lang]');if(!b)return;language=b.dataset.lang;persist();renderComposer();});
 $('saved-nav').addEventListener('click',()=>setView('saved'));
 $('explore-nav').addEventListener('click',()=>setView('explore'));
+$('cart-open').addEventListener('click',()=>setView('composer'));
+$('detail-compose').addEventListener('click',()=>{$('detail').close();setView('composer');});
+$('composer-back').addEventListener('click',()=>setView('explore'));
 $('composer-nav').addEventListener('click',()=>setView('composer'));
 $('reset-filters').addEventListener('click',()=>{category='all';filter='all';savedOnly=false;$('search').value='';document.querySelectorAll('[data-filter]').forEach(b=>{const active=b.dataset.filter==='all';b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});renderCategories();renderCards();});
-$('clear').addEventListener('click',()=>{selected.clear();persist();renderCards();renderComposer();toast('선택한 표현을 초기화했습니다.');});
+$('clear').addEventListener('click',()=>{selected.clear();persist();syncCardButtons();renderComposer();toast('선택한 표현을 초기화했습니다.');});
 $('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(composePrompt());toast('프롬프트를 복사했습니다.');}catch{const area=document.createElement('textarea');area.value=composePrompt();document.body.append(area);area.select();let ok=false;try{ok=document.execCommand('copy');}catch{}area.remove();toast(ok?'프롬프트를 복사했습니다.':'복사 권한이 없습니다. 프롬프트 내용을 직접 선택해 주세요.');}});
 $('close-detail').addEventListener('click',()=>$('detail').close());
 $('detail-add').addEventListener('click',()=>toggleSelected(detailId));
