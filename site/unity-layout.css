@@ -121,3 +121,10 @@ html[data-theme=dark] .page-range{color:#bbb}
 html[data-theme=dark] #composer-nav .icon-badge{border-color:#171717}
 footer{padding-bottom:60px}
 @media(max-width:720px){#composer-nav{right:18px;bottom:calc(18px + env(safe-area-inset-bottom));width:54px;height:54px}}
+/* Search and navigation stay together at the top while scrolling. */
+:root{--topbar-height:130px}
+.site-topbar{position:sticky;top:0;z-index:30;background:#000;box-shadow:0 2px 12px #0002}
+.site-topbar .store-header{position:relative;z-index:2}
+.site-topbar .store-navigation{position:relative;z-index:1}
+#section-title{scroll-margin-top:calc(var(--topbar-height) + 20px)}
+@media(max-width:720px){:root{--topbar-height:180px}}
