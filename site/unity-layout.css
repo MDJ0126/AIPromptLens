@@ -74,3 +74,18 @@ body{font-weight:450;line-height:1.6;letter-spacing:-.01em;font-synthesis:none}
 .category{font-weight:550;letter-spacing:-.01em}.category.active{font-weight:700}
 .daily-cta{font-weight:750;letter-spacing:0}.modal-body>p,#article-notes p{font-size:14px;line-height:1.85}
 @media(max-width:720px){.daily-copy h2{font-size:33px}.card h3{font-size:15px}.card-desc{font-size:12px;line-height:1.65;min-height:40px}.store-navigation button{font-size:14px}}
+/* Match the supplied Asset Store card: one outline around image and details. */
+.cards .card{border:1px solid #dedede!important;border-radius:8px;background:#fff!important;overflow:hidden;display:flex;flex-direction:column;box-shadow:none!important}
+.cards .card:hover{border:1px solid #999!important;box-shadow:none!important}
+.cards .card .preview{border-radius:0;flex:none}
+.cards .card .card-body{padding:12px;display:flex;flex-direction:column;flex:1;gap:0}
+.cards .card .card-title-link::after{border-radius:8px}
+.cards .card-category{align-self:flex-start;background:#f3f3f3;border-radius:3px;padding:2px 5px;margin:0 0 8px;font-size:11px;line-height:1.4}
+.cards .card h3{font-size:15px;line-height:1.5;margin:0;font-weight:650}
+.cards .card .term-en{font-size:12px;margin-top:5px;line-height:1.5}
+.cards .card-desc{font-size:13px;line-height:1.6;margin:8px 0 12px;min-height:42px}
+.cards .card-actions{margin-top:auto;padding:0;min-height:28px}
+html[data-theme=dark] .cards .card{border-color:#4b4b4b!important;background:#242424!important}
+html[data-theme=dark] .cards .card:hover{border-color:#a39a78!important}
+html[data-theme=dark] .cards .card-category{background:#353535}
+@media(max-width:720px){.cards .card .card-body{padding:10px}.cards .card h3{font-size:14px}.cards .card-desc{font-size:12px}.cards .card-category{font-size:10px}}
