@@ -21,6 +21,7 @@ function renderPagination(total){
  let previous=0;
  nav.innerHTML='<span class="page-range">'+((currentPage-1)*PAGE_SIZE+1)+'–'+Math.min(currentPage*PAGE_SIZE,total)+' / '+total+'개</span><div class="page-buttons">'+button(currentPage-1,'이전',currentPage===1)+numbers.map(n=>{const gap=n-previous>1?'<span aria-hidden="true">…</span>':'';previous=n;return gap+button(n,n);}).join('')+button(currentPage+1,'다음',currentPage===pages)+'</div>';
 }
+function bookmarkIcon(){return '<svg class="bookmark-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M11.1 3.2Q12 1.5 12.9 3.2L15.05 7.65Q15.3 8.2 15.95 8.3L20.85 9Q22.8 9.3 21.4 10.7L17.85 14.15Q17.4 14.6 17.5 15.2L18.35 20.1Q18.7 22 17 21.1L12.65 18.8Q12 18.45 11.35 18.8L7 21.1Q5.3 22 5.65 20.1L6.5 15.2Q6.6 14.6 6.15 14.15L2.6 10.7Q1.2 9.3 3.15 9L8.05 8.3Q8.7 8.2 8.95 7.65Z"/></svg>';}
 function renderCards(){
  const key=JSON.stringify([category,filter,savedOnly,$('search').value.trim().toLowerCase()]);
  if(key!==resultKey){currentPage=1;resultKey=key;}
@@ -29,7 +30,7 @@ function renderCards(){
  const pageItems=items.slice((currentPage-1)*PAGE_SIZE,currentPage*PAGE_SIZE);
  renderPagination(items.length);
  $('section-title').textContent=label+' ';const count=document.createElement('span');count.textContent=items.length;$('section-title').append(count);
- $('cards').innerHTML=pageItems.map(t=>'<article class="card"><div class="preview">'+cardIllustration(t)+'<span class="preview-label">'+t.en.toUpperCase()+'</span><button class="save '+(saved.has(t.id)?'saved':'')+'" data-save="'+t.id+'" aria-label="'+t.name+' 저장" aria-pressed="'+saved.has(t.id)+'">'+(saved.has(t.id)?'★':'☆')+'</button></div><div class="card-body"><p class="card-category">'+categories.find(c=>c.id===t.category).name+'</p><h3><button class="card-title-link" aria-haspopup="dialog" data-detail="'+t.id+'">'+t.name+'</button></h3><p class="term-en">'+t.en+'</p><p class="card-desc">'+t.desc+'</p><div class="card-actions"><button class="add '+(selected.has(t.id)?'selected':'')+'" data-add="'+t.id+'" aria-label="'+t.name+' '+(selected.has(t.id)?'빼기':'담기')+'" aria-pressed="'+selected.has(t.id)+'">'+(selected.has(t.id)?'✓':'+')+'</button></div></div></article>').join('');
+ $('cards').innerHTML=pageItems.map(t=>'<article class="card"><div class="preview">'+cardIllustration(t)+'<span class="preview-label">'+t.en.toUpperCase()+'</span><button class="save '+(saved.has(t.id)?'saved':'')+'" data-save="'+t.id+'" aria-label="'+t.name+' 저장" aria-pressed="'+saved.has(t.id)+'">'+bookmarkIcon()+'</button></div><div class="card-body"><p class="card-category">'+categories.find(c=>c.id===t.category).name+'</p><h3><button class="card-title-link" aria-haspopup="dialog" data-detail="'+t.id+'">'+t.name+'</button></h3><p class="term-en">'+t.en+'</p><p class="card-desc">'+t.desc+'</p><div class="card-actions"><button class="add '+(selected.has(t.id)?'selected':'')+'" data-add="'+t.id+'" aria-label="'+t.name+' '+(selected.has(t.id)?'빼기':'담기')+'" aria-pressed="'+selected.has(t.id)+'">'+(selected.has(t.id)?'✓':'+')+'</button></div></div></article>').join('');
  $('empty').hidden=items.length>0;$('saved-count').textContent=saved.size;
  renderNavigation();
 }
