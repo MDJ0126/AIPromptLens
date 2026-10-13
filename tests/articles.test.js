@@ -15,8 +15,8 @@ test('Markdown articles validate code examples or concept explanations',()=>{
    assert.equal(blocks[0].language,engine==='Unity'?'csharp':'cpp');
   }
   assert.ok(article.blocks.some(b=>b.section==='핵심 구조'&&b.type==='paragraph'));
-  assert.ok(article.blocks.some(b=>b.section==='연결 방법과 생략한 부분'&&b.type==='paragraph'));
-  assert.ok(raw.includes('미확인:'));assert.ok(!/[ぁ-んァ-ン]/.test(raw));
+  assert.ok(article.blocks.some(b=>b.section==='적용 방법'&&b.type==='paragraph'));
+  assert.ok(!raw.includes('## 검증 상태'));assert.ok(!raw.includes('## 코드 범위'));assert.ok(!/[ぁ-んァ-ン]/.test(raw));
   const code=article.blocks.find(b=>b.section==='Unity'&&b.type==='code').text;
   const className=code.match(/class (\w+)/)[1];assert.ok(!names.has(className));names.add(className);
  }
@@ -78,4 +78,12 @@ test('Every example opening brace occupies its own line',()=>{
   const plain=tokenizeCode(block.text).map(t=>['string','comment'].includes(t.kind)?t.text.replace(/[^\n]/g,' '):t.text).join('');
   for(const line of plain.split('\n'))if(line.includes('{'))assert.equal(line.trim(),'{',file);
  }
+});
+
+test('Inline URLs become safe links without losing surrounding text',()=>{
+ const ctx=vm.createContext({document:{createElement:tag=>({tag,children:[],append(...nodes){this.children.push(...nodes)}}),getElementById:()=>({addEventListener(){}})}});
+ vm.runInContext(fs.readFileSync('site/articles-ui.js','utf8')+'\nglobalThis.linkText=appendLinkedText;',ctx);
+ const text='확인 자료: https://example.com/doc(test). 다음 [공식 문서](https://example.com/api) 참고';
+ const p={children:[],append(...nodes){this.children.push(...nodes)}};ctx.linkText(p,text);
+ const links=p.children.filter(n=>n.tag==='a');assert.equal(links.length,2);assert.equal(links[0].href,'https://example.com/doc(test)');assert.equal(links[1].textContent,'공식 문서');assert.equal(links[1].rel,'noopener noreferrer');assert.equal(p.children.map(n=>n.textContent).join(''),'확인 자료: https://example.com/doc(test). 다음 공식 문서 참고');
 });

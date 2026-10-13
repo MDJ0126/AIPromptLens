@@ -88,21 +88,15 @@ bool TryCoyoteJump(bool bGrounded, bool bPressed)
 }
 ```
 
-## 연결 방법과 생략한 부분
+## 적용 방법
 
-Unity: 매 프레임 바닥 상태와 이번 프레임에 누른 점프 입력을 넘깁니다. true를 반환하면 이동 코드에서 점프 수직 속도를 적용합니다. Unreal: ACharacter 멤버로 넣고 매 Tick 호출합니다. 일반 Jump는 공중에서 거부될 수 있어 이 예시는 LaunchCharacter를 사용합니다. 입력 소비와 접지 상태는 이동 루프에 연결해야 합니다.
+매 프레임 캐릭터가 바닥에 닿아 있는지와 점프 버튼을 방금 눌렀는지를 전달해 주세요. Unity에서는 함수가 true를 반환할 때 이동 코드에서 점프 속도를 적용하면 됩니다.
 
-## 코드 범위
-
-Unity 코드는 CoyoteExample.cs로 저장할 MonoBehaviour 예시입니다. 필요한 참조는 Inspector에서 연결하거나 호출 측에서 전달합니다. Unreal 코드는 해당 Actor/Character/CameraActor 클래스 내부에 넣는 멤버 예시이며, 완전한 .h/.cpp 파일은 아닙니다. 함수 선언·UPROPERTY·입력 바인딩·Tick 연결은 프로젝트에 맞게 작성해야 합니다. UObject 참조는 실제 프로젝트에서 UPROPERTY 또는 적절한 수명 관리가 필요합니다. 예제 수치들은 설명을 위한 값입니다.
+Unreal에서는 ACharacter의 Tick에서 호출합니다. 공중에서는 일반 Jump가 실행되지 않을 수 있어 예제는 LaunchCharacter를 사용합니다. 점프 입력을 한 번 사용한 뒤 다시 소비하지 않도록 이동 처리와 연결해 주세요.
 
 ## Unreal 의존성
 
 GameFramework/Character.h, Engine/World.h
-
-## 검증 상태
-
-미확인: 이 저장소에서는 Unity/Unreal 프로젝트 컴파일과 엔진 실행을 수행하지 않았습니다. 구조 학습을 위한 최소 예시이며 그대로 사용하기 전 해당 엔진 프로젝트에서 검증해야 합니다.
 
 ## 요청 예시
 

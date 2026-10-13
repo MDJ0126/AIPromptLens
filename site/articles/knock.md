@@ -79,21 +79,15 @@ void Knockback(ACharacter* Victim, FVector Direction)
 }
 ```
 
-## 연결 방법과 생략한 부분
+## 적용 방법
 
-Unity는 CharacterController를 지정하고 일반 이동과 넉백 이동을 함께 처리하도록 연결합니다. Unreal은 LaunchCharacter로 대상의 수평 속도를 덮어쓰고 수직 속도를 유지합니다. 두 예제의 감속·복귀 처리는 동일하지 않습니다. Rigidbody 또는 물리 Actor에는 별도의 힘 적용이 필요합니다.
+Unity에서는 body에 CharacterController를 연결하고, 평소 이동에 넉백 이동을 함께 반영해 주세요. Unreal에서는 LaunchCharacter로 타격 방향의 수평 속도를 적용하며 기존 수직 속도는 유지합니다.
 
-## 코드 범위
-
-Unity 코드는 KnockExample.cs로 저장할 MonoBehaviour 예시입니다. 필요한 참조는 Inspector에서 연결하거나 호출 측에서 전달합니다. Unreal 코드는 해당 Actor/Character/CameraActor 클래스 내부에 넣는 멤버 예시이며, 완전한 .h/.cpp 파일은 아닙니다. 함수 선언·UPROPERTY·입력 바인딩·Tick 연결은 프로젝트에 맞게 작성해야 합니다. UObject 참조는 실제 프로젝트에서 UPROPERTY 또는 적절한 수명 관리가 필요합니다. 예제 수치들은 설명을 위한 값입니다.
+Unity 예제와 Unreal 예제는 밀린 뒤 감속하는 방식이 다릅니다. Rigidbody나 물리 시뮬레이션 중인 Actor에 적용할 때는 해당 물리 기능의 힘 적용 방식을 사용해 주세요.
 
 ## Unreal 의존성
 
 GameFramework/Character.h
-
-## 검증 상태
-
-미확인: 이 저장소에서는 Unity/Unreal 프로젝트 컴파일과 엔진 실행을 수행하지 않았습니다. 구조 학습을 위한 최소 예시이며 그대로 사용하기 전 해당 엔진 프로젝트에서 검증해야 합니다.
 
 ## 요청 예시
 

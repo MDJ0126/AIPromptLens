@@ -93,21 +93,15 @@ void UpdateSwing(float Dt)
 }
 ```
 
-## 연결 방법과 생략한 부분
+## 적용 방법
 
-줄이 팽팽할 때 바깥으로 늘어나지 않도록 제한하는 교육용 위치 보정입니다. 실제 물리 조인트가 아닙니다. Unity는 Rigidbody 없이, Unreal은 별도 AActor에서 실행합니다. 충돌·플레이어 입력·줄 렌더링·피벗 이동·CharacterMovement·네트워크는 생략했습니다. 고정 또는 충분히 작은 시간 간격이 필요합니다.
+줄이 팽팽해졌을 때 캐릭터가 줄 길이 바깥으로 나가지 않도록 위치를 보정합니다. Unity에서는 Rigidbody 없이, Unreal에서는 별도의 Actor에서 실행하는 예제입니다.
 
-## 코드 범위
-
-Unity 코드는 SwingExample.cs로 저장할 MonoBehaviour 예시입니다. 필요한 참조는 Inspector에서 연결하거나 호출 측에서 전달합니다. Unreal 코드는 해당 Actor/Character/CameraActor 클래스 내부에 넣는 멤버 예시이며, 완전한 .h/.cpp 파일은 아닙니다. 함수 선언·UPROPERTY·입력 바인딩·Tick 연결은 프로젝트에 맞게 작성해야 합니다. UObject 참조는 실제 프로젝트에서 UPROPERTY 또는 적절한 수명 관리가 필요합니다. 예제 수치들은 설명을 위한 값입니다.
+고정된 시간 간격이나 충분히 작은 간격으로 갱신해 주세요. 물리 조인트를 사용하는 방식과는 다르며, 입력과 충돌, 줄의 모습은 따로 연결해야 합니다.
 
 ## Unreal 의존성
 
 GameFramework/Actor.h, Engine/World.h
-
-## 검증 상태
-
-미확인: 이 저장소에서는 Unity/Unreal 프로젝트 컴파일과 엔진 실행을 수행하지 않았습니다. 구조 학습을 위한 최소 예시이며 그대로 사용하기 전 해당 엔진 프로젝트에서 검증해야 합니다.
 
 ## 요청 예시
 

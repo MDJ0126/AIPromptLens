@@ -1,14 +1,32 @@
 'use strict';
 const articleCache=new Map();
 let articleRequest=0,articleEngine='Unity',loadedArticle=null;
+
+function appendLinkedText(target, text)
+{
+ const pattern = /\[([^\]]+)\]\((https?:\/\/[^\s]+?)\)|https?:\/\/[^\s<>"']+/g;
+ let offset = 0;
+ for (const match of text.matchAll(pattern))
+ {
+  if (match.index > offset) { const span=document.createElement('span');span.textContent=text.slice(offset,match.index);target.append(span); }
+  let url = match[2] || match[0];
+  if (!match[2])
+  {
+   url = url.replace(/[.,;:!?。，；：！？]+$/, '');
+   while (url.endsWith(')') && (url.match(/\)/g)||[]).length > (url.match(/\(/g)||[]).length) url=url.slice(0,-1);
+  }
+  const link=document.createElement('a');link.href=url;link.textContent=match[1]||url;link.target='_blank';link.rel='noopener noreferrer';target.append(link);
+  offset=match.index+(match[2]?match[0].length:url.length);
+ }
+ if(offset<text.length){const span=document.createElement('span');span.textContent=text.slice(offset);target.append(span);}
+}
+
 function appendArticleBlocks(target,blocks){
  target.innerHTML='';
  for(const block of blocks){
   if(block.type==='heading'){const h=document.createElement('h3');h.textContent=block.text;target.append(h);}
   else if(block.type==='code'){const frame=document.createElement('div'),bar=document.createElement('div'),pre=document.createElement('pre'),code=document.createElement('code');frame.className='code-frame';bar.className='code-bar';const label=document.createElement('span'),copy=document.createElement('button');label.textContent=block.language==='csharp'?'C# · Unity':'C++ · Unreal Engine';copy.setAttribute('aria-label','예제 코드 복사');bar.append(label,bindCopyButton(copy,()=>block.text));renderHighlightedCode(code,block.text);pre.append(code);frame.append(bar,pre);target.append(frame);}
-  else if(/^https:\/\/[^\s]+$/.test(block.text)){
-   const link=document.createElement('a');link.href=block.text;link.textContent=block.text;link.target='_blank';link.rel='noopener noreferrer';target.append(link);
-  }else{const p=document.createElement('p');p.textContent=block.text;target.append(p);}
+  else{const p=document.createElement('p');appendLinkedText(p,block.text);target.append(p);}
  }
 }
 function renderArticleEngine(){
@@ -26,7 +44,7 @@ function renderArticleEngine(){
  appendArticleBlocks(document.getElementById('article-structure'),loadedArticle.blocks.filter(b=>b.section==='핵심 구조'));
  const engineBlocks=loadedArticle.blocks.filter(b=>b.section===articleEngine&&b.type!=='heading');
  appendArticleBlocks(document.getElementById('article-code'),engineBlocks);
- const common=loadedArticle.blocks.filter(b=>['연결 방법과 생략한 부분','코드 범위','검증 상태','참고 자료','자료 대조에서 보강한 내용','확인 기록'].includes(b.section)||(articleEngine==='Unreal'&&b.section==='Unreal 의존성'));
+ const common=loadedArticle.blocks.filter(b=>['적용 방법','참고 자료','자료 대조에서 보강한 내용','확인 기록'].includes(b.section)||(articleEngine==='Unreal'&&b.section==='Unreal 의존성'));
  appendArticleBlocks(document.getElementById('article-notes'),common);
 }
 async function loadArticle(term){

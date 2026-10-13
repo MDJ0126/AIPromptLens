@@ -79,21 +79,15 @@ bool TryBufferedJump(bool bPressed, bool bGrounded)
 }
 ```
 
-## 연결 방법과 생략한 부분
+## 적용 방법
 
-Unity: 매 프레임 호출하고 true일 때 이동 코드에서 점프합니다. Unreal: ACharacter 멤버로 넣고 접지 판정 갱신 후 매 Tick 호출합니다. 입력은 계속 누르고 있는 상태가 아니라 누른 순간을 넘깁니다. 중력과 접지 판정은 생략했습니다.
+점프 버튼을 방금 눌렀는지를 매 프레임 전달해 주세요. 버튼을 계속 누르고 있는 상태가 아니라 누른 순간을 저장합니다. Unity에서는 함수가 true를 반환할 때 이동 코드에서 점프하면 됩니다.
 
-## 코드 범위
-
-Unity 코드는 JumpExample.cs로 저장할 MonoBehaviour 예시입니다. 필요한 참조는 Inspector에서 연결하거나 호출 측에서 전달합니다. Unreal 코드는 해당 Actor/Character/CameraActor 클래스 내부에 넣는 멤버 예시이며, 완전한 .h/.cpp 파일은 아닙니다. 함수 선언·UPROPERTY·입력 바인딩·Tick 연결은 프로젝트에 맞게 작성해야 합니다. UObject 참조는 실제 프로젝트에서 UPROPERTY 또는 적절한 수명 관리가 필요합니다. 예제 수치들은 설명을 위한 값입니다.
+Unreal에서는 ACharacter의 접지 상태를 갱신한 뒤 Tick에서 호출해 주세요. 중력과 바닥 판정은 캐릭터 이동 기능에서 처리합니다.
 
 ## Unreal 의존성
 
 GameFramework/Character.h, Engine/World.h
-
-## 검증 상태
-
-미확인: 이 저장소에서는 Unity/Unreal 프로젝트 컴파일과 엔진 실행을 수행하지 않았습니다. 구조 학습을 위한 최소 예시이며 그대로 사용하기 전 해당 엔진 프로젝트에서 검증해야 합니다.
 
 ## 요청 예시
 

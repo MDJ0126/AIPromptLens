@@ -94,21 +94,15 @@ void UpdateDash(float DeltaTime)
 }
 ```
 
-## 연결 방법과 생략한 부분
+## 적용 방법
 
-Unity는 CharacterController를 지정합니다. Unreal은 AActor 또는 ACharacter의 Tick에서 UpdateDash를 호출합니다. 충돌 검사를 켠 위치 이동의 간단한 예시입니다. CharacterMovement와의 경쟁, 네트워크 예측, 중력, 재사용 시간은 생략했습니다. 대시 동안 일반 이동이 동시에 적용되지 않도록 연결해야 합니다.
+Unity에서는 body에 CharacterController를 연결해 주세요. Unreal에서는 Actor나 Character의 Tick에서 UpdateDash를 호출하면 됩니다. 정해진 시간 동안 입력 방향으로 이동하는 구조입니다.
 
-## 코드 범위
-
-Unity 코드는 DashExample.cs로 저장할 MonoBehaviour 예시입니다. 필요한 참조는 Inspector에서 연결하거나 호출 측에서 전달합니다. Unreal 코드는 해당 Actor/Character/CameraActor 클래스 내부에 넣는 멤버 예시이며, 완전한 .h/.cpp 파일은 아닙니다. 함수 선언·UPROPERTY·입력 바인딩·Tick 연결은 프로젝트에 맞게 작성해야 합니다. UObject 참조는 실제 프로젝트에서 UPROPERTY 또는 적절한 수명 관리가 필요합니다. 예제 수치들은 설명을 위한 값입니다.
+대시 중에는 일반 이동이 동시에 적용되지 않도록 해 주세요. 중력과 재사용 대기 시간은 별도로 연결하고, CharacterMovement를 사용하는 경우 이동 처리가 서로 충돌하지 않도록 조정해 주세요.
 
 ## Unreal 의존성
 
 GameFramework/Actor.h
-
-## 검증 상태
-
-미확인: 이 저장소에서는 Unity/Unreal 프로젝트 컴파일과 엔진 실행을 수행하지 않았습니다. 구조 학습을 위한 최소 예시이며 그대로 사용하기 전 해당 엔진 프로젝트에서 검증해야 합니다.
 
 ## 요청 예시
 

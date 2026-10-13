@@ -85,21 +85,15 @@ void EndHitStop()
 }
 ```
 
-## 연결 방법과 생략한 부분
+## 적용 방법
 
-Unity: 두 Animator를 지정하고 중복 실행을 막은 뒤 StartCoroutine(HitStop())을 호출합니다. Unreal: AMyActor를 실제 소유 Actor 클래스명으로 바꾸고 적중 시 StartHitStop을 호출합니다. 이 예시는 애니메이션만 잠깐 멈추며 이동·물리·판정 정지는 별도로 구현해야 합니다. Unreal 타이머는 게임 시간이고 Unity 예시는 실제 시간이라 시간 축이 다릅니다. 다른 시스템이 이미 정지한 상태를 복원하는 처리는 생략했습니다.
+Unity에서는 공격자와 대상의 Animator를 연결한 뒤, 공격이 맞았을 때 StartCoroutine(HitStop())을 호출해 주세요. Unreal에서는 AMyActor를 사용 중인 Actor 클래스 이름으로 바꾸고 StartHitStop을 호출합니다.
 
-## 코드 범위
-
-Unity 코드는 HitExample.cs로 저장할 MonoBehaviour 예시입니다. 필요한 참조는 Inspector에서 연결하거나 호출 측에서 전달합니다. Unreal 코드는 해당 Actor/Character/CameraActor 클래스 내부에 넣는 멤버 예시이며, 완전한 .h/.cpp 파일은 아닙니다. 함수 선언·UPROPERTY·입력 바인딩·Tick 연결은 프로젝트에 맞게 작성해야 합니다. UObject 참조는 실제 프로젝트에서 UPROPERTY 또는 적절한 수명 관리가 필요합니다. 예제 수치들은 설명을 위한 값입니다.
+이 예제는 애니메이션을 잠깐 멈춥니다. 이동과 물리도 함께 멈추고 싶다면 해당 처리까지 연결해 주세요. Unity 예제는 실제 시간, Unreal 타이머는 게임 시간을 기준으로 하므로 슬로 모션과 함께 쓸 때 차이가 있습니다.
 
 ## Unreal 의존성
 
 Components/SkeletalMeshComponent.h, TimerManager.h
-
-## 검증 상태
-
-미확인: 이 저장소에서는 Unity/Unreal 프로젝트 컴파일과 엔진 실행을 수행하지 않았습니다. 구조 학습을 위한 최소 예시이며 그대로 사용하기 전 해당 엔진 프로젝트에서 검증해야 합니다.
 
 ## 요청 예시
 

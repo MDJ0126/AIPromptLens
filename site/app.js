@@ -63,12 +63,8 @@ function setView(view){
 }
 function composePrompt(){return promptForTerms([...selected].map(id=>terms.find(t=>t.id===id)));}
 function promptForTerms(list){
- const engine=$('engine').value;
  if(!list.length)return language==='ko'?'표현을 담으면 여기에 프롬프트가 만들어집니다.':'Choose terms to build a prompt.';
- const parts=[];
- if(language==='ko'){if(engine)parts.push('사용 엔진: '+engine);if(list.length)parts.push('다음 요소를 포함해 주세요:\n'+list.map(t=>'• '+t.ko).join('\n'));parts.push('먼저 설계와 구현 순서를 설명하고, 조정할 수 있는 주요 설정값을 제안해 주세요.');}
- else{if(engine)parts.push('Engine: '+engine);if(list.length)parts.push('Include these elements:\n'+list.map(t=>'• '+t.promptEn).join('\n'));parts.push('Explain the design and implementation steps first, and suggest the key tunable parameters.');}
- return parts.join('\n\n');
+ return list.map(t=>language==='ko'?t.ko:t.promptEn).join('\n\n');
 }
 function renderComposer(){
  renderNavigation();

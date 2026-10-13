@@ -72,21 +72,15 @@ float RimFactor(FVector Normal, FVector ViewDirection)
 }
 ```
 
-## 연결 방법과 생략한 부분
+## 적용 방법
 
-두 벡터는 같은 좌표계이며 viewDirection은 표면에서 카메라를 향합니다. 가장자리 밝기 계산을 CPU 함수로 보여줍니다. 최종 렌더링은 Unity Shader Graph/HLSL 또는 Unreal 머티리얼에서 픽셀별로 같은 계산을 적용해야 합니다. 이 함수만 호출해도 캐릭터에 효과가 나타나는 것은 아닙니다. 실제 후방 조명에 의한 림 라이트와도 구분되는 재질 기반 근사입니다.
+표면의 방향과 카메라를 향하는 방향을 비교해 가장자리를 밝게 만드는 계산입니다. 두 벡터는 같은 좌표계를 사용하고, viewDirection은 표면에서 카메라 쪽을 향하게 해 주세요.
 
-## 코드 범위
-
-Unity 코드는 RimExample.cs로 저장할 MonoBehaviour 예시입니다. 필요한 참조는 Inspector에서 연결하거나 호출 측에서 전달합니다. Unreal 코드는 해당 Actor/Character/CameraActor 클래스 내부에 넣는 멤버 예시이며, 완전한 .h/.cpp 파일은 아닙니다. 함수 선언·UPROPERTY·입력 바인딩·Tick 연결은 프로젝트에 맞게 작성해야 합니다. UObject 참조는 실제 프로젝트에서 UPROPERTY 또는 적절한 수명 관리가 필요합니다. 예제 수치들은 설명을 위한 값입니다.
+화면에 적용하려면 Unity Shader Graph나 HLSL, Unreal 머티리얼에서 픽셀마다 같은 계산을 사용합니다. 실제 뒤쪽 조명을 배치하는 대신 재질 계산으로 가장자리 밝기를 흉내 내는 방식입니다.
 
 ## Unreal 의존성
 
 CoreMinimal.h
-
-## 검증 상태
-
-미확인: 이 저장소에서는 Unity/Unreal 프로젝트 컴파일과 엔진 실행을 수행하지 않았습니다. 구조 학습을 위한 최소 예시이며 그대로 사용하기 전 해당 엔진 프로젝트에서 검증해야 합니다.
 
 ## 요청 예시
 
