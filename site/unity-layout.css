@@ -151,3 +151,17 @@ html[data-theme=dark] .footer-bottom{border-color:#444}
 /* One divider marks the footer; spacing separates everything else. */
 .pagination{border-top:0;padding-top:0}
 .footer-bottom{border-top:0;padding-top:0}
+/* Two full-width action areas along the bottom edge of each card. */
+.cards .card-actions{display:grid;grid-template-columns:1fr 1fr;gap:0;margin: auto -12px -12px;padding:0;border-top:1px solid #dedede;min-height:48px;position:relative;z-index:2}
+.cards .card-actions:before{display:none}
+.cards .card-actions button{display:flex;align-items:center;justify-content:center;width:100%;min-width:0;height:48px;margin:0;padding:8px 5px;border:0!important;border-radius:0;font-size:12px;font-weight:650;line-height:1.4}
+.cards .card-actions .card-copy{background:#fafafa;color:#333;border-right:1px solid #dedede!important}
+.cards .card-actions .card-copy:hover{background:#fff4c6;color:#171717}
+.cards .card-actions .add,html[data-theme=dark] .cards .card-actions .add{background:#f5cf36!important;color:#171717!important}
+.cards .card-actions .add:hover{background:#ffdd59!important}
+.cards .card-actions .add.selected,html[data-theme=dark] .cards .card-actions .add.selected{background:#171717!important;color:#f5cf36!important}
+.cards .card-desc{margin-bottom:16px}
+html[data-theme=dark] .cards .card-actions{border-top-color:#4b4b4b}
+html[data-theme=dark] .cards .card-actions .card-copy{background:#2c2c2c;color:#eee;border-right-color:#4b4b4b!important}
+html[data-theme=dark] .cards .card-actions .card-copy:hover{background:#3d361b;color:#f5cf36}
+@media(max-width:720px){.cards .card-actions{margin-left:-10px;margin-right:-10px;margin-bottom:-10px}.cards .card-actions button{font-size:11px;min-height:48px}}
