@@ -56,3 +56,5 @@ main{padding-bottom:126px}footer{margin-bottom:20px}.card .add{width:auto;min-wi
 #cart-open{border:0;border-radius:7px;background:#2463eb;color:#fff;font-size:12px;font-weight:600;padding:11px 14px;white-space:nowrap}.composer-back{background:none;border:0;color:var(--accent);padding:0;margin-bottom:22px;font-size:12px}.detail-compose{display:block;margin:12px auto 0;background:transparent;border:1px solid var(--line);border-radius:6px;padding:11px 15px;color:var(--accent);font-size:12px}.detail-compose[hidden]{display:none}
 #toast{bottom:108px}
 @media(max-width:720px){.prompt-cart{bottom:12px;padding:12px;gap:10px}.cart-icon{display:none}.cart-copy strong{font-size:12px}.cart-copy p{font-size:10px}#cart-open{font-size:11px;padding:10px}.composer-heading h2{font-size:23px!important}.prompt-cart .cart-copy{min-width:0}#toast{bottom:98px}}
+
+header #theme-toggle{margin-left:auto}
