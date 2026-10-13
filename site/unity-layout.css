@@ -24,3 +24,6 @@ html[data-theme=dark]{--bg:#171717;--panel:#202020;--line:#444;--text:#eee;--mut
 #section-title{line-height:26px}#section-title>span{vertical-align:baseline;line-height:1}
 
 .section-top{margin-bottom:11px}
+
+/* Artwork fills its area without a decorative technical frame. */
+.card .preview{background:#eef4ff!important}.card .preview>svg{width:100%;height:100%;display:block}.daily-art>svg{background:#eef4ff}#detail-preview .preview{aspect-ratio:auto;background:transparent!important}#detail-preview .preview>svg,#detail-preview img{width:100%;height:auto;display:block}
