@@ -10,7 +10,11 @@ $('idea').value=typeof stored.idea==='string'?stored.idea:'';
 if(['','Unity','Unreal Engine','Godot'].includes(stored.engine))$('engine').value=stored.engine;
 function persist(){try{localStorage.setItem('promptlens-v1',JSON.stringify({selected:[...selected],saved:[...saved],idea:$('idea').value,engine:$('engine').value,language}));}catch{ /* Browser storage can be disabled; interactions still work. */ }}
 function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').classList.remove('show'),2400);}
-function renderCategories(){$('categories').innerHTML=categories.map(c=>'<button class="category '+(c.id===category?'active':'')+'" data-category="'+c.id+'"><span class="cat-icon">'+c.icon+'</span>'+c.name+'<span class="cat-count">'+(c.id==='all'?terms.length:terms.filter(t=>t.category===c.id).length)+'</span></button>').join('');}
+function categoryIcon(id){
+ const icons={platform:'<rect x="5" y="5" width="14" height="14" rx="2"/><path d="M8 2v3m8-3v3M8 19v3m8-3v3M2 8h3m-3 8h3m14-8h3m-3 8h3"/>',ui:'<rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 8h20m-14 0v13M5 5h1m3 0h1"/>',optimization:'<path d="M3 18a10 10 0 1 1 18 0M12 12l5-5"/><circle cx="12" cy="12" r="2"/>',procedural:'<path d="M4 4h16v16H4ZM4 12h16M12 4v16m-8-8 8-8 8 8-8 8Z"/>',combat:'<path d="m3 3 12 9-3 3L3 3Zm9 12 6 6m-2-5 4 4M21 3l-9 12m-3 2-6 4m1-4 4 4"/>',movement:'<path d="M3 12h18m-6-6 6 6-6 6M3 6h5m-5 12h5"/>',ai:'<circle cx="12" cy="12" r="4"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="m6 6 3 3m6-6-3 3m-9 9 3-3m6 6-3-3"/>',level:'<path d="m2 5 7-3 6 3 7-3v17l-7 3-6-3-7 3Zm7-3v17m6-14v17"/>',effects:'<path d="m12 2 2 7 8 3-8 2-2 8-3-8-7-2 7-3Zm7 1v4m-2-2h4"/>',principles:'<path d="M12 4C8 1 4 2 2 3v17c4-2 7-1 10 1m0-17c4-3 8-2 10-1v17c-4-2-7-1-10 1V4Z"/>',all:'<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>',assets:'<path d="m12 2 9 5v10l-9 5-9-5V7Zm0 10 9-5M12 12 3 7m9 5v10"/>',audio:'<path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="2" y="12" width="5" height="9" rx="2"/><rect x="17" y="12" width="5" height="9" rx="2"/>',tools:'<path d="m14 5 5-3a7 7 0 0 1-8 10L5 20a2 2 0 0 1-3-3l8-6a7 7 0 0 1 2-8l-1 5 4 1Z"/>',rendering:'<path d="m12 3 9 17H3Zm0 0v17m-6-6h12"/>',animation:'<path d="m5 3 15 9-15 9Z"/>',physics:'<circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="5"/><ellipse cx="12" cy="12" rx="5" ry="10"/>',architecture:'<path d="m8 5-6 7 6 7m8-14 6 7-6 7m-3-15-2 16"/>',camera:'<rect x="3" y="6" width="18" height="15" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 6V3h8v3"/>',network:'<circle cx="12" cy="4" r="2"/><circle cx="4" cy="19" r="2"/><circle cx="20" cy="19" r="2"/><path d="M12 6v5H4v6m8-6h8v6"/>'};
+ return '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(icons[id]||'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/>')+'</svg>';
+}
+function renderCategories(){$('categories').innerHTML=categories.map(c=>'<button class="category '+(c.id===category?'active':'')+'" data-category="'+c.id+'"><span class="cat-icon">'+categoryIcon(c.id)+'</span>'+c.name+'<span class="cat-count">'+(c.id==='all'?terms.length:terms.filter(t=>t.category===c.id).length)+'</span></button>').join('');}
 function visibleTerms(){const q=$('search').value.trim().toLowerCase();return terms.filter(t=>(category==='all'||t.category===category)&&(filter==='all'||(filter==='beginner'?t.tags.includes('beginner'):t.genres.includes(filter)))&&(!savedOnly||saved.has(t.id))&&(!q||[t.name,t.en,t.desc,t.ko,...(t.aliases||[])].join(' ').toLowerCase().includes(q)));}
 function renderPagination(total){
  const pages=Math.ceil(total/PAGE_SIZE), nav=$('pagination');
@@ -97,6 +101,8 @@ $('engine').addEventListener('change',()=>{persist();renderComposer();});
 document.querySelector('.language').addEventListener('click',e=>{const b=e.target.closest('[data-lang]');if(!b)return;language=b.dataset.lang;persist();renderComposer();});
 $('saved-nav').addEventListener('click',()=>setView('saved'));
 $('explore-nav').addEventListener('click',()=>setView('explore'));
+document.querySelector('.store-navigation').addEventListener('click',e=>{const button=e.target.closest('[data-store-category]');if(!button)return;setView('explore');category=button.dataset.storeCategory;renderCategories();renderCards();});
+$('search-submit').addEventListener('click',()=>{renderCards();$('search-options').hidden=true;$('search').setAttribute('aria-expanded','false');});
 $('store-resources').addEventListener('click',()=>$('open-resources').click());
 $('composer-panel').addEventListener('close',()=>{if(activeView==='composer')setView(savedOnly?'saved':'explore');});
 $('detail-compose').addEventListener('click',()=>{$('detail').close();setView('composer');});
@@ -108,7 +114,7 @@ $('copy').addEventListener('click',async()=>{try{await navigator.clipboard.write
 $('close-detail').addEventListener('click',()=>$('detail').close());
 $('detail-add').addEventListener('click',()=>toggleSelected(detailId));
 $('detail').addEventListener('click',e=>{if(e.target===$('detail')){const r=$('detail').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('detail').close();}});
-document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!$('detail').open&&activeView!=='composer'){e.preventDefault();$('search').focus();}});
+document.addEventListener('keydown',e=>{if((e.key==='/'||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'))&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!$('detail').open&&activeView!=='composer'){e.preventDefault();$('search').focus();}});
 renderCategories();renderCards();renderComposer();renderDailyRecommendation();
 
 function renderSuggestions(){
