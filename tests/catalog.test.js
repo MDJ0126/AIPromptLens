@@ -45,7 +45,7 @@ assert.equal(el('copy').disabled,true);
  listeners.get('cards:click')({target:{closest:()=>({dataset:{add:'99'}})}});assert.equal(el('detail').open,false);assert.equal(el('selection-count').textContent,1);
  listeners.get('cards:click')({target:{closest:()=>({dataset:{add:'99'}})}});assert.equal(el('selection-count').textContent,0);
 
- listeners.get('composer-nav:click')();assert.equal(el('main').hidden,true);assert.equal(el('composer-panel').hidden,false);
+ listeners.get('composer-nav:click')();assert.equal(el('main').hidden,false);assert.equal(el('composer-panel').hidden,false);
  listeners.get('explore-nav:click')();assert.equal(el('main').hidden,false);assert.equal(el('composer-panel').hidden,true);
  const beforeSelectionMarkup=el('cards').innerHTML;ctx.api.toggleSelected(4);assert.equal(el('cards').innerHTML,beforeSelectionMarkup,'Adding a term must not replace preview markup');assert.ok(el('prompt').textContent.includes('동작을 짧게 멈추는'));
  assert.equal(JSON.parse(storage.get('promptlens-v1')).selected[0],4);
@@ -80,3 +80,10 @@ test('Action previews autoplay; dictionary entries use honest static covers',()=
 });
 
 test('Examples always autoplay and modal locks page scrolling',()=>{const css=fs.readFileSync('site/style.css','utf8');assert.ok(css.includes('animation-play-state:running!important'));assert.ok(css.includes('html:has(#detail[open]),body:has(#detail[open]){overflow:hidden'));assert.ok(!fs.readFileSync('site/index.html','utf8').includes('id="animation-toggle"'));});
+
+
+test('Cart panel contains its selection, engine, prompt and copy controls',()=>{
+ const html=fs.readFileSync('site/index.html','utf8');const panel=html.match(/<dialog[^>]*id="composer-panel"[\s\S]*?<\/dialog>/)?.[0];assert.ok(panel);
+ for(const id of ['selection','idea','engine','prompt','copy'])assert.ok(panel.includes('id="'+id+'"'),id+' must stay within the cart dialog');
+ assert.ok(!html.includes('id="prompt-cart"'));
+});
