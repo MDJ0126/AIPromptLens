@@ -4,7 +4,12 @@ function readState() {try {const v=JSON.parse(localStorage.getItem('promptlens-v
 const stored=readState();
 const ids = values => new Set(Array.isArray(values)?values.filter(id=>terms.some(t=>t.id===id)):[]);
 let selected=ids(stored.selected), saved=ids(stored.saved), category='all', filter='all', savedOnly=false, language=stored.language==='en'?'en':'ko', detailId=null, activeView='explore';
-const PAGE_SIZE=24;
+let PAGE_SIZE=24;
+function gridPageSize(){
+ if(typeof getComputedStyle!=='function')return 24;
+ const columns=getComputedStyle($('cards')).gridTemplateColumns.trim().split(/\s+/).length;
+ return Math.ceil(24/columns)*columns;
+}
 let currentPage=1, resultKey='';
 $('idea').value=typeof stored.idea==='string'?stored.idea:'';
 if(['','Unity','Unreal Engine','Godot'].includes(stored.engine))$('engine').value=stored.engine;
@@ -21,12 +26,14 @@ function renderPagination(total){
  nav.hidden=pages<=1;
  if(pages<=1){nav.innerHTML='';return;}
  const numbers=[...new Set([1,...Array.from({length:5},(_,i)=>currentPage+i-2).filter(n=>n>=1&&n<=pages),pages])].sort((a,b)=>a-b);
- const button=(page,label,disabled=false)=>'<button type="button" data-page="'+page+'"'+(disabled?' disabled':'')+(page===currentPage?' aria-current="page"':'')+' aria-label="'+(typeof label==='number'?label+' 페이지':label)+'">'+label+'</button>';
+ const arrow=direction=>'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="'+(direction==='이전'?'m14 6-6 6 6 6':'m10 6 6 6-6 6')+'"/></svg>';
+ const button=(page,label,disabled=false)=>'<button type="button" class="'+(typeof label==='number'?'page-number':'page-direction')+'" data-page="'+page+'"'+(disabled?' disabled':'')+(page===currentPage?' aria-current="page"':'')+' aria-label="'+(typeof label==='number'?label+' 페이지':label)+'">'+(typeof label==='number'?label:arrow(label)+'<span>'+label+'</span>')+'</button>';
  let previous=0;
  nav.innerHTML='<span class="page-range">'+((currentPage-1)*PAGE_SIZE+1)+'–'+Math.min(currentPage*PAGE_SIZE,total)+' / '+total+'개</span><div class="page-buttons">'+button(currentPage-1,'이전',currentPage===1)+numbers.map(n=>{const gap=n-previous>1?'<span aria-hidden="true">…</span>':'';previous=n;return gap+button(n,n);}).join('')+button(currentPage+1,'다음',currentPage===pages)+'</div>';
 }
 function bookmarkIcon(){return '<svg class="bookmark-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M11.1 3.2Q12 1.5 12.9 3.2L15.05 7.65Q15.3 8.2 15.95 8.3L20.85 9Q22.8 9.3 21.4 10.7L17.85 14.15Q17.4 14.6 17.5 15.2L18.35 20.1Q18.7 22 17 21.1L12.65 18.8Q12 18.45 11.35 18.8L7 21.1Q5.3 22 5.65 20.1L6.5 15.2Q6.6 14.6 6.15 14.15L2.6 10.7Q1.2 9.3 3.15 9L8.05 8.3Q8.7 8.2 8.95 7.65Z"/></svg>';}
 function renderCards(){
+ const nextSize=gridPageSize();if(nextSize!==PAGE_SIZE){currentPage=Math.floor((currentPage-1)*PAGE_SIZE/nextSize)+1;PAGE_SIZE=nextSize;}
  const key=JSON.stringify([category,filter,savedOnly,$('search').value.trim().toLowerCase()]);
  if(key!==resultKey){currentPage=1;resultKey=key;}
  const items=visibleTerms(),label=savedOnly?'저장한 표현':categories.find(c=>c.id===category).name;
@@ -132,3 +139,5 @@ function renderSuggestions(){
  }
 }
 document.body.classList.add('motion-enabled');
+
+if(typeof window!=='undefined'){let gridResizeTimer;window.addEventListener('resize',()=>{clearTimeout(gridResizeTimer);gridResizeTimer=setTimeout(()=>{if(gridPageSize()!==PAGE_SIZE)renderCards();},150);});}
