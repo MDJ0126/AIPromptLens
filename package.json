@@ -1,0 +1,13 @@
+{
+  "name": "aipromptlens",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/build-content.js --check && node --test tests/*.test.js",
+    "build:content": "node scripts/build-content.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

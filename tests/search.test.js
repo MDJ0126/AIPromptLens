@@ -1,0 +1,3 @@
+const test=require('node:test'),assert=require('node:assert/strict');const {matchSearchTerms}=require('../site/search-ui.js');
+const terms=[{id:1,slug:'coyote',name:'코요테 타임',en:'Coyote time',desc:'점프 허용',ko:''},{id:2,slug:'buffer',name:'점프 버퍼',en:'Jump buffer',desc:'점프 입력 보관',ko:''},{id:3,slug:'camera',name:'카메라',en:'Camera',desc:'시점',ko:''}];
+test('Search suggestions rank exact titles before description matches and handle empty or unmatched input',()=>{assert.deepEqual(matchSearchTerms(terms,'점프 버퍼').map(t=>t.id),[2]);assert.deepEqual(matchSearchTerms(terms,'점프').map(t=>t.id),[2,1]);assert.deepEqual(matchSearchTerms(terms,'CAMERA').map(t=>t.id),[3]);assert.deepEqual(matchSearchTerms(terms,'zzzz'),[]);assert.deepEqual(matchSearchTerms(terms,'').map(t=>t.id),[1]);});
