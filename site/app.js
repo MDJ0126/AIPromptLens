@@ -11,9 +11,8 @@ function gridPageSize(){
  return Math.ceil(24/columns)*columns;
 }
 let currentPage=1, resultKey='';
-$('idea').value=typeof stored.idea==='string'?stored.idea:'';
 if(['','Unity','Unreal Engine','Godot'].includes(stored.engine))$('engine').value=stored.engine;
-function persist(){try{localStorage.setItem('promptlens-v1',JSON.stringify({selected:[...selected],saved:[...saved],idea:$('idea').value,engine:$('engine').value,language}));}catch{ /* Browser storage can be disabled; interactions still work. */ }}
+function persist(){try{localStorage.setItem('promptlens-v1',JSON.stringify({selected:[...selected],saved:[...saved],engine:$('engine').value,language}));}catch{ /* Browser storage can be disabled; interactions still work. */ }}
 function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').classList.remove('show'),2400);}
 function categoryIcon(id){
  const icons={platform:'<rect x="5" y="5" width="14" height="14" rx="2"/><path d="M8 2v3m8-3v3M8 19v3m8-3v3M2 8h3m-3 8h3m14-8h3m-3 8h3"/>',ui:'<rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 8h20m-14 0v13M5 5h1m3 0h1"/>',optimization:'<path d="M3 18a10 10 0 1 1 18 0M12 12l5-5"/><circle cx="12" cy="12" r="2"/>',procedural:'<path d="M4 4h16v16H4ZM4 12h16M12 4v16m-8-8 8-8 8 8-8 8Z"/>',combat:'<path d="m3 3 12 9-3 3L3 3Zm9 12 6 6m-2-5 4 4M21 3l-9 12m-3 2-6 4m1-4 4 4"/>',movement:'<path d="M3 12h18m-6-6 6 6-6 6M3 6h5m-5 12h5"/>',ai:'<circle cx="12" cy="12" r="4"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="m6 6 3 3m6-6-3 3m-9 9 3-3m6 6-3-3"/>',level:'<path d="m2 5 7-3 6 3 7-3v17l-7 3-6-3-7 3Zm7-3v17m6-14v17"/>',effects:'<path d="m12 2 2 7 8 3-8 2-2 8-3-8-7-2 7-3Zm7 1v4m-2-2h4"/>',principles:'<path d="M12 4C8 1 4 2 2 3v17c4-2 7-1 10 1m0-17c4-3 8-2 10-1v17c-4-2-7-1-10 1V4Z"/>',all:'<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>',assets:'<path d="m12 2 9 5v10l-9 5-9-5V7Zm0 10 9-5M12 12 3 7m9 5v10"/>',audio:'<path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="2" y="12" width="5" height="9" rx="2"/><rect x="17" y="12" width="5" height="9" rx="2"/>',tools:'<path d="m14 5 5-3a7 7 0 0 1-8 10L5 20a2 2 0 0 1-3-3l8-6a7 7 0 0 1 2-8l-1 5 4 1Z"/>',rendering:'<path d="m12 3 9 17H3Zm0 0v17m-6-6h12"/>',animation:'<path d="m5 3 15 9-15 9Z"/>',physics:'<circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="5"/><ellipse cx="12" cy="12" rx="5" ry="10"/>',architecture:'<path d="m8 5-6 7 6 7m8-14 6 7-6 7m-3-15-2 16"/>',camera:'<rect x="3" y="6" width="18" height="15" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 6V3h8v3"/>',network:'<circle cx="12" cy="4" r="2"/><circle cx="4" cy="19" r="2"/><circle cx="20" cy="19" r="2"/><path d="M12 6v5H4v6m8-6h8v6"/>'};
@@ -63,29 +62,28 @@ function setView(view){
  renderNavigation();
 }
 function composePrompt(){
- const list=[...selected].map(id=>terms.find(t=>t.id===id)),idea=$('idea').value.trim(),engine=$('engine').value;
- if(!list.length&&!idea)return language==='ko'?'표현을 담으면 여기에 프롬프트가 만들어집니다.':'Choose a term or describe your game to build a prompt.';
+ const list=[...selected].map(id=>terms.find(t=>t.id===id)),engine=$('engine').value;
+ if(!list.length)return language==='ko'?'표현을 담으면 여기에 프롬프트가 만들어집니다.':'Choose terms to build a prompt.';
  const parts=[];
- if(language==='ko'){if(idea)parts.push('만들고 싶은 게임: '+idea);if(engine)parts.push('사용 엔진: '+engine);if(list.length)parts.push('다음 요소를 포함해 주세요:\n'+list.map(t=>'• '+t.ko).join('\n'));parts.push('먼저 설계와 구현 순서를 설명하고, 조정할 수 있는 주요 설정값을 제안해 주세요.');}
- else{if(idea)parts.push('Game concept: '+idea);if(engine)parts.push('Engine: '+engine);if(list.length)parts.push('Include these elements:\n'+list.map(t=>'• '+t.promptEn).join('\n'));parts.push('Explain the design and implementation steps first, and suggest the key tunable parameters.');}
+ if(language==='ko'){if(engine)parts.push('사용 엔진: '+engine);if(list.length)parts.push('다음 요소를 포함해 주세요:\n'+list.map(t=>'• '+t.ko).join('\n'));parts.push('먼저 설계와 구현 순서를 설명하고, 조정할 수 있는 주요 설정값을 제안해 주세요.');}
+ else{if(engine)parts.push('Engine: '+engine);if(list.length)parts.push('Include these elements:\n'+list.map(t=>'• '+t.promptEn).join('\n'));parts.push('Explain the design and implementation steps first, and suggest the key tunable parameters.');}
  return parts.join('\n\n');
 }
 function renderComposer(){
  renderNavigation();
- renderSuggestions();
  $('selection-count').textContent=selected.size;
- $('composer-nav').setAttribute('aria-label','기술 장바구니, '+selected.size+'개');
+ $('composer-nav').setAttribute('aria-label','프롬프트 장바구니, '+selected.size+'개');
  $('detail-compose').hidden=selected.size===0;
  $('selection').innerHTML=selected.size?[...selected].map(id=>{const t=terms.find(t=>t.id===id);return '<span class="selected-chip">'+t.name+'<button data-remove="'+id+'" aria-label="'+t.name+' 빼기">×</button></span>';}).join(''):'<div class="selection-empty"><span>⊕</span>카드의 + 버튼을 눌러<br>첫 번째 표현을 담아 보세요.</div>';
- $('prompt').textContent=composePrompt();$('copy').disabled=!selected.size&&!$('idea').value.trim();
+ $('prompt').textContent=composePrompt();$('copy').disabled=!selected.size;
  document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===language));
- if(detailId!==null)$('detail-add').textContent=selected.has(detailId)?'장바구니에서 빼기 −':'기술 장바구니에 담기 ＋';
+ if(detailId!==null)$('detail-add').textContent=selected.has(detailId)?'장바구니에서 빼기 −':'프롬프트 장바구니에 담기 ＋';
 }
 function syncCardButtons(){
  document.querySelectorAll('#cards [data-add]').forEach(button=>{const id=Number(button.dataset.add),term=terms.find(t=>t.id===id),active=selected.has(id);button.classList.toggle('selected',active);button.setAttribute('aria-pressed',String(active));button.setAttribute('aria-label',term.name+' '+(active?'빼기':'담기'));button.textContent=active?'✓ 담김':'+ 담기';});
  document.querySelectorAll('#cards [data-save]').forEach(button=>{const active=saved.has(Number(button.dataset.save));button.classList.toggle('saved',active);button.setAttribute('aria-pressed',String(active));});
 }
-function toggleSelected(id){if(!terms.some(t=>t.id===id))return;const adding=!selected.has(id);if(adding)selected.add(id);else selected.delete(id);persist();syncCardButtons();renderComposer();if(adding)toast('기술 장바구니에 담았습니다. 오른쪽 위 장바구니에서 확인하세요.');}
+function toggleSelected(id){if(!terms.some(t=>t.id===id))return;const adding=!selected.has(id);if(adding)selected.add(id);else selected.delete(id);persist();syncCardButtons();renderComposer();if(adding)toast('프롬프트 장바구니에 담았습니다. 오른쪽 아래 장바구니에서 확인하세요.');}
 function openDetail(id){
  const t=terms.find(t=>t.id===id);detailId=id;
  $('detail-category').textContent=categories.find(c=>c.id===t.category).name;
@@ -106,7 +104,6 @@ $('cards').addEventListener('click',e=>{const b=e.target.closest('button');if(!b
 $('selection').addEventListener('click',e=>{const b=e.target.closest('[data-remove]');if(b)toggleSelected(Number(b.dataset.remove));});
 document.querySelector('.chips').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>{const active=b.dataset.filter===filter;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});renderCards();});
 // Search results update on suggestion selection or Enter, not on every keystroke.
-$('idea').addEventListener('input',()=>{persist();renderComposer();});
 $('engine').addEventListener('change',()=>{persist();renderComposer();});
 document.querySelector('.language').addEventListener('click',e=>{const b=e.target.closest('[data-lang]');if(!b)return;language=b.dataset.lang;persist();renderComposer();});
 $('saved-nav').addEventListener('click',()=>setView('saved'));
@@ -114,6 +111,7 @@ $('explore-nav').addEventListener('click',()=>{setView('explore');category='all'
 document.querySelector('.store-navigation').addEventListener('click',e=>{const button=e.target.closest('[data-store-category]');if(!button)return;setView('explore');category=button.dataset.storeCategory;renderCategories();renderCards();});
 $('search-submit').addEventListener('click',()=>{renderCards();$('search-options').hidden=true;$('search').setAttribute('aria-expanded','false');});
 $('store-resources').addEventListener('click',()=>$('open-resources').click());
+$('composer-panel').addEventListener('click',e=>{if(e.target!==$('composer-panel'))return;const r=$('composer-panel').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('composer-panel').close();});
 $('composer-panel').addEventListener('close',()=>{if(activeView==='composer')setView(savedOnly?'saved':'explore');});
 $('detail-compose').addEventListener('click',()=>{$('detail').close();setView('composer');});
 $('composer-back').addEventListener('click',()=>setView(savedOnly?'saved':'explore'));
@@ -127,20 +125,6 @@ $('detail').addEventListener('click',e=>{if(e.target===$('detail')){const r=$('d
 document.addEventListener('keydown',e=>{if((e.key==='/'||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'))&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!$('detail').open&&activeView!=='composer'){e.preventDefault();$('search').focus();}});
 renderCategories();renderCards();renderComposer();renderDailyRecommendation();
 
-function renderSuggestions(){
- const input=$('idea').value.trim(),suggestions=suggestTechniques(input);
- $('suggestions').innerHTML='';
- if(!suggestions.length){const p=document.createElement('p');p.className='suggestion-empty';p.textContent=input?'현재 등록된 표현에서 일치하는 단서를 찾지 못했습니다. 시점·이동·전투를 더 적거나 카드에서 직접 선택해 주세요.':'게임 설명을 입력해 보세요. 예: 3인칭, 여러 적, 회피, 점프';$('suggestions').append(p);return;}
- for(const item of suggestions){
-  const term=terms.find(t=>t.id===item.id),row=document.createElement('div');row.className='suggestion-row';
-  const title=document.createElement('strong');title.textContent=term.name;
-  const reason=document.createElement('p');reason.textContent='단서: '+item.matches.join(', ')+' · '+item.reasons.join(' ');
-  const actions=document.createElement('div');actions.className='suggestion-actions';
-  const preview=document.createElement('button');preview.textContent='예시 보기';preview.addEventListener('click',()=>openDetail(item.id));
-  const choose=document.createElement('button');choose.textContent=selected.has(item.id)?'✓ 선택됨':'+ 담기';choose.setAttribute('aria-pressed',String(selected.has(item.id)));choose.addEventListener('click',()=>toggleSelected(item.id));
-  actions.append(preview,choose);row.append(title,reason,actions);$('suggestions').append(row);
- }
-}
 document.body.classList.add('motion-enabled');
 
 if(typeof window!=='undefined'){let gridResizeTimer;window.addEventListener('resize',()=>{clearTimeout(gridResizeTimer);gridResizeTimer=setTimeout(()=>{if(gridPageSize()!==PAGE_SIZE)renderCards();},150);});}

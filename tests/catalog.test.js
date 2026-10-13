@@ -53,7 +53,7 @@ assert.equal(el('copy').disabled,true);
  listeners.get('explore-nav:click')();assert.equal(el('selection-count').textContent,1);
  el('search').value='어깨';assert.equal(ctx.api.visibleTerms().length,1);
  listeners.get('.language:click')({target:{closest:()=>({dataset:{lang:'en'}})}});assert.ok(ctx.api.composePrompt().includes('brief hit stop'));
- el('idea').value='<img src=x onerror=alert(1)>';listeners.get('idea:input')();assert.ok(el('prompt').textContent.includes('<img'));assert.equal(el('prompt').innerHTML,'');
+ assert.equal(el('prompt').innerHTML,'');
  ctx.api.toggleSelected(4);assert.equal(el('selection-count').textContent,0);
 });
 
@@ -84,6 +84,8 @@ test('Examples always autoplay and modal locks page scrolling',()=>{const css=fs
 
 test('Cart panel contains its selection, engine, prompt and copy controls',()=>{
  const html=fs.readFileSync('site/index.html','utf8');const panel=html.match(/<dialog[^>]*id="composer-panel"[\s\S]*?<\/dialog>/)?.[0];assert.ok(panel);
- for(const id of ['selection','idea','engine','prompt','copy'])assert.ok(panel.includes('id="'+id+'"'),id+' must stay within the cart dialog');
+ for(const id of ['selection','engine','prompt','copy'])assert.ok(panel.includes('id="'+id+'"'),id+' must stay within the cart dialog');
  assert.ok(!html.includes('id="prompt-cart"'));
 });
+
+test('Cart no longer contains the removed idea and recommendation interface',()=>{const html=fs.readFileSync('site/index.html','utf8');assert.ok(!html.includes('id="idea"'));assert.ok(!html.includes('id="suggestions"'));assert.ok(!html.includes('기술 장바구니'));assert.ok(html.includes('프롬프트 장바구니'));});
