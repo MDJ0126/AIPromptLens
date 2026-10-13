@@ -109,3 +109,7 @@ html[data-theme=dark] .page-range{color:#bbb}
 .store-navigation button.nav-active{color:#f5cf36!important}
 .store-navigation button.nav-active:after{display:block;content:'';position:absolute;left:0;right:0;bottom:7px;height:2px;border-radius:2px;background:#f5cf36}
 @media(prefers-reduced-motion:reduce){.store-navigation button{transition:none!important}}
+/* Show every category instead of hiding the remainder in a horizontal strip. */
+.sidebar #categories{display:flex;flex-wrap:wrap;overflow:visible;gap:10px;padding:0;max-width:100%}
+.sidebar .category{white-space:normal;max-width:100%;flex:0 0 auto}
+@media(max-width:720px){.sidebar #categories{gap:8px}.sidebar .category{font-size:12px;padding:6px 9px;line-height:1.4;min-height:34px}}
