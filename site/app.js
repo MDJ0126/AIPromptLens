@@ -128,3 +128,5 @@ renderCategories();renderCards();renderComposer();renderDailyRecommendation();
 document.body.classList.add('motion-enabled');
 
 if(typeof window!=='undefined'){let gridResizeTimer;window.addEventListener('resize',()=>{clearTimeout(gridResizeTimer);gridResizeTimer=setTimeout(()=>{if(gridPageSize()!==PAGE_SIZE)renderCards();},150);});}
+
+document.querySelector('.site-footer').addEventListener('click',e=>{const button=e.target.closest('[data-footer-action]');if(!button)return;const action=button.dataset.footerAction;if(action==='resources')$('open-resources').click();else if(action==='cart')setView('composer');else if(action==='top')window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});

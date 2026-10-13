@@ -128,3 +128,23 @@ footer{padding-bottom:60px}
 .site-topbar .store-navigation{position:relative;z-index:1}
 #section-title{scroll-margin-top:calc(var(--topbar-height) + 20px)}
 @media(max-width:720px){:root{--topbar-height:180px}}
+/* Footer aligned with the dictionary, with clear navigation and breathing room. */
+.site-footer{display:block;width:100%;margin:48px 0 0;padding:28px 30px 22px;border:1px solid #e2e2de;border-radius:12px;background:#f7f7f4;color:#555}
+.footer-main{display:flex;align-items:center;justify-content:space-between;gap:28px;padding-bottom:24px}
+.footer-brand{display:inline-flex;align-items:center;gap:10px;color:#171717;font-size:22px;font-weight:800;letter-spacing:-.035em}
+.footer-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:9px;background:#f5cf36;color:#171717;flex:none}
+.footer-intro p{margin:10px 0 0;font-size:13px;line-height:1.7;color:#666}
+.footer-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.footer-links button{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #ddd;border-radius:7px;padding:9px 12px;background:transparent;color:#444;font-size:12px;font-weight:550;line-height:1.5}
+.footer-links button:hover{background:#fff4c6;border-color:#d4ac24;color:#171717}
+.footer-links .footer-top{background:#171717;color:#f5cf36;border-color:#171717}
+.footer-bottom{display:flex;justify-content:space-between;gap:18px;padding-top:18px;border-top:1px solid #ddd;font-size:11px;line-height:1.7;color:#777}
+.footer-dot{color:#bd9421;margin:0 6px}
+html[data-theme=dark] .site-footer{background:#222;border-color:#40403a;color:#ddd}
+html[data-theme=dark] .footer-brand{color:#f1f1e9}
+html[data-theme=dark] .footer-intro p,html[data-theme=dark] .footer-bottom{color:#aaa}
+html[data-theme=dark] .footer-links button{color:#ddd;border-color:#555}
+html[data-theme=dark] .footer-links button:hover{background:#3d361b;color:#f5cf36;border-color:#b79524}
+html[data-theme=dark] .footer-links .footer-top{color:#f5cf36;border-color:#171717}
+html[data-theme=dark] .footer-bottom{border-color:#444}
+@media(max-width:720px){.site-footer{padding:23px 20px;margin-top:32px}.footer-main{align-items:flex-start;flex-direction:column;gap:19px;padding-bottom:20px}.footer-brand{font-size:21px}.footer-links{gap:7px}.footer-links button{padding:8px 10px;font-size:11px}.footer-bottom{flex-direction:column;gap:6px;padding-right:34px;font-size:10px}}
