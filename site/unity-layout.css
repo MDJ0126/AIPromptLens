@@ -148,3 +148,6 @@ html[data-theme=dark] .footer-links button:hover{background:#3d361b;color:#f5cf3
 html[data-theme=dark] .footer-links .footer-top{color:#f5cf36;border-color:#171717}
 html[data-theme=dark] .footer-bottom{border-color:#444}
 @media(max-width:720px){.site-footer{padding:23px 0;margin-top:32px}.footer-main{align-items:flex-start;flex-direction:column;gap:19px;padding-bottom:20px}.footer-brand{font-size:21px}.footer-links{gap:7px}.footer-links button{padding:8px 10px;font-size:11px}.footer-bottom{flex-direction:column;gap:6px;padding-right:34px;font-size:10px}}
+/* One divider marks the footer; spacing separates everything else. */
+.pagination{border-top:0;padding-top:0}
+.footer-bottom{border-top:0;padding-top:0}
