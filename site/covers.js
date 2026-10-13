@@ -11,8 +11,8 @@ function composeArticleCover(term){
  const dot=(x,y,r=5,color=blue)=>'<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+color+'"/>';
  const box=(x,y,w,h,color=blue)=>'<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="6" fill="'+color+'" fill-opacity=".13" stroke="'+color+'" stroke-opacity=".7"/>';
  const cube=(x,y,size=28)=>'<g transform="translate('+x+' '+y+')"><path d="M0 -'+size+'L'+size*1.5+' -'+size/2+'V'+size+'L0 '+size*1.5+'L-'+size*1.5+' '+size+'V-'+size/2+'Z" fill="'+blue+'" fill-opacity=".14" stroke="'+blue+'"/><path d="M0 '+size/2+'V'+size*1.5+'M0 '+size/2+'L'+size*1.5+' -'+size/2+'M0 '+size/2+'L-'+size*1.5+' -'+size/2+'M-'+size*1.5+' -'+size/2+'L0 -'+size+'L'+size*1.5+' -'+size/2+'" stroke="'+blue+'" fill="none"/></g>';
- let art='';
- if(!staticCover){
+ let art='';const specificAsset=typeof assetArticleScene==='function'?assetArticleScene(term,blue,gold):null;
+ if(specificAsset){art=specificAsset;}else if(!staticCover){
   const original=illustration(term).replace('<svg ','<svg x="26" y="38" width="368" height="190" ');
   art='<rect x="25" y="37" width="370" height="192" rx="8" fill="#eef4ff"/>'+original;
  }else if(/audio|sound|mixer|reverb|doppler/.test(q)||term.category==='audio'){

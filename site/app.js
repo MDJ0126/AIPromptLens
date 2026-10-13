@@ -94,7 +94,7 @@ $('close-detail').addEventListener('click',()=>$('detail').close());
 $('detail-add').addEventListener('click',()=>toggleSelected(detailId));
 $('detail').addEventListener('click',e=>{if(e.target===$('detail')){const r=$('detail').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('detail').close();}});
 document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!$('detail').open&&activeView!=='composer'){e.preventDefault();$('search').focus();}});
-renderCategories();renderCards();renderComposer();
+renderCategories();renderCards();renderComposer();renderDailyRecommendation();
 
 function renderSuggestions(){
  const input=$('idea').value.trim(),suggestions=suggestTechniques(input);
