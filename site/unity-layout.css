@@ -104,3 +104,8 @@ html[data-theme=dark] .pagination .page-buttons button[aria-current=page]{backgr
 html[data-theme=dark] .pagination .page-buttons button:disabled{background:#202020!important;border-color:#303030!important;color:#777!important}
 html[data-theme=dark] .page-range{color:#bbb}
 @media(max-width:560px){.pagination{justify-content:center;gap:12px}.page-buttons{gap:4px}.pagination .page-buttons button{min-width:32px;height:36px;min-height:36px;padding:0 7px}.pagination .page-buttons .page-direction{min-width:32px;padding:0 7px}.page-direction span{display:none}.page-buttons>span{width:14px}}
+/* The active top-level category follows the category filter. */
+.store-navigation button{transition:color .15s ease!important}
+.store-navigation button.nav-active{color:#f5cf36!important}
+.store-navigation button.nav-active:after{display:block;content:'';position:absolute;left:0;right:0;bottom:7px;height:2px;border-radius:2px;background:#f5cf36}
+@media(prefers-reduced-motion:reduce){.store-navigation button{transition:none!important}}

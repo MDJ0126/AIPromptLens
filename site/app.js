@@ -46,7 +46,10 @@ function renderCards(){
  renderNavigation();
 }
 function renderNavigation(){
- for(const [id,view] of [['explore-nav','explore'],['saved-nav','saved'],['composer-nav','composer']]){const active=activeView===view;$(id).classList.toggle('nav-active',active);$(id).setAttribute('aria-pressed',String(active));}
+ const exploring=activeView==='explore';
+ const allActive=exploring&&category==='all';$('explore-nav').classList.toggle('nav-active',allActive);$('explore-nav').setAttribute('aria-pressed',String(allActive));
+ document.querySelectorAll('[data-store-category]').forEach(button=>{const active=exploring&&button.dataset.storeCategory===category;button.classList.toggle('nav-active',active);button.setAttribute('aria-pressed',String(active));});
+ for(const [id,view] of [['saved-nav','saved'],['composer-nav','composer']]){const active=activeView===view;$(id).classList.toggle('nav-active',active);$(id).setAttribute('aria-pressed',String(active));}
  $('composer-nav-count').textContent=selected.size;
  $('saved-count').textContent=saved.size;
 }
@@ -107,7 +110,7 @@ $('idea').addEventListener('input',()=>{persist();renderComposer();});
 $('engine').addEventListener('change',()=>{persist();renderComposer();});
 document.querySelector('.language').addEventListener('click',e=>{const b=e.target.closest('[data-lang]');if(!b)return;language=b.dataset.lang;persist();renderComposer();});
 $('saved-nav').addEventListener('click',()=>setView('saved'));
-$('explore-nav').addEventListener('click',()=>setView('explore'));
+$('explore-nav').addEventListener('click',()=>{setView('explore');category='all';renderCategories();renderCards();});
 document.querySelector('.store-navigation').addEventListener('click',e=>{const button=e.target.closest('[data-store-category]');if(!button)return;setView('explore');category=button.dataset.storeCategory;renderCategories();renderCards();});
 $('search-submit').addEventListener('click',()=>{renderCards();$('search-options').hidden=true;$('search').setAttribute('aria-expanded','false');});
 $('store-resources').addEventListener('click',()=>$('open-resources').click());
