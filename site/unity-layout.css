@@ -58,3 +58,19 @@ html[data-theme=dark] .store-header .brand>span:not(.brand-icon){color:#fff!impo
 html[data-theme=dark] .card .save{background:#222!important;color:#fff!important}
 html[data-theme=dark] .card .save.saved{background:#222!important;color:#f5cf36!important}
 html[data-theme=dark] .store-header .search{border-color:#656565!important}
+/* Wanted Sans is bundled locally under the SIL Open Font License. */
+@font-face{font-family:'Wanted Sans';src:url('fonts/WantedSansVariable.woff2') format('woff2');font-style:normal;font-weight:100 1000;font-display:swap}
+:root{--font-ui:'Wanted Sans',sans-serif}
+body,button,input,textarea,select,.card-category,.card .term-en,.page-range,.store-header .search kbd{font-family:var(--font-ui)!important}
+body{font-weight:450;line-height:1.6;letter-spacing:-.01em;font-synthesis:none}
+.store-header .brand{font-weight:850;letter-spacing:-.045em}
+.store-navigation button{font-weight:600;letter-spacing:-.015em}
+.daily-copy h2{font-weight:800;letter-spacing:-.04em;line-height:1.22;font-size:39px}
+.daily-description{font-size:16px;line-height:1.65;font-weight:450}
+#section-title{font-weight:750;letter-spacing:-.025em}
+.card h3{font-size:17px;font-weight:720;letter-spacing:-.025em;line-height:1.45}
+.card-desc{font-size:13px;line-height:1.7;font-weight:450;min-height:44px}
+.card .term-en{font-size:12px;letter-spacing:0;line-height:1.5}
+.category{font-weight:550;letter-spacing:-.01em}.category.active{font-weight:700}
+.daily-cta{font-weight:750;letter-spacing:0}.modal-body>p,#article-notes p{font-size:14px;line-height:1.85}
+@media(max-width:720px){.daily-copy h2{font-size:33px}.card h3{font-size:15px}.card-desc{font-size:12px;line-height:1.65;min-height:40px}.store-navigation button{font-size:14px}}
