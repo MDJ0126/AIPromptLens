@@ -6,7 +6,7 @@ test('Dictionary entries retain explicit source version, scope, and execution li
 
 
 test('Every post cover matches its generated asset and the old hero is removed',()=>{
- const ctx=vm.createContext({});vm.runInContext(['catalog','demos','concepts','asset-art','covers'].map(name=>fs.readFileSync('site/'+name+'.js','utf8')).join('\n')+'\nglobalThis.covers={terms,composeArticleCover};',ctx);
+ const ctx=vm.createContext({});vm.runInContext(['catalog','demos','concepts','asset-art','animation-art','covers'].map(name=>fs.readFileSync('site/'+name+'.js','utf8')).join('\n')+'\nglobalThis.covers={terms,composeArticleCover};',ctx);
  const images=ctx.covers.terms.map(term=>{const svg=fs.readFileSync('site/covers/'+term.slug+'.svg','utf8');assert.equal(svg,ctx.covers.composeArticleCover(term));assert.ok(svg.includes('<title>'));assert.ok(svg.includes('xmlns="http://www.w3.org/2000/svg"'));assert.ok(!svg.includes('undefined'));assert.ok(!svg.includes('NaN'));return svg;});assert.equal(new Set(images).size,340);
  const html=fs.readFileSync('site/index.html','utf8');assert.ok(!html.includes('class="hero"'));assert.ok(html.includes('href="studio.css"'));assert.ok(html.includes('src="covers.js"'));
 });
@@ -19,4 +19,9 @@ test('Asset artwork uses 24 different scene structures, rather than recolored cu
 test('Daily recommendation stays stable within the Korean day and changes at midnight',()=>{
  const ctx=vm.createContext({});vm.runInContext(fs.readFileSync('site/catalog.js','utf8')+'\n'+fs.readFileSync('site/daily.js','utf8')+'\nglobalThis.pick=dailyRecommendation;',ctx);
  const a=ctx.pick(new Date('2026-10-14T00:00:00+09:00')), b=ctx.pick(new Date('2026-10-14T23:59:59+09:00')), c=ctx.pick(new Date('2026-10-15T00:00:00+09:00'));assert.equal(a.id,b.id);assert.notEqual(a.id,c.id);
+});
+test('All 39 animation covers have intentional distinct scene geometry',()=>{
+ const ctx=vm.createContext({});vm.runInContext(['catalog','covers','animation-art'].map(n=>fs.readFileSync('site/'+n+'.js','utf8')).join('\n')+'\nglobalThis.animations={terms,animationArticleScene};',ctx);
+ const terms=ctx.animations.terms.filter(t=>t.category==='animation');assert.equal(terms.length,39);
+ const scenes=terms.map(term=>{const scene=ctx.animations.animationArticleScene(term);assert.ok(scene,term.slug);assert.ok(!scene.includes('undefined'));assert.ok(!scene.includes('NaN'));return scene.replace(/<text[\s\S]*?<\/text>/g,'');});assert.equal(new Set(scenes).size,39);
 });

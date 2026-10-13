@@ -1,6 +1,6 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-const source=fs.readFileSync('site/catalog.js','utf8')+'\n'+fs.readFileSync('site/demos.js','utf8')+'\n'+fs.readFileSync('site/concepts.js','utf8')+'\n'+fs.readFileSync('site/asset-art.js','utf8')+'\n'+fs.readFileSync('site/covers.js','utf8')+'\n'+fs.readFileSync('site/daily.js','utf8')+'\n'+fs.readFileSync('site/suggestions.js','utf8'),context=vm.createContext({});
+const source=fs.readFileSync('site/catalog.js','utf8')+'\n'+fs.readFileSync('site/demos.js','utf8')+'\n'+fs.readFileSync('site/concepts.js','utf8')+'\n'+fs.readFileSync('site/asset-art.js','utf8')+'\n'+fs.readFileSync('site/animation-art.js','utf8')+'\n'+fs.readFileSync('site/covers.js','utf8')+'\n'+fs.readFileSync('site/daily.js','utf8')+'\n'+fs.readFileSync('site/suggestions.js','utf8'),context=vm.createContext({});
 vm.runInContext(source+'\nglobalThis.catalog={terms,categories,illustration};',context);
 const {terms,categories,illustration}=context.catalog;
 test('340 complete terms with unique ids and valid categories',()=>{
