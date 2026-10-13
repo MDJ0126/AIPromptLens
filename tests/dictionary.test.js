@@ -6,9 +6,9 @@ test('Public catalog excludes reference-only posts and empty categories',()=>{as
 
 
 test('Every post cover matches its generated asset and the old hero is removed',()=>{
- const ctx=vm.createContext({});vm.runInContext(['catalog','demos','concepts','asset-art','animation-art','covers'].map(name=>fs.readFileSync('site/'+name+'.js','utf8')).join('\n')+'\nglobalThis.covers={terms,composeArticleCover};',ctx);
+ const ctx=vm.createContext({});vm.runInContext(['catalog','demos','concepts','asset-art','animation-art','technical-art','covers'].map(name=>fs.readFileSync('site/'+name+'.js','utf8')).join('\n')+'\nglobalThis.covers={terms,composeArticleCover};',ctx);
  const images=ctx.covers.terms.map(term=>{const svg=fs.readFileSync('site/covers/'+term.slug+'.svg','utf8');assert.equal(svg,ctx.covers.composeArticleCover(term));assert.ok(svg.includes('<title>'));assert.ok(svg.includes('xmlns="http://www.w3.org/2000/svg"'));assert.ok(!svg.includes('undefined'));assert.ok(!svg.includes('NaN'));return svg;});assert.equal(new Set(images).size,terms.length);
- const html=fs.readFileSync('site/index.html','utf8');assert.ok(!html.includes('class="hero"'));assert.ok(html.includes('href="studio.css"'));assert.ok(html.includes('src="covers.js"'));
+ const html=fs.readFileSync('site/index.html','utf8');assert.ok(!html.includes('class="hero"'));assert.ok(html.includes('href="studio.css"'));assert.ok(html.includes('src="covers.js?v=unique-scenes-20261014"'));
 });
 
 
