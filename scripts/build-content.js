@@ -12,6 +12,7 @@ const rows=fs.readdirSync(dir).filter(f=>f.endsWith('.md')).map(file=>{
  if(!Number.isInteger(row.id)||!Array.isArray(row.tags))throw Error(file+': invalid metadata');
  if(!Array.isArray(row.genres)||!row.genres.length||row.genres.some(g=>!["action","rpg","shooter","platformer","strategy","puzzle","horror","adventure","simulation","racing","sports","rhythm"].includes(g)))throw Error(file+': invalid genres');
  if(row.kind!=='concept'&&(!raw.includes('## Unity\n')||!raw.includes('## Unreal\n')))throw Error(file+': engine examples missing');
+ if(row.visualType==='dictionary'||row.category==='architecture')throw Error(file+': reference-only posts belong in archive/reference-posts');
  return row;
 }).sort((a,b)=>a.id-b.id);
 if(new Set(rows.map(r=>r.id)).size!==rows.length)throw Error('Duplicate article ids');

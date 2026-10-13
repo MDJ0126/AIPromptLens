@@ -3,12 +3,12 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const source=fs.readFileSync('site/catalog.js','utf8')+'\n'+fs.readFileSync('site/demos.js','utf8')+'\n'+fs.readFileSync('site/concepts.js','utf8')+'\n'+fs.readFileSync('site/asset-art.js','utf8')+'\n'+fs.readFileSync('site/animation-art.js','utf8')+'\n'+fs.readFileSync('site/covers.js','utf8')+'\n'+fs.readFileSync('site/daily.js','utf8')+'\n'+fs.readFileSync('site/suggestions.js','utf8'),context=vm.createContext({});
 vm.runInContext(source+'\nglobalThis.catalog={terms,categories,illustration};',context);
 const {terms,categories,illustration}=context.catalog;
-test('340 complete terms with unique ids and valid categories',()=>{
- assert.equal(terms.length,340);assert.equal(new Set(terms.map(t=>t.id)).size,340);
+test('129 complete terms with unique ids and valid categories',()=>{
+ assert.equal(terms.length,129);assert.equal(new Set(terms.map(t=>t.id)).size,129);
  for(const t of terms){assert.ok(categories.some(c=>c.id===t.category));for(const key of ['name','en','desc','ko','promptEn','visual'])assert.ok(t[key]);}
 });
 test('Every term has an accessible and distinct illustration',()=>{
- const svgs=terms.map(illustration);assert.equal(new Set(svgs).size,340);
+ const svgs=terms.map(illustration);assert.equal(new Set(svgs).size,129);
  svgs.forEach((svg,i)=>{assert.ok(svg.startsWith('<svg'));assert.ok(svg.endsWith('</svg>'));assert.ok(svg.includes(terms[i].name+(terms[i].visualType==='dictionary'?' 용어 카드':' 개념 도식')));assert.ok(!svg.includes('undefined'));assert.ok(!svg.includes('NaN'));});
 });
 test('Search, selection, composer, language and persistence interactions',()=>{
@@ -17,15 +17,15 @@ test('Search, selection, composer, language and persistence interactions',()=>{
  const doc={getElementById:el,createElement:()=>el('temp'),querySelector:s=>el(s),querySelectorAll:()=>[],addEventListener(){},body:{append(){},classList:{toggle(){},add(){}}},activeElement:{tagName:'BODY'}};
  const ctx=vm.createContext({document:doc,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),navigator:{clipboard:{writeText:async()=>{}}},setTimeout:()=>0,clearTimeout(){}});
  vm.runInContext(fs.readFileSync('site/clipboard.js','utf8')+'\n'+source+'\n'+fs.readFileSync('site/app.js','utf8')+'\nglobalThis.api={toggleSelected,visibleTerms,composePrompt};',ctx);
- assert.equal(ctx.api.visibleTerms().length,340);
+ assert.equal(ctx.api.visibleTerms().length,129);
  const renderedIds=()=>[...el('cards').innerHTML.matchAll(/data-detail="(\d+)"/g)].map(m=>Number(m[1]));
  const page=n=>listeners.get('pagination:click')({target:{closest:()=>({dataset:{page:String(n)},disabled:false})}});
  assert.deepEqual(renderedIds(),Array.from(terms.slice(0,24),t=>t.id));
  page(2);assert.deepEqual(renderedIds(),Array.from(terms.slice(24,48),t=>t.id));
  ctx.api.toggleSelected(terms[24].id);assert.equal(renderedIds()[0],terms[24].id);
  ctx.api.toggleSelected(terms[24].id);
- page(15);assert.deepEqual(renderedIds(),Array.from(terms.slice(336),t=>t.id));
- page(16);assert.equal(renderedIds().length,4);
+ page(6);assert.deepEqual(renderedIds(),Array.from(terms.slice(120),t=>t.id));
+ page(7);assert.equal(renderedIds().length,9);
  listeners.get('categories:click')({target:{closest:()=>({dataset:{category:terms[0].category}})}});
  assert.deepEqual(renderedIds(),Array.from(terms.filter(t=>t.category===terms[0].category).slice(0,24),t=>t.id));
  listeners.get('categories:click')({target:{closest:()=>({dataset:{category:'all'}})}});
@@ -40,10 +40,10 @@ test('Search, selection, composer, language and persistence interactions',()=>{
 assert.equal(el('copy').disabled,true);
  assert.ok(!el('cards').innerHTML.includes('자세히 보기'));assert.ok(el('cards').innerHTML.includes('aria-haspopup="dialog"'));
  let opened=null;ctx.loadArticle=term=>{opened=term.id;};
- listeners.get('cards:click')({target:{closest:()=>({dataset:{detail:'99'}})}});assert.equal(opened,99);assert.equal(el('detail').open,true);el('detail').close();
- listeners.get('cards:click')({target:{closest:()=>({dataset:{save:'99'}})}});assert.equal(el('detail').open,false);assert.equal(opened,99);
- listeners.get('cards:click')({target:{closest:()=>({dataset:{add:'99'}})}});assert.equal(el('detail').open,false);assert.equal(el('selection-count').textContent,1);
- listeners.get('cards:click')({target:{closest:()=>({dataset:{add:'99'}})}});assert.equal(el('selection-count').textContent,0);
+ listeners.get('cards:click')({target:{closest:()=>({dataset:{detail:'100'}})}});assert.equal(opened,100);assert.equal(el('detail').open,true);el('detail').close();
+ listeners.get('cards:click')({target:{closest:()=>({dataset:{save:'100'}})}});assert.equal(el('detail').open,false);assert.equal(opened,100);
+ listeners.get('cards:click')({target:{closest:()=>({dataset:{add:'100'}})}});assert.equal(el('detail').open,false);assert.equal(el('selection-count').textContent,1);
+ listeners.get('cards:click')({target:{closest:()=>({dataset:{add:'100'}})}});assert.equal(el('selection-count').textContent,0);
 
  listeners.get('composer-nav:click')();assert.equal(el('main').hidden,false);assert.equal(el('composer-panel').hidden,false);
  listeners.get('explore-nav:click')();assert.equal(el('main').hidden,false);assert.equal(el('composer-panel').hidden,true);

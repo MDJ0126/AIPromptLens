@@ -3,7 +3,7 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const {parseArticle}=require('../site/article-parser.js');
 const files=fs.readdirSync('site/articles').filter(f=>f.endsWith('.md'));
 test('Markdown articles validate code examples or concept explanations',()=>{
- assert.equal(files.length,340);
+ assert.equal(files.length,129);
  const ids=new Set(),names=new Set();
  for(const file of files){
   const raw=fs.readFileSync('site/articles/'+file,'utf8'),article=parseArticle(raw);
