@@ -4,7 +4,7 @@ function coverEscape(value){return String(value).replace(/[&<>"]/g,c=>({'&':'&am
 function coverSeed(text){let seed=2166136261;for(const char of text)seed=Math.imul(seed^char.charCodeAt(0),16777619);return seed>>>0;}
 function composeArticleCover(term){
  const staticCover=term.visualType==='dictionary'||Boolean(term.kind==='concept'&&term.diagramSteps);
- const seed=coverSeed(term.slug), id='cover-'+term.slug, hue=198+seed%37, blue='hsl('+hue+' 86% 65%)', gold='#ffda66';
+ const seed=coverSeed(term.slug), id='cover-'+term.slug, hue=43+seed%10, blue='hsl('+hue+' 86% 65%)', gold='#ffda66';
  const palette={assets:'PACKAGE',tools:'WORKSPACE',platform:'BUILD',ui:'INTERFACE',rendering:'RENDER',animation:'MOTION',physics:'SIMULATION',network:'SYNC',optimization:'PROFILE',procedural:'GENERATION',audio:'SIGNAL',architecture:'SYSTEM',camera:'VIEW',combat:'IMPACT',movement:'CONTROL',ai:'AGENT',level:'SPACE'};
  const label=palette[term.category]||'GAME SYSTEM', q=(term.slug+' '+term.en).toLowerCase();
  const line=(x,y,a,b,color=blue)=>'<path d="M'+x+' '+y+'L'+a+' '+b+'" stroke="'+color+'" stroke-width="1.5" fill="none"/>';
@@ -13,7 +13,7 @@ function composeArticleCover(term){
  const cube=(x,y,size=28)=>'<g transform="translate('+x+' '+y+')"><path d="M0 -'+size+'L'+size*1.5+' -'+size/2+'V'+size+'L0 '+size*1.5+'L-'+size*1.5+' '+size+'V-'+size/2+'Z" fill="'+blue+'" fill-opacity=".14" stroke="'+blue+'"/><path d="M0 '+size/2+'V'+size*1.5+'M0 '+size/2+'L'+size*1.5+' -'+size/2+'M0 '+size/2+'L-'+size*1.5+' -'+size/2+'M-'+size*1.5+' -'+size/2+'L0 -'+size+'L'+size*1.5+' -'+size/2+'" stroke="'+blue+'" fill="none"/></g>';
  let art='';const specificAsset=typeof assetArticleScene==='function'?assetArticleScene(term,blue,gold):null;
  if(specificAsset){art=specificAsset;}else if(!staticCover){
-  return illustration(term).replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');
+  return illustration(term).replace(/#[0-9a-f]{6}/gi,color=>({"#eef4ff":"#fff9e6","#4e83d1":"#313131","#4c82d0":"#313131","#5497cb":"#ba951e","#29446f":"#38352b","#3560a3":"#665321","#496faa":"#6b624a","#4d6894":"#6b624a","#516a94":"#6b624a","#607fae":"#8c805b","#82a5d6":"#d4b85e","#879fc5":"#a79b77","#87a9df":"#d4b85e","#a3bee5":"#ddd0a2","#bfd1ed":"#e8ddbb","#c4d5ee":"#e8ddbb","#dce7f7":"#f1e9d0","#dce8ff":"#f1e9d0","#88a7d7":"#c7af65","#95afd3":"#c7b78b","#a3bcde":"#dacba4","#aabedc":"#dacba4","#adc5e5":"#dacba4","#b4caeb":"#e1d4ac","#b8cce8":"#e1d4ac","#d6e4f8":"#f0e6c6","#d6e9f0":"#eee7d2","#d7e3f5":"#eee7d2","#dbe6f8":"#eee7d2","#e4ecfa":"#f6eed8"})[color.toLowerCase()]||color).replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');
  }else if(/audio|sound|mixer|reverb|doppler/.test(q)||term.category==='audio'){
   for(let i=0;i<37;i++){const height=12+Math.abs(Math.sin((i+seed%13)*.43))*64+(seed>>(i%20)&7);art+=line(65+i*8,132-height/2,65+i*8,132+height/2,i%7===0?gold:blue);}art+=line(52,192,365,192)+dot(96+seed%220,192,4,gold);
  }else if(/graph|state|event|rpc|network|sync|connection|architecture|pipeline/.test(q)||['network','architecture','ai'].includes(term.category)){
@@ -53,6 +53,6 @@ function composeArticleCover(term){
   art=box(73,65,275,137)+box(88,80,245,20,gold);
   for(let i=0;i<5;i++){const width=55+(seed>>(i*3)&63);art+=line(94+(i%3)*12,119+i*14,94+(i%3)*12+width,119+i*14,i===seed%5?gold:blue);}art+=cube(278,145,23);
  }
- return '<svg xmlns="http://www.w3.org/2000/svg" class="article-cover" viewBox="0 0 420 252" role="img" aria-label="'+coverEscape(term.name)+(term.visualType==='dictionary'?' 용어 카드':' 개념 도식')+'"><title>'+coverEscape(term.name)+' 개별 기술 일러스트</title><defs><radialGradient id="'+id+'-glow"><stop stop-color="'+blue+'" stop-opacity=".16"/><stop offset="1" stop-color="'+blue+'" stop-opacity="0"/></radialGradient><radialGradient id="'+id+'-orb" cx="30%" cy="24%"><stop stop-color="#eafaff"/><stop offset=".42" stop-color="'+blue+'"/><stop offset="1" stop-color="#142c5b"/></radialGradient></defs><rect width="420" height="252" fill="#101f39"/><circle cx="245" cy="119" r="175" fill="url(#'+id+'-glow)"/>'+art+'</svg>';
+ return '<svg xmlns="http://www.w3.org/2000/svg" class="article-cover" viewBox="0 0 420 252" role="img" aria-label="'+coverEscape(term.name)+(term.visualType==='dictionary'?' 용어 카드':' 개념 도식')+'"><title>'+coverEscape(term.name)+' 개별 기술 일러스트</title><defs><radialGradient id="'+id+'-glow"><stop stop-color="'+blue+'" stop-opacity=".16"/><stop offset="1" stop-color="'+blue+'" stop-opacity="0"/></radialGradient><radialGradient id="'+id+'-orb" cx="30%" cy="24%"><stop stop-color="#fff7d6"/><stop offset=".42" stop-color="'+blue+'"/><stop offset="1" stop-color="#46390d"/></radialGradient></defs><rect width="420" height="252" fill="#171717"/><circle cx="245" cy="119" r="175" fill="url(#'+id+'-glow)"/>'+art+'</svg>';
 }
 function cardIllustration(term){return (term.visualType==='dictionary'||(term.kind==='concept'&&term.diagramSteps))?'<img class="article-cover-image" src="covers/'+term.slug+'.svg" alt="'+coverEscape(term.name)+' 개념 일러스트" loading="lazy" decoding="async" width="420" height="252">':composeArticleCover(term);}
