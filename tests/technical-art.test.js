@@ -19,3 +19,19 @@ test('Every affected card renders its scene inline with a nonconstant looping an
   assert.ok(!/undefined|NaN/.test(svg));
  }
 });
+test('Entire 129-post catalog renders inline animation, including every formerly static card',()=>{
+ assert.equal(ctx.art.terms.length,129);
+ const geometry=[];
+ for(const term of ctx.art.terms){
+  const svg=ctx.art.cardIllustration(term);assert.ok(svg.startsWith('<svg'),term.slug);assert.ok(!svg.includes('<img'),term.slug);
+  assert.ok(svg.includes('<animate')||svg.includes('class="demo '),term.slug+' must have SVG or CSS animation');
+  assert.ok(!/undefined|NaN/.test(svg),term.slug);
+  if(svg.includes('technical-scene')){
+   assert.ok(/<animate(?:Transform|Motion)?\b/.test(svg),term.slug);
+   geometry.push(svg.replace(/<title[\s\S]*?<\/title>|<text\b[\s\S]*?<\/text>/g,'').replace(/(?:id|class|aria-label|data-scene)="[^"]*"/g,'').replace(/(?:fill|stroke|stop-color)="[^"]*"/g,'').replace(/<animate(?:Transform|Motion)?\b[^>]*\/>/g,''));
+  }
+ }
+ assert.equal(geometry.length,100);assert.equal(new Set(geometry).size,100);
+ const html=fs.readFileSync('site/index.html','utf8');assert.equal((html.match(/id="preview-motion"/g)||[]).length,1);
+ assert.ok(fs.readFileSync('site/unity-layout.css','utf8').includes('.preview-motion-paused .demo'));
+});

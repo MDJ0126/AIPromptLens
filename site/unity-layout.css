@@ -178,3 +178,12 @@ html[data-theme=dark] .cards .card-actions .card-copy:hover{background:#3d361b;c
 .prompt-block{margin-top:26px;padding:16px;background:var(--surface,#f7f7f7);border-radius:6px;}
 .prompt-block blockquote{margin:16px 0 0;white-space:pre-wrap;}
 .prompt-box .copy-block-header{margin-bottom:16px;}
+
+/* Match the compact genre control; keep playback outside the collapsible filter. */
+#preview-motion{position:absolute;right:96px;top:0;display:inline-flex;align-items:center;gap:6px;width:auto;min-height:29px;padding:4px 9px;border:1px solid var(--line,#ddd);border-radius:4px;background:var(--panel,#fff);color:var(--text,#333);font:inherit;font-size:12px;line-height:1.5;cursor:pointer;white-space:nowrap;}
+#preview-motion:before{content:'Ⅱ';font-size:13px;font-weight:600;}
+#preview-motion[aria-pressed=true]:before{content:'▶';font-size:10px;}
+#preview-motion:hover{border-color:#b79718;background:#fff7d5;color:#27220e;}
+#preview-motion:focus-visible{outline:2px solid #c7a524;outline-offset:3px;}
+.preview-motion-paused .demo *,.preview-motion-paused .demo{animation-play-state:paused!important;}
+@media(max-width:720px){.explorer .section-top{min-height:58px;align-items:flex-start}.genre-filters>summary{top:35px}#preview-motion{top:29px;right:83px;min-height:27px;font-size:11px;padding:4px 8px;}}

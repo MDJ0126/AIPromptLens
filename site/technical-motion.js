@@ -3,7 +3,8 @@
 const previewMotionButton=document.getElementById('preview-motion');
 let previewMotionPaused=false;
 function syncTechnicalMotion(){
- document.querySelectorAll('svg:has(.technical-scene)').forEach(svg=>{
+ document.documentElement.classList.toggle('preview-motion-paused',previewMotionPaused);
+ document.querySelectorAll('.preview svg,.daily-art svg,#detail svg').forEach(svg=>{
   if(previewMotionPaused)svg.pauseAnimations();else svg.unpauseAnimations();
  });
  previewMotionButton.setAttribute('aria-pressed',String(previewMotionPaused));
