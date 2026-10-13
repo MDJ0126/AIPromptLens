@@ -43,7 +43,7 @@ test('Engine tabs, code copy and out-of-order article loads use the correct arti
  await el('copy-code').handlers.click();assert.ok(copy[0].includes('DashExample'));assert.ok(!copy[0].includes('HitExample'));
  el('article-engines').handlers.click({target:{closest:()=>({dataset:{articleEngine:'Unreal'}})}});
  await el('copy-code').handlers.click();assert.ok(copy[1].includes('UpdateDash'));assert.ok(!copy[1].includes('MonoBehaviour'));
- vm.runInContext(['catalog.js','demos.js','concepts.js','suggestions.js','app.js'].map(file=>fs.readFileSync('site/'+file,'utf8')).join('\n'),ctx);
+ vm.runInContext(['catalog.js','demos.js','concepts.js','covers.js','suggestions.js','app.js'].map(file=>fs.readFileSync('site/'+file,'utf8')).join('\n'),ctx);
  await vm.runInContext('openDetail(4)',ctx);
  assert.equal(el('detail').open,true);
  assert.equal(el('article-file').href,'articles/hit.md');

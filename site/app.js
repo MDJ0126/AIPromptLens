@@ -29,7 +29,7 @@ function renderCards(){
  const pageItems=items.slice((currentPage-1)*PAGE_SIZE,currentPage*PAGE_SIZE);
  renderPagination(items.length);
  $('section-title').textContent=label+' ';const count=document.createElement('span');count.textContent=items.length;$('section-title').append(count);
- $('cards').innerHTML=pageItems.map(t=>'<article class="card"><div class="preview">'+illustration(t)+'<span class="preview-label">'+t.en.toUpperCase()+'</span><button class="save '+(saved.has(t.id)?'saved':'')+'" data-save="'+t.id+'" aria-label="'+t.name+' 저장" aria-pressed="'+saved.has(t.id)+'">'+(saved.has(t.id)?'★':'☆')+'</button></div><div class="card-body"><p class="card-category">'+categories.find(c=>c.id===t.category).name+'</p><h3><button class="card-title-link" aria-haspopup="dialog" data-detail="'+t.id+'">'+t.name+'</button></h3><p class="term-en">'+t.en+'</p><p class="card-desc">'+t.desc+'</p><div class="card-actions"><button class="add '+(selected.has(t.id)?'selected':'')+'" data-add="'+t.id+'" aria-label="'+t.name+' '+(selected.has(t.id)?'빼기':'담기')+'" aria-pressed="'+selected.has(t.id)+'">'+(selected.has(t.id)?'✓':'+')+'</button></div></div></article>').join('');
+ $('cards').innerHTML=pageItems.map(t=>'<article class="card"><div class="preview">'+cardIllustration(t)+'<span class="preview-label">'+t.en.toUpperCase()+'</span><button class="save '+(saved.has(t.id)?'saved':'')+'" data-save="'+t.id+'" aria-label="'+t.name+' 저장" aria-pressed="'+saved.has(t.id)+'">'+(saved.has(t.id)?'★':'☆')+'</button></div><div class="card-body"><p class="card-category">'+categories.find(c=>c.id===t.category).name+'</p><h3><button class="card-title-link" aria-haspopup="dialog" data-detail="'+t.id+'">'+t.name+'</button></h3><p class="term-en">'+t.en+'</p><p class="card-desc">'+t.desc+'</p><div class="card-actions"><button class="add '+(selected.has(t.id)?'selected':'')+'" data-add="'+t.id+'" aria-label="'+t.name+' '+(selected.has(t.id)?'빼기':'담기')+'" aria-pressed="'+selected.has(t.id)+'">'+(selected.has(t.id)?'✓':'+')+'</button></div></div></article>').join('');
  $('empty').hidden=items.length>0;$('saved-count').textContent=saved.size;
  renderNavigation();
 }
@@ -64,7 +64,7 @@ function toggleSelected(id){if(selected.has(id))selected.delete(id);else selecte
 function openDetail(id){
  const t=terms.find(t=>t.id===id);detailId=id;
  $('detail-category').textContent=categories.find(c=>c.id===t.category).name;
- $('detail-preview').innerHTML='<div class="preview">'+illustration(t)+'</div>';
+ $('detail-preview').innerHTML='<div class="preview">'+cardIllustration(t)+'</div>';
  $('detail-en').textContent=t.en;$('detail-name').textContent=t.name;$('detail-description').textContent=t.desc;
  $('detail-example').textContent=t.ko;$('detail-source').hidden=!t.source;if(t.source)$('detail-source').href=t.source;else $('detail-source').removeAttribute('href');
  renderComposer();$('detail').showModal();return loadArticle(t);

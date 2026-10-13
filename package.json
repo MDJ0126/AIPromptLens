@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "test": "node scripts/build-content.js --check && node --test tests/*.test.js",
-    "build:content": "node scripts/build-content.js"
+    "test": "node scripts/build-content.js --check && node scripts/build-covers.js --check && node --test tests/*.test.js",
+    "build:content": "node scripts/build-content.js",
+    "build:covers": "node scripts/build-covers.js"
   },
   "engines": {
     "node": ">=18"

@@ -1,0 +1,37 @@
+/* Game development library: compact navigation, technical artwork, clear reading surfaces. */
+:root{--bg:#f3f5f8;--panel:#fff;--line:#dce2ec;--text:#192941;--muted:#61718a;--accent:#2463eb;--studio-yellow:#ffda66}
+html[data-theme="dark"]{--bg:#101722;--panel:#172232;--line:#2b3a50;--text:#edf2fb;--muted:#a3b2c8;--accent:#91b6ff}
+body{font-size:14px;line-height:1.65}
+header{height:74px;gap:28px;padding:0 32px;box-shadow:0 1px 0 var(--line);background:var(--panel)!important}
+.brand{font-size:21px;letter-spacing:-.7px;white-space:nowrap}.brand-icon{display:inline-block;width:30px;height:30px;line-height:30px;border-radius:8px;background:#2463eb;color:var(--studio-yellow);font-size:23px;margin-right:10px}.brand small{display:none}
+header nav button{font-size:13px;font-weight:600}.theme-toggle,.repo-link{font-size:12px}
+#workspace-layout{max-width:1640px;grid-template-columns:222px minmax(0,1fr)}
+.sidebar{padding:30px 18px;background:var(--panel)!important;min-height:calc(100vh - 74px)}
+.sidebar>.eyebrow{display:block;font-family:Consolas,monospace;font-size:9px;letter-spacing:1.6px;margin:0 12px 8px;color:var(--accent)}
+.sidebar h3{font-size:14px;color:var(--text);margin:0 12px 19px}
+.category{padding:10px 12px;font-size:12px;border-radius:7px;color:var(--muted)!important}.category .cat-icon{display:inline-block;margin-right:9px;color:var(--accent);font-size:14px}.category.active{background:#eaf0ff!important;color:#1e56ca!important;font-weight:650}.cat-count{font-family:Consolas,monospace;font-size:10px}
+main{padding:30px 32px 48px;min-width:0}
+.explorer{max-width:none}.section-top{display:grid;grid-template-columns:1fr;gap:16px;padding:0;border-bottom:0}
+.section-top>div:first-child{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.section-top .eyebrow{display:block;order:2;margin:0;font-family:Consolas,monospace;font-size:10px;letter-spacing:1.3px;color:var(--muted)}
+h2{font-size:25px;font-weight:700;letter-spacing:-.8px;margin:0}h2>span{font-family:Consolas,monospace;background:var(--panel)!important;border:1px solid var(--line);padding:3px 8px;border-radius:5px;margin-left:8px;font-size:12px!important;color:var(--muted)!important;vertical-align:middle}
+.search-area{width:100%}.explorer .search{min-height:64px;border:1px solid #769be9;border-radius:10px;background:var(--panel)!important;box-shadow:0 4px 15px #243c7007;padding:0 19px}.search input{font-size:15px!important}.search>span{font-size:26px}.search kbd{display:block;border:1px solid var(--line);border-radius:4px;font-family:Consolas,monospace;color:var(--muted)}.search-help{font-size:11px;margin-top:8px}.search-options{top:72px;border-radius:10px}
+.filter-row{margin:19px 0 8px;align-items:flex-start;gap:14px}.chips{gap:6px}.chips button{font-size:11px;padding:7px 11px;border:1px solid var(--line)!important;background:var(--panel)!important;border-radius:6px;color:var(--muted)!important}.chips button.active{background:var(--studio-yellow)!important;border-color:#ecc85b!important;color:#463912!important;font-weight:650}.animation-status{font-size:10px;padding-top:8px}.genre-help{font-size:11px;margin-bottom:21px;color:var(--muted)}
+.cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.card{border:1px solid var(--line)!important;border-radius:12px;background:var(--panel)!important;box-shadow:0 3px 9px #14294504!important;transition:border-color .22s,box-shadow .22s!important;overflow:hidden}
+.card:hover{border-color:#7297de!important;box-shadow:0 10px 25px #14294514!important}.card .card-title-link::after{border-radius:12px}
+.card .preview{background:#101f39!important;aspect-ratio:420/252;min-height:0;height:auto;display:block;overflow:hidden}.preview>svg,.article-cover-image{display:block;width:100%;height:auto;aspect-ratio:420/252;object-fit:cover}.preview>svg>svg{height:auto}.preview-label{display:none}
+.card .save{top:12px;right:12px;width:29px;height:29px;background:#ffffffed!important;border:1px solid #ffffff40!important;color:#466080!important;font-size:17px}
+.card .card-body{padding:17px 17px 15px;position:static}.card-category{font-family:Consolas,'Malgun Gothic',monospace;font-size:10px;color:var(--accent)!important;letter-spacing:.3px;margin-bottom:7px}.card h3{font-size:17px;font-weight:700;letter-spacing:-.5px;line-height:1.4}.card .term-en{font-family:Consolas,monospace;font-size:11px;margin-top:5px;color:var(--muted)!important;overflow-wrap:anywhere}.card-desc{font-size:12px;line-height:1.75;margin:12px 0 14px;min-height:42px;color:var(--muted)!important}.card-actions{border-top:1px solid var(--line);padding-top:10px;justify-content:flex-end}.card-actions:before{content:'개념 · 적용 방법';font-size:10px;color:var(--muted);margin-right:auto}.add{width:29px;height:29px;border-radius:6px;font-size:17px}
+.pagination{margin-top:30px}.page-range{font-family:Consolas,'Malgun Gothic',monospace}footer{font-size:10px;border-top:1px solid var(--line);padding-top:18px}
+#composer-panel{background:var(--panel)!important;border:1px solid var(--line);border-radius:12px;margin:30px auto}
+html[data-theme="dark"] .category.active{background:#21375c!important;color:#a9c9ff!important}html[data-theme="dark"] .chips button.active{background:#ffda66!important;color:#463912!important}html[data-theme="dark"] .card .save{background:#20344f!important;color:#d5e4ff!important}
+@media(min-width:1500px){.cards{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:1150px){#workspace-layout{grid-template-columns:195px minmax(0,1fr)}main{padding:26px 24px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}header{gap:22px;padding:0 24px}.section-top .eyebrow{font-size:9px}}
+@media(max-width:720px){header{height:auto;padding:15px 18px;gap:15px;flex-wrap:wrap}.brand{font-size:19px}header nav{order:3;width:100%;justify-content:space-between;min-height:32px;gap:12px}header nav button{font-size:12px}.theme-toggle{margin-left:auto}.repo-link{margin-left:0}#workspace-layout{display:block}.sidebar{min-height:0;padding:16px 18px;border-right:0;border-bottom:1px solid var(--line)}.sidebar>.eyebrow,.sidebar h3,.resources-button{display:none}#categories{display:flex;flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px;overscroll-behavior:contain}.category{white-space:nowrap;font-size:11px;flex-shrink:0;padding:8px 10px}.category .cat-icon,.cat-count{display:none}main{padding:24px 18px}.section-top .eyebrow{display:none}h2{font-size:23px}.cards{gap:14px}.card .card-body{padding:13px}.card h3{font-size:15px}.card-desc{font-size:11px}.card .term-en{font-size:10px}.card-actions:before{font-size:9px}.animation-status{display:none}.genre-help{font-size:10px}.explorer .search{min-height:60px}.search-options{top:68px}#composer-panel{margin:18px}}
+@media(max-width:430px){.cards{grid-template-columns:1fr}.card h3{font-size:18px}.card-desc{font-size:12px;min-height:0}.card .card-body{padding:16px}.card .term-en{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.card{transition:none!important}}
+
+#detail-preview .preview{aspect-ratio:420/252;height:auto;background:#101f39!important}#detail-preview .preview>svg,#detail-preview img{display:block;width:100%;height:auto}
+
+.brand,h2,.card-title-link{color:var(--text)}.genre-help{margin-top:7px}.preview .save{font-size:17px}
