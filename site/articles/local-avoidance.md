@@ -94,11 +94,3 @@ https://dev.epicgames.com/documentation/unreal-engine/behavior-trees-in-unreal-e
 
 회피 품질과 처리 비용의 절충을 확인했습니다. 경로 전체를 찾는 탐색과 국소 이동 보정은 구분합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 NavMeshAgent.obstacleAvoidanceType의 회피 품질 설정을 확인했습니다. 전역 경로 생성 기능과 구분합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AI.NavMeshAgent-obstacleAvoidanceType.html

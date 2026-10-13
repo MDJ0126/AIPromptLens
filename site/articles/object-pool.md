@@ -72,13 +72,4 @@ https://gameprogrammingpatterns.com/object-pool.html
 
 ## 자료 대조에서 보강한 내용
 
-원저자 문서에서 객체 재사용·풀 용량·초기화 문제를 확인했습니다. 풀 사용의 성능 이득은 대상 환경에서 측정해야 합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-원저자 문서에서 객체 재사용·풀 용량·초기화 문제를 확인했습니다. 풀 사용의 성능 이득은 대상 환경에서 측정해야 합니다.
-
-
-확인 자료: https://gameprogrammingpatterns.com/object-pool.html

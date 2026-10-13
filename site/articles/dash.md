@@ -111,13 +111,4 @@ GameFramework/Actor.h
 ## 참고 자료
 
 https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs
-확인 범위: Celeste 개발자 공개 Player.cs의 Dash 상태·속도 처리를 확인했습니다. 예제는 동일 게임 구현이 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Celeste 개발자 공개 Player.cs의 Dash 상태·속도 처리를 확인했습니다. 예제는 동일 게임 구현이 아닙니다.
-
-
-확인 자료: https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs

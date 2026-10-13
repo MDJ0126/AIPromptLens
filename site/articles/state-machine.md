@@ -73,13 +73,4 @@ https://gameprogrammingpatterns.com/state.html
 
 ## 자료 대조에서 보강한 내용
 
-원저자 문서의 상태·입력·전이·진입/종료 작업을 확인했습니다. 단순 머신 하나는 현재 상태 하나를 갖습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-원저자 문서의 상태·입력·전이·진입/종료 작업을 확인했습니다. 단순 머신 하나는 현재 상태 하나를 갖습니다.
-
-
-확인 자료: https://gameprogrammingpatterns.com/state.html

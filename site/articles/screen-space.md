@@ -79,13 +79,4 @@ https://dev.epicgames.com/documentation/unreal-engine/reflections-environment-in
 
 ## 자료 대조에서 보강한 내용
 
-Epic SSR 문서에서 화면 정보로 반사를 만드는 기능을 확인했습니다. 가려지거나 화면 밖인 정보의 보완은 시스템 구성에 따릅니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Epic SSR 문서에서 화면 정보로 반사를 만드는 기능을 확인했습니다. 가려지거나 화면 밖인 정보의 보완은 시스템 구성에 따릅니다.
-
-
-확인 자료: https://dev.epicgames.com/documentation/en-us/unreal-engine/screen-space-reflections-in-unreal-engine

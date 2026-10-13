@@ -87,7 +87,6 @@
 ## 참고 자료
 
 https://gafferongames.com/post/networked_physics_2004/
-확인 범위: 클라이언트에서 입력 결과를 먼저 계산하는 방식입니다. 보정 없이 예측만 사용하는 것으로 설명하지 않습니다.
 
 ## 함께 볼 용어
 
@@ -96,13 +95,4 @@ https://gafferongames.com/post/networked_physics_2004/
 
 ## 자료 대조에서 보강한 내용
 
-클라이언트에서 입력 결과를 먼저 계산하는 방식입니다. 보정 없이 예측만 사용하는 것으로 설명하지 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-클라이언트에서 입력 결과를 먼저 계산하는 방식입니다. 보정 없이 예측만 사용하는 것으로 설명하지 않습니다.
-
-
-확인 자료: https://gafferongames.com/post/networked_physics_2004/

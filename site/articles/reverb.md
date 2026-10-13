@@ -95,13 +95,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Audio.html
 
 ## 자료 대조에서 보강한 내용
 
-Unity Reverb Filter의 감쇠 시간과 초기 반사·잔향 설정을 확인했습니다. 원음의 음량 조절과 구분합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity Reverb Filter의 감쇠 시간과 초기 반사·잔향 설정을 확인했습니다. 원음의 음량 조절과 구분합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioReverbFilter.html

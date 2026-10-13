@@ -92,13 +92,4 @@ https://catlikecoding.com/unity/tutorials/
 
 ## 자료 대조에서 보강한 내용
 
-Unity InitState는 생성기 시작 상태를 정합니다. 재현에는 호출 순서·생성기·버전도 일치해야 합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity InitState는 생성기 시작 상태를 정합니다. 재현에는 호출 순서·생성기·버전도 일치해야 합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Random.InitState.html

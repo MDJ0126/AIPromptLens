@@ -93,13 +93,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/PhysicsSection.html
 
 ## 자료 대조에서 보강한 내용
 
-Unity OnTrigger 이벤트는 겹침을 감지하는 기능입니다. 설정한 콜라이더·강체 조건이 맞아야 이벤트가 발생합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity OnTrigger 이벤트는 겹침을 감지하는 기능입니다. 설정한 콜라이더·강체 조건이 맞아야 이벤트가 발생합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/collider-interactions-ontrigger.html

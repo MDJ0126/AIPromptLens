@@ -88,7 +88,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
-확인 범위: 밝은 영역 주변의 번짐을 만드는 후처리이며 장면의 실제 간접광 계산을 대신하지 않습니다.
 
 ## 함께 볼 용어
 
@@ -97,13 +96,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-밝은 영역 주변의 번짐을 만드는 후처리이며 장면의 실제 간접광 계산을 대신하지 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-밝은 영역 주변의 번짐을 만드는 후처리이며 장면의 실제 간접광 계산을 대신하지 않습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

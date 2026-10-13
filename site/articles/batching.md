@@ -92,7 +92,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html
-확인 범위: Unity 문서는 같은 재질의 메시 묶기를 설명합니다. 배칭 종류와 렌더러 지원 제약을 함께 확인합니다.
 
 ## 함께 볼 용어
 
@@ -101,13 +100,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html
 
 ## 자료 대조에서 보강한 내용
 
-Unity 문서는 같은 재질의 메시 묶기를 설명합니다. 배칭 종류와 렌더러 지원 제약을 함께 확인합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 문서는 같은 재질의 메시 묶기를 설명합니다. 배칭 종류와 렌더러 지원 제약을 함께 확인합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html

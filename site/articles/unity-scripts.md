@@ -75,9 +75,3 @@ Unity 스크립트의 의미를 설명하고 다음 조건을 구분해 주세�
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/creating-scripts.html
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Creating scripts · Unity 6.0 (6000.0)
-

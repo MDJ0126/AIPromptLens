@@ -98,11 +98,3 @@ https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 https://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter20_Hierarchical_Architecture_for_Group_Navigation_Behaviors.pdf
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Game AI Pro 2 20장의 그룹 내비게이션·포메이션 설명을 확인했습니다. 예제는 그 시스템 전체를 재현하지 않습니다.
-
-
-확인 자료: https://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter20_Hierarchical_Architecture_for_Group_Navigation_Behaviors.pdf

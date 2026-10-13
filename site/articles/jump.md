@@ -100,11 +100,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Celeste 개발자 공개 Player.cs의 Jump 입력 검사와 ConsumeBuffer 호출을 확인했습니다.
-
-
-확인 자료: https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs

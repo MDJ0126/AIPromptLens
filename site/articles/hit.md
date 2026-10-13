@@ -106,11 +106,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 Animator.speed로 애니메이션 속도 제어가 가능함을 확인했습니다. 물리와 게임 전체 정지를 구현한 코드가 아니므로 명칭을 좁혔습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Animator-speed.html

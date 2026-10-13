@@ -88,7 +88,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/AudioMixer.html
-확인 범위: Unity Mixer Group의 신호 혼합·음량·효과 처리를 확인했습니다. 과도한 합산 출력은 별도로 점검합니다.
 
 ## 함께 볼 용어
 
@@ -97,13 +96,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/AudioMixer.html
 
 ## 자료 대조에서 보강한 내용
 
-Unity Mixer Group의 신호 혼합·음량·효과 처리를 확인했습니다. 과도한 합산 출력은 별도로 점검합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity Mixer Group의 신호 혼합·음량·효과 처리를 확인했습니다. 과도한 합산 출력은 별도로 점검합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/AudioMixer.html

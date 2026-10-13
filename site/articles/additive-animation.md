@@ -85,7 +85,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationLayers.html
-확인 범위: 가산 혼합은 기준에 대한 동작 차이를 합성합니다. Unity 문서는 레이어 사이 애니메이션 속성 구성이 맞아야 한다고 설명합니다.
 
 ## 함께 볼 용어
 
@@ -94,13 +93,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationLayers.html
 
 ## 자료 대조에서 보강한 내용
 
-가산 혼합은 기준에 대한 동작 차이를 합성합니다. Unity 문서는 레이어 사이 애니메이션 속성 구성이 맞아야 한다고 설명합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-가산 혼합은 기준에 대한 동작 차이를 합성합니다. Unity 문서는 레이어 사이 애니메이션 속성 구성이 맞아야 한다고 설명합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationLayers.html

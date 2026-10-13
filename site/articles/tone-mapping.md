@@ -100,11 +100,3 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 확인한 적용 예시는 Unity 6.0의 URP 17 Tonemapping Volume Override입니다. 다른 파이프라인의 메뉴와 옵션까지 같다고 안내하지 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0/URP 17의 Tonemapping 문서에서 HDR 값의 범위 변환을 확인했습니다.
-
-
-확인 자료: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/post-processing-tonemapping.html

@@ -92,11 +92,3 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/PhysicsSection.html
 
 Unity Spring Joint 문서에서 Spring은 변위, Damper는 상대 속도에 비례한 처리를 확인했습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 Spring Joint의 복원력과 상대 속도에 비례하는 Damper 설명을 확인했습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/class-SpringJoint.html

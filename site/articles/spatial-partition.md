@@ -99,13 +99,4 @@ https://gameprogrammingpatterns.com/optimization-patterns.html
 
 ## 자료 대조에서 보강한 내용
 
-Game Programming Patterns 원문에서 위치 기반 자료구조로 주변 객체 검색을 줄이는 패턴을 확인했습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Game Programming Patterns 원문에서 위치 기반 자료구조로 주변 객체 검색을 줄이는 패턴을 확인했습니다.
-
-
-확인 자료: https://gameprogrammingpatterns.com/spatial-partition.html

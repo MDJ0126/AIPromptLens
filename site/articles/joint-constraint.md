@@ -90,9 +90,3 @@ Configurable Joint의 축별 이동·회전 제한과 드라이브를 구분해�
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/class-ConfigurableJoint.html
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 Configurable Joint 상세 문서에서 축별 Motion과 Limit·Drive 설정을 대조했습니다. 일반 조인트 제약 원리와 컴포넌트를 구분합니다.
-

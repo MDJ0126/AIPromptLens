@@ -99,13 +99,4 @@ https://gameprogrammingpatterns.com/optimization-patterns.html
 
 ## 자료 대조에서 보강한 내용
 
-Unity의 관리 힙 회수 기능을 확인했습니다. 모든 네이티브 자원을 대신 정리하는 기능은 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity의 관리 힙 회수 기능을 확인했습니다. 모든 네이티브 자원을 대신 정리하는 기능은 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/performance-garbage-collector.html

@@ -78,13 +78,4 @@ https://valvesoftware.github.io/steam-audio/doc/capi/simulation.html
 
 ## 자료 대조에서 보강한 내용
 
-Steam Audio C API 문서에서 직접 경로의 차폐 검사를 확인했습니다. Unity/Unreal 기본 오디오와 동일한 내장 기능으로 소개하지 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Steam Audio C API 문서에서 직접 경로의 차폐 검사를 확인했습니다. Unity/Unreal 기본 오디오와 동일한 내장 기능으로 소개하지 않습니다.
-
-
-확인 자료: https://valvesoftware.github.io/steam-audio/doc/capi/simulation.html

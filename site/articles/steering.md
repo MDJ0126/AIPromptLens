@@ -92,13 +92,4 @@ https://dev.epicgames.com/documentation/unreal-engine/behavior-trees-in-unreal-e
 
 ## 자료 대조에서 보강한 내용
 
-Craig Reynolds의 원저자 자료에서 목표 추종·장애물 회피와 행동 조합을 확인했습니다. 단일 엔진 내장 기능명이 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Craig Reynolds의 원저자 자료에서 목표 추종·장애물 회피와 행동 조합을 확인했습니다. 단일 엔진 내장 기능명이 아닙니다.
-
-
-확인 자료: https://www.red3d.com/cwr/steer/

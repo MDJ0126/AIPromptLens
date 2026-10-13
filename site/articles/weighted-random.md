@@ -92,11 +92,3 @@ https://catlikecoding.com/unity/tutorials/
 
 확률을 누적 구간으로 나눠 선택하는 알고리즘을 확인했습니다. 참조 문서는 Unity 2018.4이며 최신 API 안내가 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 2018.4의 서로 다른 확률 선택 설명을 확인했습니다. 확률 알고리즘 참고이며 최신 엔진 메뉴 안내가 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/2018.4/Documentation/Manual/RandomNumbers.html

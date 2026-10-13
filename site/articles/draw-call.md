@@ -92,7 +92,6 @@ CPU의 렌더 제출 비용을 분석합니다.
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html
-확인 범위: 드로 콜은 제출 단위입니다. 수만 줄여도 모든 장면의 총 처리 비용이 줄어드는 것은 아닙니다.
 
 ## 함께 볼 용어
 
@@ -101,13 +100,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html
 
 ## 자료 대조에서 보강한 내용
 
-드로 콜은 제출 단위입니다. 수만 줄여도 모든 장면의 총 처리 비용이 줄어드는 것은 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-드로 콜은 제출 단위입니다. 수만 줄여도 모든 장면의 총 처리 비용이 줄어드는 것은 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html

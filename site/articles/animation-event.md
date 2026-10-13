@@ -84,7 +84,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
-확인 범위: 클립의 지정 시점 이벤트 호출을 확인했습니다. 공격 판정의 서버 권한과 중복 방지까지 제공하는 기능은 아닙니다.
 
 ## 함께 볼 용어
 
@@ -93,13 +92,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-클립의 지정 시점 이벤트 호출을 확인했습니다. 공격 판정의 서버 권한과 중복 방지까지 제공하는 기능은 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-클립의 지정 시점 이벤트 호출을 확인했습니다. 공격 판정의 서버 권한과 중복 방지까지 제공하는 기능은 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

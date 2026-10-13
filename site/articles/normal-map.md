@@ -95,13 +95,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-노멀 맵은 조명에 사용할 법선 방향을 바꾸며 메시 정점과 실루엣은 바꾸지 않습니다. 탠전트 공간·월드 공간 등 저장 기준도 확인합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-노멀 맵은 조명에 사용할 법선 방향을 바꾸며 메시 정점과 실루엣은 바꾸지 않습니다. 탠전트 공간·월드 공간 등 저장 기준도 확인합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

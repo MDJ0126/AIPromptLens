@@ -79,9 +79,3 @@ Unity 서비스 문서 (2026-10-14 확인)을 참고한 설명입니다. 엔진�
 
 https://docs.unity.com/en-us/iap
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Unity In-App Purchasing • In-App Purchasing • Unity Docs · Unity 서비스 문서 (2026-10-14 확인)
-

@@ -92,7 +92,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/TextureStreaming.html
-확인 범위: Unity 6.0의 mipmap streaming 문서를 확인했습니다. 근거 범위에 맞춰 텍스처 밉 스트리밍으로 좁혔습니다.
 
 ## 함께 볼 용어
 
@@ -103,11 +102,3 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/TextureStreaming.html
 
 확인한 문서는 GPU 메모리의 텍스처 밉 레벨 로딩입니다. 월드·사운드·임의 에셋 스트리밍 전체 기능으로 확대 해석하지 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0의 mipmap streaming 문서를 확인했습니다. 근거 범위에 맞춰 텍스처 밉 스트리밍으로 좁혔습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/TextureStreaming.html

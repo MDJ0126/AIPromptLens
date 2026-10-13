@@ -102,13 +102,4 @@ GameFramework/Actor.h, Engine/World.h
 ## 참고 자료
 
 https://dev.epicgames.com/documentation/fortnite/tmnt-enemy-encounters-and-obstacles-in-unreal-editor-for-fortnite?lang=en-US
-확인 범위: Epic UEFN TMNT의 전투 공간·진입·종료 사례를 확인했습니다. 일반 Unity/Unreal 예제는 엄폐물 배치만 다룹니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Epic UEFN TMNT의 전투 공간·진입·종료 사례를 확인했습니다. 일반 Unity/Unreal 예제는 엄폐물 배치만 다룹니다.
-
-
-확인 자료: https://dev.epicgames.com/documentation/fortnite/tmnt-enemy-encounters-and-obstacles-in-unreal-editor-for-fortnite?lang=en-US

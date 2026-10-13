@@ -99,13 +99,4 @@ https://gameprogrammingpatterns.com/optimization-patterns.html
 
 ## 자료 대조에서 보강한 내용
 
-Unity 문서에서 가려진 렌더러를 제외하는 기능을 확인했습니다. 카메라·데이터·장면 구조의 제약을 검토합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 문서에서 가려진 렌더러를 제외하는 기능을 확인했습니다. 카메라·데이터·장면 구조의 제약을 검토합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

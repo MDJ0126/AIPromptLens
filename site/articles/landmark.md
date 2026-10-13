@@ -97,11 +97,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-David Shaver의 GDC 2018 원저자 자료 검색 본문에서 랜드마크를 통한 안내를 확인했습니다. 전체 PDF는 크기 제한으로 열지 못했습니다.
-
-
-확인 자료: https://media.gdcvault.com/gdc2018/presentations/DShaver_Invisible_Intuition_GDC2018.pdf

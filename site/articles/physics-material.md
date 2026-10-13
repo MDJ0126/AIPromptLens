@@ -93,13 +93,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/PhysicsSection.html
 
 ## 자료 대조에서 보강한 내용
 
-물리 재질은 마찰과 반발을 정합니다. 시각 재질의 금속·거칠기 입력과는 별개입니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-물리 재질은 마찰과 반발을 정합니다. 시각 재질의 금속·거칠기 입력과는 별개입니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

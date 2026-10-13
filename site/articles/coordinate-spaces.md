@@ -67,13 +67,4 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/class-Transform.html
-확인 범위: Unity 6.0 Transform 문서의 부모 기준 좌표와 월드 좌표 설명을 확인했습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 Transform 문서의 부모 기준 좌표와 월드 좌표 설명을 확인했습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/class-Transform.html

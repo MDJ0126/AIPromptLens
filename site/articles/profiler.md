@@ -99,13 +99,4 @@ https://gameprogrammingpatterns.com/optimization-patterns.html
 
 ## 자료 대조에서 보강한 내용
 
-프로파일러에서 구간별 시간과 자원 사용량을 측정하는 기능을 확인했습니다. 실제 대상 기기의 대표 상황으로 검증합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-프로파일러에서 구간별 시간과 자원 사용량을 측정하는 기능을 확인했습니다. 실제 대상 기기의 대표 상황으로 검증합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

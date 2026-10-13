@@ -95,13 +95,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-정점별 계산을 수행하는 셰이더 단계입니다. GPU 전체 작업이나 픽셀별 계산과 구분합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-정점별 계산을 수행하는 셰이더 단계입니다. GPU 전체 작업이나 픽셀별 계산과 구분합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

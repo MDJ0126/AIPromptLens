@@ -94,11 +94,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 NavMeshAgent.SetDestination의 요청 API를 확인했습니다. 반환 성공은 도착 완료가 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AI.NavMeshAgent.SetDestination.html

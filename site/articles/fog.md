@@ -96,11 +96,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6 용어집의 거리 기반 안개 개념을 대조했습니다. 예제의 색상 보간은 실제 렌더링 안개 적용을 검증한 결과가 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

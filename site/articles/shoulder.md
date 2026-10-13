@@ -98,11 +98,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 카메라와 좌표 변환을 이용한 오프셋 배치 예시입니다. Shoulder라는 내장 컴포넌트가 있다는 뜻은 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/class-Camera.html

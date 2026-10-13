@@ -114,11 +114,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Insomniac 개발자의 GDC 2019 발표 소개에서 스윙 이동의 존재를 확인했습니다. 예제는 발표 구현이 아닌 별도 교육용 제약 모델입니다.
-
-
-확인 자료: https://www.gdcvault.com/play/1026422

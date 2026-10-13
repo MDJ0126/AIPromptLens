@@ -88,7 +88,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
-확인 범위: Unity의 Blend Tree는 입력 파라미터로 클립을 연속 혼합합니다. 상태 머신의 전이 자체와 동일한 기능은 아닙니다.
 
 ## 함께 볼 용어
 
@@ -97,13 +96,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-Unity의 Blend Tree는 입력 파라미터로 클립을 연속 혼합합니다. 상태 머신의 전이 자체와 동일한 기능은 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity의 Blend Tree는 입력 파라미터로 클립을 연속 혼합합니다. 상태 머신의 전이 자체와 동일한 기능은 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

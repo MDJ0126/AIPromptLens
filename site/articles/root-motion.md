@@ -94,11 +94,3 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationOverview.html
 
 루트 이동을 추출해 캐릭터 이동에 적용하는 구성입니다. 물리 충돌·이동 권한·네트워크 처리는 별도 연결이 필요합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 Root Motion 문서의 루트 변환과 이동 적용 설명을 확인했습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/RootMotion.html

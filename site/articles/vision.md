@@ -103,11 +103,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 직선 충돌 검사로 가림을 판정할 수 있음을 확인했습니다. 거리·시야각과 조합한 직접 구현 예시입니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Physics.Raycast.html

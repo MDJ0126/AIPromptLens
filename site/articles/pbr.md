@@ -98,13 +98,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-PBR은 모델과 재질 입력의 일관성을 목표로 합니다. 모든 셰이더나 엔진이 같은 입력값과 결과를 보장하는 것은 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-PBR은 모델과 재질 입력의 일관성을 목표로 합니다. 모든 셰이더나 엔진이 같은 입력값과 결과를 보장하는 것은 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

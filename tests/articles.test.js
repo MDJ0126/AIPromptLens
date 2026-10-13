@@ -38,7 +38,7 @@ test('Engine tabs, code copy and out-of-order article loads use the correct arti
  const article=(slug)=>parseArticle(fs.readFileSync('site/articles/'+slug+'.md','utf8')).metadata;
  const first=ctx.ui.loadArticle(article('hit')),second=ctx.ui.loadArticle(article('dash'));
  requests.get('articles/dash.md')({ok:true,text:async()=>fs.readFileSync('site/articles/dash.md','utf8')});await second;
- assert.equal(el('article-review').children[0].textContent,'최근 업데이트 · '+article('dash').reviewedAt);assert.equal(el('article-review').children[1].textContent,article('dash').reviewScope);
+ assert.equal(el('article-review').children[0].textContent,'최근 업데이트 · '+article('dash').reviewedAt);assert.equal(el('article-review').children.length,1);
  requests.get('articles/hit.md')({ok:true,text:async()=>fs.readFileSync('site/articles/hit.md','utf8')});await first;
  await el('article-code').children.at(-1).children[0].children[1].handlers.click();assert.ok(copy[0].includes('DashExample'));assert.ok(!copy[0].includes('HitExample'));
  el('article-engines').handlers.click({target:{closest:()=>({dataset:{articleEngine:'Unreal'}})}});

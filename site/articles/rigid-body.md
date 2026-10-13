@@ -96,13 +96,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/PhysicsSection.html
 
 ## 자료 대조에서 보강한 내용
 
-강체는 변형을 계산하지 않는 물체 모델입니다. 렌더 메시와 충돌 형태, 질량·관성은 독립적으로 지정될 수 있습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-강체는 변형을 계산하지 않는 물체 모델입니다. 렌더 메시와 충돌 형태, 질량·관성은 독립적으로 지정될 수 있습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

@@ -95,13 +95,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-UV는 표면과 텍스처의 좌표 대응입니다. 일반 재질 UV와 라이트맵 UV의 요구 조건이 같다는 뜻은 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-UV는 표면과 텍스처의 좌표 대응입니다. 일반 재질 UV와 라이트맵 UV의 요구 조건이 같다는 뜻은 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

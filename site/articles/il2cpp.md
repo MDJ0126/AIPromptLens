@@ -72,9 +72,3 @@ IL2CPP의 데이터와 처리 흐름을 설명하고 Mono와 지원 플랫폼 �
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/scripting-backends-il2cpp.html
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: IL2CPP scripting back end
-

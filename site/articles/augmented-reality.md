@@ -78,9 +78,3 @@ Unity 6.0 (6000.0)을 참고한 설명입니다. 엔진마다 같은 이름이�
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/AROverview.html
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: AR development in Unity · Unity 6.0 (6000.0)
-

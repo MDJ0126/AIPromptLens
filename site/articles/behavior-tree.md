@@ -85,7 +85,6 @@
 ## 참고 자료
 
 https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine
-확인 범위: Unreal Behavior Tree 기능을 확인했습니다. 성공·실패·진행 중 결과와 중단 정책은 실제 노드 구성을 따라야 합니다.
 
 ## 함께 볼 용어
 
@@ -94,13 +93,4 @@ https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-un
 
 ## 자료 대조에서 보강한 내용
 
-Unreal Behavior Tree 기능을 확인했습니다. 성공·실패·진행 중 결과와 중단 정책은 실제 노드 구성을 따라야 합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unreal Behavior Tree 기능을 확인했습니다. 성공·실패·진행 중 결과와 중단 정책은 실제 노드 구성을 따라야 합니다.
-
-
-확인 자료: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine

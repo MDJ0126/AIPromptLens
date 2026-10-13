@@ -75,9 +75,3 @@ PhysX 5.5.0을 참고한 설명입니다. 엔진마다 같은 이름이나 API�
 
 https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/docs/RigidBodyCollision.html
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Rigid Body Collision   physx 5.5.0 documentation · PhysX 5.5.0
-

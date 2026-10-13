@@ -94,13 +94,4 @@ https://gafferongames.com/post/snapshot_interpolation/
 
 ## 자료 대조에서 보강한 내용
 
-서버가 최종 판단하는 모델입니다. 검증 로직이 없으면 서버 권한이라는 이름만으로 잘못된 요청을 막지 못합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-서버가 최종 판단하는 모델입니다. 검증 로직이 없으면 서버 권한이라는 이름만으로 잘못된 요청을 막지 못합니다.
-
-
-확인 자료: https://gafferongames.com/post/what_every_programmer_needs_to_know_about_game_networking/

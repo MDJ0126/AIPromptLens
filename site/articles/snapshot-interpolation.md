@@ -94,13 +94,4 @@ https://gafferongames.com/post/snapshot_interpolation/
 
 ## 자료 대조에서 보강한 내용
 
-수신한 상태를 버퍼에 보관하고 사이를 보간합니다. 지터 완화와 표시 지연 사이 절충을 확인했습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-수신한 상태를 버퍼에 보관하고 사이를 보간합니다. 지터 완화와 표시 지연 사이 절충을 확인했습니다.
-
-
-확인 자료: https://gafferongames.com/post/snapshot_interpolation/

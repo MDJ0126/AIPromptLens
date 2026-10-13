@@ -86,7 +86,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/LayerBasedCollision.html
-확인 범위: 레이어 충돌 매트릭스와 질의의 LayerMask는 서로 다른 적용 지점입니다. 두 설정을 혼동하지 않습니다.
 
 ## 함께 볼 용어
 
@@ -95,13 +94,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/LayerBasedCollision.html
 
 ## 자료 대조에서 보강한 내용
 
-레이어 충돌 매트릭스와 질의의 LayerMask는 서로 다른 적용 지점입니다. 두 설정을 혼동하지 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-레이어 충돌 매트릭스와 질의의 LayerMask는 서로 다른 적용 지점입니다. 두 설정을 혼동하지 않습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/LayerBasedCollision.html

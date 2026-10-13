@@ -86,7 +86,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
-확인 범위: 콜라이더는 충돌 모양이며 눈에 보이는 메시와 같을 필요가 없습니다. 복잡한 형태와 동적 강체의 지원 제약은 엔진별로 확인합니다.
 
 ## 함께 볼 용어
 
@@ -95,13 +94,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-콜라이더는 충돌 모양이며 눈에 보이는 메시와 같을 필요가 없습니다. 복잡한 형태와 동적 강체의 지원 제약은 엔진별로 확인합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-콜라이더는 충돌 모양이며 눈에 보이는 메시와 같을 필요가 없습니다. 복잡한 형태와 동적 강체의 지원 제약은 엔진별로 확인합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

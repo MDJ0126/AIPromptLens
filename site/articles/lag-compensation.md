@@ -96,11 +96,3 @@ https://gafferongames.com/post/snapshot_interpolation/
 
 Valve 원문은 서버가 과거 상태로 판정을 수행한 뒤 현재 상태로 복원하는 방식을 설명합니다. 되감기 범위와 공정성 정책은 게임별입니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Valve 개발자 원문 검색 본문에서 과거 상태 되감기 판정을 확인했습니다. 직접 페이지 접근은 차단되었습니다.
-
-
-확인 자료: https://developer.valvesoftware.com/w/index.php?title=Latency_Compensating_Methods_in_Client%2FServer_In-game_Protocol_Design_and_Optimization&uselang=en

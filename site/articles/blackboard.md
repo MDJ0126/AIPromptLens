@@ -85,7 +85,6 @@
 ## 참고 자료
 
 https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---user-guide
-확인 범위: Unreal Blackboard는 행동 판단에 사용할 키 값을 저장합니다. 저장만으로 지각이나 행동이 자동 실행되지는 않습니다.
 
 ## 함께 볼 용어
 
@@ -94,13 +93,4 @@ https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unr
 
 ## 자료 대조에서 보강한 내용
 
-Unreal Blackboard는 행동 판단에 사용할 키 값을 저장합니다. 저장만으로 지각이나 행동이 자동 실행되지는 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unreal Blackboard는 행동 판단에 사용할 키 값을 저장합니다. 저장만으로 지각이나 행동이 자동 실행되지는 않습니다.
-
-
-확인 자료: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---user-guide

@@ -67,13 +67,4 @@ https://www.redblobgames.com/pathfinding/tower-defense/
 
 ## 자료 대조에서 보강한 내용
 
-Red Blob 원문에서 개별 탐색과 공통 목표의 거리장 공유를 확인했습니다. BFS는 동일 비용일 때 사용하는 예시입니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Red Blob 원문에서 개별 탐색과 공통 목표의 거리장 공유를 확인했습니다. BFS는 동일 비용일 때 사용하는 예시입니다.
-
-
-확인 자료: https://www.redblobgames.com/pathfinding/tower-defense/

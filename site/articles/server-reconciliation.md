@@ -96,11 +96,3 @@ https://gafferongames.com/post/snapshot_interpolation/
 
 확인된 상태와 입력 기록을 기준으로 다시 계산하는 보정입니다. 모든 게임이 같은 재처리 구조를 사용한다는 뜻은 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Gaffer On Games의 입력 기록을 되감아 재적용하는 보정 설명을 확인했습니다.
-
-
-확인 자료: https://gafferongames.com/post/what_every_programmer_needs_to_know_about_game_networking/

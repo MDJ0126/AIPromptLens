@@ -97,11 +97,3 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 광원 관점의 가림 정보를 기록하는 방식입니다. 해상도와 바이어스는 품질·비용의 절충이며 단순히 올린다고 모든 문제가 해결되지는 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 그림자 성능 문서의 섀도 맵 생성·사용 단계를 확인했습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/ShadowPerformance.html

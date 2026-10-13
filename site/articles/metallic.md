@@ -95,13 +95,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-금속과 비금속은 반사 모델의 재질 분류입니다. 경계 혼합이나 텍스처 필터링에서는 중간값이 생길 수 있습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-금속과 비금속은 반사 모델의 재질 분류입니다. 경계 혼합이나 텍스처 필터링에서는 중간값이 생길 수 있습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/StandardShaderMaterialParameterMetallic.html

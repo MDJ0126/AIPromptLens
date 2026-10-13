@@ -86,7 +86,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
-확인 범위: CCD는 이동 사이의 충돌 누락을 줄이는 기능입니다. 모든 충돌 쌍·회전·모드에 동일한 보장을 주지는 않습니다.
 
 ## 함께 볼 용어
 
@@ -95,13 +94,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-CCD는 이동 사이의 충돌 누락을 줄이는 기능입니다. 모든 충돌 쌍·회전·모드에 동일한 보장을 주지는 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-CCD는 이동 사이의 충돌 누락을 줄이는 기능입니다. 모든 충돌 쌍·회전·모드에 동일한 보장을 주지는 않습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

@@ -77,9 +77,3 @@ Unity 2018.4 (역사·레거시 자료)을 참고한 설명입니다. 엔진마�
 
 https://docs.unity3d.com/2018.4/Documentation/Manual/class-InputManager.html
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료:  Input Manager · Unity 2018.4 (역사·레거시 자료)
-

@@ -88,7 +88,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioRolloffMode.html
-확인 범위: Unity 6.0 AudioRolloffMode의 거리 기반 음량 감쇠 모드를 확인했습니다.
 
 ## 함께 볼 용어
 
@@ -99,11 +98,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioRolloffMode.h
 
 거리 기반 음량 변화를 확인했습니다. 벽에 막히는 차폐와는 다른 기능입니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 AudioRolloffMode의 거리 기반 음량 감쇠 모드를 확인했습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioRolloffMode.html

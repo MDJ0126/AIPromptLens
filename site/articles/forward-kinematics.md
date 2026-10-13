@@ -92,13 +92,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationOverview.html
 
 ## 자료 대조에서 보강한 내용
 
-관절 회전을 부모에서 자식으로 합성해 끝점 위치를 계산합니다. 목표 위치를 주고 관절을 푸는 IK와 방향이 반대입니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-관절 회전을 부모에서 자식으로 합성해 끝점 위치를 계산합니다. 목표 위치를 주고 관절을 푸는 IK와 방향이 반대입니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

@@ -88,7 +88,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
-확인 범위: 여기서 깊이는 렌더링의 깊이 값이며 월드에서 카메라까지의 거리와 항상 같은 수치는 아닙니다. 투영과 깊이 정밀도에 따라 표현이 달라집니다.
 
 ## 함께 볼 용어
 
@@ -97,13 +96,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-여기서 깊이는 렌더링의 깊이 값이며 월드에서 카메라까지의 거리와 항상 같은 수치는 아닙니다. 투영과 깊이 정밀도에 따라 표현이 달라집니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-여기서 깊이는 렌더링의 깊이 값이며 월드에서 카메라까지의 거리와 항상 같은 수치는 아닙니다. 투영과 깊이 정밀도에 따라 표현이 달라집니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

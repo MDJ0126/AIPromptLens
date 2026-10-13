@@ -75,9 +75,3 @@ Unity Build Automation의 의미를 설명하고 다음 조건을 구분해 주�
 
 https://docs.unity.com/devops/en/manual/unity-build-automation
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Unity Build Automation • Build Automation • Unity Docs · Unity 서비스 문서 (2026-10-14 확인)
-

@@ -95,13 +95,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationOverview.html
 
 ## 자료 대조에서 보강한 내용
 
-끝점 목표로 관절 자세를 계산하는 개념을 확인했습니다. 사용한 IK 솔버에 따라 관절 제한과 도달 불가능 목표 처리가 다릅니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-끝점 목표로 관절 자세를 계산하는 개념을 확인했습니다. 사용한 IK 솔버에 따라 관절 제한과 도달 불가능 목표 처리가 다릅니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

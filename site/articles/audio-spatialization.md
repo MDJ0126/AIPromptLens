@@ -88,7 +88,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
-확인 범위: 위치에 따른 청취 출력과 Unity Spatializer 개념을 확인했습니다. 모든 출력 장치에서 같은 방향 인지를 보장하지 않습니다.
 
 ## 함께 볼 용어
 
@@ -97,13 +96,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-위치에 따른 청취 출력과 Unity Spatializer 개념을 확인했습니다. 모든 출력 장치에서 같은 방향 인지를 보장하지 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-위치에 따른 청취 출력과 Unity Spatializer 개념을 확인했습니다. 모든 출력 장치에서 같은 방향 인지를 보장하지 않습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

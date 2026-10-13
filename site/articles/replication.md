@@ -94,13 +94,4 @@ https://gafferongames.com/post/snapshot_interpolation/
 
 ## 자료 대조에서 보강한 내용
 
-상태 복제는 여러 머신의 상태 공유입니다. 전송 빈도·관심 대상·권한을 설계해야 합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-상태 복제는 여러 머신의 상태 공유입니다. 전송 빈도·관심 대상·권한을 설계해야 합니다.
-
-
-확인 자료: https://dev.epicgames.com/documentation/en-us/unreal-engine/networking-overview-for-unreal-engine

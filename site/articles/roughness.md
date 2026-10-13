@@ -97,11 +97,3 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 Unreal의 Roughness는 작은 값일수록 날카로운 반사를 만듭니다. Unity Standard Shader는 Smoothness를 사용하므로 값과 맵 채널을 그대로 옮기지 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unreal 5.8 Roughness의 반사 폭 제어를 확인했습니다. Unity의 Smoothness와 이름·값 방향을 구분합니다.
-
-
-확인 자료: https://dev.epicgames.com/documentation/en-us/unreal-engine/physically-based-materials-in-unreal-engine

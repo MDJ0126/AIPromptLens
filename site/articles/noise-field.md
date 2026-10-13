@@ -92,13 +92,4 @@ https://catlikecoding.com/unity/tutorials/
 
 ## 자료 대조에서 보강한 내용
 
-Catlike Coding의 Value Noise 원문에서 좌표별 연속값 생성을 확인했습니다. 모든 노이즈 종류가 같은 성질은 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Catlike Coding의 Value Noise 원문에서 좌표별 연속값 생성을 확인했습니다. 모든 노이즈 종류가 같은 성질은 아닙니다.
-
-
-확인 자료: https://catlikecoding.com/unity/tutorials/pseudorandom-noise/value-noise/

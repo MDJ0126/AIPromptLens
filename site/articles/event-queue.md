@@ -90,7 +90,6 @@
 ## 참고 자료
 
 https://gameprogrammingpatterns.com/event-queue.html
-확인 범위: 원저자 문서에서 이벤트 발송과 처리 시점을 분리하는 큐 패턴을 확인했습니다.
 
 ## 함께 볼 용어
 
@@ -99,13 +98,4 @@ https://gameprogrammingpatterns.com/event-queue.html
 
 ## 자료 대조에서 보강한 내용
 
-원저자 문서에서 이벤트 발송과 처리 시점을 분리하는 큐 패턴을 확인했습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-원저자 문서에서 이벤트 발송과 처리 시점을 분리하는 큐 패턴을 확인했습니다.
-
-
-확인 자료: https://gameprogrammingpatterns.com/event-queue.html

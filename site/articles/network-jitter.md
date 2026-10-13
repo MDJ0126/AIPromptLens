@@ -94,13 +94,4 @@ https://gafferongames.com/post/snapshot_interpolation/
 
 ## 자료 대조에서 보강한 내용
 
-Gaffer의 스냅샷 보간 설명에서 불규칙한 패킷 도착과 버퍼의 필요성을 확인했습니다. 평균 지연과 구분합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Gaffer의 스냅샷 보간 설명에서 불규칙한 패킷 도착과 버퍼의 필요성을 확인했습니다. 평균 지연과 구분합니다.
-
-
-확인 자료: https://gafferongames.com/post/snapshot_interpolation/

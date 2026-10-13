@@ -101,11 +101,3 @@ https://gameprogrammingpatterns.com/optimization-patterns.html
 
 시야 범위 밖 제외는 기본 컬링이고, 범위 안의 가림 제외는 오클루전 컬링입니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 컬링 문서에서 기본 시야 범위 검사와 가림 컬링의 차이를 확인했습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/OcclusionCulling.html

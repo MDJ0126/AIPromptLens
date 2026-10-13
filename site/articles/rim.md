@@ -93,11 +93,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 Standard Shader의 Fresnel 가장자리 반사 설명을 확인했습니다. 실제 후방 광원 조명과 구분하여 명칭을 수정했습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/StandardShaderFresnel.html

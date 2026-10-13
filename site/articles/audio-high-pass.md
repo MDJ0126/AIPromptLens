@@ -72,9 +72,3 @@ Unity 6.0 공식 용어와 문서를 기준으로 설명합니다. 공통 개념
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioHighPassFilter.html
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Audio High Pass Filter
-

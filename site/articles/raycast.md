@@ -93,13 +93,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/PhysicsSection.html
 
 ## 자료 대조에서 보강한 내용
 
-Unity Raycast의 시작점이 콜라이더 내부인 경우 그 콜라이더를 감지하지 않는 제한이 문서에 있습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity Raycast의 시작점이 콜라이더 내부인 경우 그 콜라이더를 감지하지 않는 제한이 문서에 있습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Physics.Raycast.html

@@ -66,13 +66,4 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.Dot.html
-확인 범위: Unity 6.0 Vector3.Dot의 정규화 방향 내적과 코사인 관계를 확인했습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 Vector3.Dot의 정규화 방향 내적과 코사인 관계를 확인했습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.Dot.html

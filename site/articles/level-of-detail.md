@@ -102,13 +102,4 @@ https://gameprogrammingpatterns.com/optimization-patterns.html
 
 ## 자료 대조에서 보강한 내용
 
-화면 크기 등에 따라 디테일을 바꾸는 LOD를 확인했습니다. 메시 LOD와 셰이더 LOD는 같은 기능이 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-화면 크기 등에 따라 디테일을 바꾸는 LOD를 확인했습니다. 메시 LOD와 셰이더 LOD는 같은 기능이 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/LevelOfDetail.html

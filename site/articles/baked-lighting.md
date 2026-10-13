@@ -80,18 +80,8 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
-확인 범위: Unity 용어집에서 Baked와 Realtime의 계산 시점 차이를 확인했습니다. 움직이는 물체에 저장된 광 정보를 적용하는 방식은 별도입니다.
 
 
 ## 자료 대조에서 보강한 내용
 
-Unity 용어집에서 Baked와 Realtime의 계산 시점 차이를 확인했습니다. 움직이는 물체에 저장된 광 정보를 적용하는 방식은 별도입니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 용어집에서 Baked와 Realtime의 계산 시점 차이를 확인했습니다. 움직이는 물체에 저장된 광 정보를 적용하는 방식은 별도입니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

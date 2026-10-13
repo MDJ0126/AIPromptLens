@@ -90,7 +90,6 @@
 ## 참고 자료
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
-확인 범위: Unity GameObject의 컴포넌트 구성을 확인했습니다. 이 설명은 ECS나 모든 엔진의 객체 모델과 같다는 뜻이 아닙니다.
 
 ## 함께 볼 용어
 
@@ -99,13 +98,4 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 ## 자료 대조에서 보강한 내용
 
-Unity GameObject의 컴포넌트 구성을 확인했습니다. 이 설명은 ECS나 모든 엔진의 객체 모델과 같다는 뜻이 아닙니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity GameObject의 컴포넌트 구성을 확인했습니다. 이 설명은 ECS나 모든 엔진의 객체 모델과 같다는 뜻이 아닙니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

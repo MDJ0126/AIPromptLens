@@ -74,18 +74,8 @@
 ## 참고 자료
 
 https://gafferongames.com/post/fix_your_timestep/
-확인 범위: Gaffer 원문에서 누적 시간·고정 스텝·이전/현재 상태 보간을 확인했습니다. 고정 dt만으로 결정론이 보장되지 않습니다.
 
 
 ## 자료 대조에서 보강한 내용
 
-Gaffer 원문에서 누적 시간·고정 스텝·이전/현재 상태 보간을 확인했습니다. 고정 dt만으로 결정론이 보장되지 않습니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Gaffer 원문에서 누적 시간·고정 스텝·이전/현재 상태 보간을 확인했습니다. 고정 dt만으로 결정론이 보장되지 않습니다.
-
-
-확인 자료: https://gafferongames.com/post/fix_your_timestep/

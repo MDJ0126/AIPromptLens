@@ -94,13 +94,4 @@ https://gafferongames.com/post/snapshot_interpolation/
 
 ## 자료 대조에서 보강한 내용
 
-Unreal RPC는 다른 머신에서 실행할 호출이며 일반 반환값이 없습니다. 다른 프레임워크의 RPC 의미와 구분합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unreal RPC는 다른 머신에서 실행할 호출이며 일반 반환값이 없습니다. 다른 프레임워크의 RPC 의미와 구분합니다.
-
-
-확인 자료: https://dev.epicgames.com/documentation/en-us/unreal-engine/remote-procedure-calls-in-unreal-engine

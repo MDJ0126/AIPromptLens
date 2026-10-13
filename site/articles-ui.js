@@ -34,8 +34,8 @@ function renderArticleEngine(){
  const metadata=loadedArticle.metadata;
  const review=document.getElementById('article-review');
  review.innerHTML='';
- const date=document.createElement('p'),scope=document.createElement('p');
- date.textContent='최근 업데이트 · '+(metadata.updatedAt||metadata.reviewedAt);scope.textContent=metadata.reviewScope;review.append(date,scope);
+ const date=document.createElement('p');
+ date.textContent='최근 업데이트 · '+(metadata.updatedAt||metadata.reviewedAt);review.append(date);
  const concept=metadata.kind==='concept';
  document.getElementById('article-engines').hidden=concept;
  document.getElementById('article-heading-title').textContent=concept?'개념과 선택 기준':'간단한 구현 예제';
@@ -44,7 +44,7 @@ function renderArticleEngine(){
  appendArticleBlocks(document.getElementById('article-structure'),loadedArticle.blocks.filter(b=>b.section==='핵심 구조'));
  const engineBlocks=loadedArticle.blocks.filter(b=>b.section===articleEngine&&b.type!=='heading');
  appendArticleBlocks(document.getElementById('article-code'),engineBlocks);
- const common=loadedArticle.blocks.filter(b=>['적용 방법','참고 자료','자료 대조에서 보강한 내용','확인 기록'].includes(b.section)||(articleEngine==='Unreal'&&b.section==='Unreal 의존성'));
+ const common=loadedArticle.blocks.filter(b=>['적용 방법','참고 자료','자료 대조에서 보강한 내용'].includes(b.section)||(articleEngine==='Unreal'&&b.section==='Unreal 의존성'));
  appendArticleBlocks(document.getElementById('article-notes'),common);
 }
 async function loadArticle(term){

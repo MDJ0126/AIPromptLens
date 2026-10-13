@@ -94,11 +94,3 @@ https://dev.epicgames.com/documentation/unreal-engine/behavior-trees-in-unreal-e
 
 경로 탐색과 위치 질의를 지원하는 이동 표면 표현입니다. 메시 데이터가 준비되고 에이전트 크기와 접근 영역이 맞아야 합니다.
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6.0 NavMesh의 경로·표면 질의 API를 확인했습니다. 생성에는 별도 내비게이션 데이터가 필요합니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AI.NavMesh.html

@@ -110,11 +110,3 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/
 https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 
-## 확인 기록
-
-마지막 확인: 2026-10-14
-
-Unity 6 용어집의 Trail Renderer 개념을 대조했습니다. Unreal 예제의 Spline 데이터만으로 트레일이 렌더링되지는 않습니다.
-
-
-확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
