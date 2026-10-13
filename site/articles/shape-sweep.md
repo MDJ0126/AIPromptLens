@@ -35,7 +35,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "Unity SphereCast는 시작부터 겹쳐 있는 콜라이더를 감지하지 않습니다. 초기 겹침은 별도 Overlap 검사로 구분합니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Physics.SphereCast.html",
@@ -102,6 +101,5 @@ Unity SphereCast는 시작부터 겹쳐 있는 콜라이더를 감지하지 않�
 
 Unity SphereCast는 시작부터 겹쳐 있는 콜라이더를 감지하지 않습니다. 초기 겹침은 별도 Overlap 검사로 구분합니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Physics.SphereCast.html

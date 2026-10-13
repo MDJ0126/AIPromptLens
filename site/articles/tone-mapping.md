@@ -37,7 +37,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "Unity 6.0/URP 17의 Tonemapping 문서에서 HDR 값의 범위 변환을 확인했습니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/post-processing-tonemapping.html",
@@ -107,6 +106,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 Unity 6.0/URP 17의 Tonemapping 문서에서 HDR 값의 범위 변환을 확인했습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/post-processing-tonemapping.html

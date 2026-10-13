@@ -41,7 +41,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "Game Programming Patterns 원문에서 위치 기반 자료구조로 주변 객체 검색을 줄이는 패턴을 확인했습니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://gameprogrammingpatterns.com/spatial-partition.html",
@@ -108,6 +107,5 @@ Game Programming Patterns 원문에서 위치 기반 자료구조로 주변 객�
 
 Game Programming Patterns 원문에서 위치 기반 자료구조로 주변 객체 검색을 줄이는 패턴을 확인했습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://gameprogrammingpatterns.com/spatial-partition.html

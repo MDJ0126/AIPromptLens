@@ -21,7 +21,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "Insomniac 개발자의 GDC 2019 발표 소개에서 스윙 이동의 존재를 확인했습니다. 예제는 발표 구현이 아닌 별도 교육용 제약 모델입니다.",
-  "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://www.gdcvault.com/play/1026422",
@@ -123,6 +122,5 @@ https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 Insomniac 개발자의 GDC 2019 발표 소개에서 스윙 이동의 존재를 확인했습니다. 예제는 발표 구현이 아닌 별도 교육용 제약 모델입니다.
 
-구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.
 
 확인 자료: https://www.gdcvault.com/play/1026422

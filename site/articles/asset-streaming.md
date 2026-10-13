@@ -43,7 +43,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "Unity 6.0의 mipmap streaming 문서를 확인했습니다. 근거 범위에 맞춰 텍스처 밉 스트리밍으로 좁혔습니다.",
   "reviewVersion": "Unity 6.0 (6000.0)",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/TextureStreaming.html",
@@ -110,6 +109,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/TextureStreaming.html
 
 Unity 6.0의 mipmap streaming 문서를 확인했습니다. 근거 범위에 맞춰 텍스처 밉 스트리밍으로 좁혔습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/TextureStreaming.html

@@ -29,7 +29,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 카메라와 좌표 변환을 이용한 오프셋 배치 예시입니다. Shoulder라는 내장 컴포넌트가 있다는 뜻은 아닙니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Camera.html",
@@ -69,7 +68,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 카메라의 직교 투영을 확인했습니다. 위에서 보는 시점은 직접 배치하는 카메라 구성입니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Camera.html",
@@ -108,7 +106,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6 용어집의 등각 투영 정의를 대조했습니다. 카메라 구성 예제의 엔진 실행은 미확인입니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -150,7 +147,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 Transform.LookAt의 목표 방향 회전을 확인했습니다. 락온 선택·해제·가시성 관리는 직접 구현합니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.LookAt.html",
@@ -188,7 +184,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 Animator.speed로 애니메이션 속도 제어가 가능함을 확인했습니다. 물리와 게임 전체 정지를 구현한 코드가 아니므로 명칭을 좁혔습니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Animator-speed.html",
@@ -225,7 +220,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 힘 적용과 이동 제어가 가능함을 확인했습니다. 현재 Unity 코드는 물리 힘 대신 CharacterController 이동입니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.AddForce.html",
@@ -265,7 +259,6 @@ const terms = [
     "reviewType": "구현·설계 패턴",
     "reviewScope": "Celeste 개발자 공개 Player.cs의 Dash 상태·속도 처리를 확인했습니다. 예제는 동일 게임 구현이 아닙니다.",
     "reviewVersion": "개발자 공개 Celeste 소스",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs",
@@ -304,7 +297,6 @@ const terms = [
     "reviewType": "구현·설계 패턴",
     "reviewScope": "Celeste 개발자 공개 Player.cs의 jumpGraceTimer 갱신과 점프 허용 분기를 확인했습니다.",
     "reviewVersion": "개발자 공개 Celeste 소스",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs",
@@ -342,7 +334,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Celeste 개발자 공개 Player.cs의 Jump 입력 검사와 ConsumeBuffer 호출을 확인했습니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs",
@@ -379,7 +370,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Insomniac 개발자의 GDC 2019 발표 소개에서 스윙 이동의 존재를 확인했습니다. 예제는 발표 구현이 아닌 별도 교육용 제약 모델입니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://www.gdcvault.com/play/1026422",
@@ -416,7 +406,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Game AI Pro 28장의 NPC 공격 관리와 위치·용량 배분 설명을 확인했습니다. 예제는 단순 예약 배열입니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://www.gameaipro.com/GameAIPro/GameAIPro_Chapter28_Beyond_the_Kung-Fu_Circle_A_Flexible_System_for_Managing_NPC_Attacks.pdf",
@@ -452,7 +441,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Game AI Pro 2 20장의 그룹 내비게이션·포메이션 설명을 확인했습니다. 예제는 그 시스템 전체를 재현하지 않습니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter20_Hierarchical_Architecture_for_Group_Navigation_Behaviors.pdf",
@@ -491,7 +479,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 NavMeshAgent.SetDestination의 요청 API를 확인했습니다. 반환 성공은 도착 완료가 아닙니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AI.NavMeshAgent.SetDestination.html",
@@ -530,7 +517,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 직선 충돌 검사로 가림을 판정할 수 있음을 확인했습니다. 거리·시야각과 조합한 직접 구현 예시입니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Physics.Raycast.html",
@@ -570,7 +556,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "David Shaver의 GDC 2018 원저자 자료 검색 본문에서 빛·형태를 이용한 안내를 확인했습니다. 전체 PDF는 크기 제한으로 열지 못했습니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://media.gdcvault.com/gdc2018/presentations/DShaver_Invisible_Intuition_GDC2018.pdf",
@@ -609,7 +594,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "David Shaver의 GDC 2018 원저자 자료 검색 본문에서 랜드마크를 통한 안내를 확인했습니다. 전체 PDF는 크기 제한으로 열지 못했습니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://media.gdcvault.com/gdc2018/presentations/DShaver_Invisible_Intuition_GDC2018.pdf",
@@ -650,7 +634,6 @@ const terms = [
     "reviewType": "구현·설계 패턴",
     "reviewScope": "Epic UEFN TMNT의 전투 공간·진입·종료 사례를 확인했습니다. 일반 Unity/Unreal 예제는 엄폐물 배치만 다룹니다.",
     "reviewVersion": "UEFN 공식 문서",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://dev.epicgames.com/documentation/fortnite/tmnt-enemy-encounters-and-obstacles-in-unreal-editor-for-fortnite?lang=en-US",
@@ -689,7 +672,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 Standard Shader의 Fresnel 가장자리 반사 설명을 확인했습니다. 실제 후방 광원 조명과 구분하여 명칭을 수정했습니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/StandardShaderFresnel.html",
@@ -728,7 +710,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6 용어집의 Trail Renderer 개념을 대조했습니다. Unreal 예제의 Spline 데이터만으로 트레일이 렌더링되지는 않습니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -770,7 +751,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6 용어집의 거리 기반 안개 개념을 대조했습니다. 예제의 색상 보간은 실제 렌더링 안개 적용을 검증한 결과가 아닙니다.",
-    "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -814,7 +794,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unity 용어집에서 Baked와 Realtime의 계산 시점 차이를 확인했습니다. 움직이는 물체에 저장된 광 정보를 적용하는 방식은 별도입니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -856,7 +835,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Epic SSR 문서에서 화면 정보로 반사를 만드는 기능을 확인했습니다. 가려지거나 화면 밖인 정보의 보완은 시스템 구성에 따릅니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/screen-space-reflections-in-unreal-engine",
@@ -894,7 +872,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Steam Audio C API 문서에서 직접 경로의 차폐 검사를 확인했습니다. Unity/Unreal 기본 오디오와 동일한 내장 기능으로 소개하지 않습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://valvesoftware.github.io/steam-audio/doc/capi/simulation.html",
@@ -932,7 +909,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Red Blob 원문에서 개별 탐색과 공통 목표의 거리장 공유를 확인했습니다. BFS는 동일 비용일 때 사용하는 예시입니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://www.redblobgames.com/pathfinding/tower-defense/",
@@ -973,7 +949,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unity 6.0 Vector3.Dot의 정규화 방향 내적과 코사인 관계를 확인했습니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.Dot.html",
@@ -1015,7 +990,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unity 6.0 Transform 문서의 부모 기준 좌표와 월드 좌표 설명을 확인했습니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Transform.html",
@@ -1054,7 +1028,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "원저자 문서에서 객체 재사용·풀 용량·초기화 문제를 확인했습니다. 풀 사용의 성능 이득은 대상 환경에서 측정해야 합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gameprogrammingpatterns.com/object-pool.html",
@@ -1094,7 +1067,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "원저자 문서의 상태·입력·전이·진입/종료 작업을 확인했습니다. 단순 머신 하나는 현재 상태 하나를 갖습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gameprogrammingpatterns.com/state.html",
@@ -1136,7 +1108,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Gaffer 원문에서 누적 시간·고정 스텝·이전/현재 상태 보간을 확인했습니다. 고정 dt만으로 결정론이 보장되지 않습니다.",
     "reviewVersion": "원저자 자료",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gafferongames.com/post/fix_your_timestep/",
@@ -1192,7 +1163,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "PBR은 모델과 재질 입력의 일관성을 목표로 합니다. 모든 셰이더나 엔진이 같은 입력값과 결과를 보장하는 것은 아닙니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -1248,7 +1218,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "노멀 맵은 조명에 사용할 법선 방향을 바꾸며 메시 정점과 실루엣은 바꾸지 않습니다. 탠전트 공간·월드 공간 등 저장 기준도 확인합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -1301,7 +1270,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unreal 5.8 Roughness의 반사 폭 제어를 확인했습니다. Unity의 Smoothness와 이름·값 방향을 구분합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/physically-based-materials-in-unreal-engine",
@@ -1354,7 +1322,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "금속과 비금속은 반사 모델의 재질 분류입니다. 경계 혼합이나 텍스처 필터링에서는 중간값이 생길 수 있습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/StandardShaderMaterialParameterMetallic.html",
@@ -1409,7 +1376,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "여기서 깊이는 렌더링의 깊이 값이며 월드에서 카메라까지의 거리와 항상 같은 수치는 아닙니다. 투영과 깊이 정밀도에 따라 표현이 달라집니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -1462,7 +1428,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 그림자 성능 문서의 섀도 맵 생성·사용 단계를 확인했습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/ShadowPerformance.html",
@@ -1517,7 +1482,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "AO는 주변 가림에 대한 근사입니다. 화면 기반 SSAO와 사전 계산된 AO는 사용할 수 있는 장면 정보가 다릅니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -1570,7 +1534,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "전역 조명은 직접광·간접광을 다루는 기법의 범주입니다. 베이크 여부와 동적 장면 반영은 선택한 시스템에 따라 다릅니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -1625,7 +1588,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "밝은 영역 주변의 번짐을 만드는 후처리이며 장면의 실제 간접광 계산을 대신하지 않습니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -1678,7 +1640,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0/URP 17의 Tonemapping 문서에서 HDR 값의 범위 변환을 확인했습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/post-processing-tonemapping.html",
@@ -1736,7 +1697,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "기술 자체는 확인했습니다. MSAA·FXAA·TAA 등 구체적 방식의 지원 여부와 잔상·비용은 파이프라인별로 확인해야 합니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -1789,7 +1749,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "밉맵은 작은 텍스처 단계의 모음입니다. 밉 단계 생성과 필요한 단계만 로드하는 스트리밍은 별도 기능입니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/texture-mipmaps-introduction.html",
@@ -1842,7 +1801,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "UV는 표면과 텍스처의 좌표 대응입니다. 일반 재질 UV와 라이트맵 UV의 요구 조건이 같다는 뜻은 아닙니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -1895,7 +1853,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "정점별 계산을 수행하는 셰이더 단계입니다. GPU 전체 작업이나 픽셀별 계산과 구분합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -1948,7 +1905,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "프래그먼트는 항상 최종 화면 픽셀과 일대일로 대응하지 않습니다. 가림과 샘플 처리 등으로 결과가 달라질 수 있습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/writing-shader-writing-shader-programs-hlsl.html",
@@ -2000,7 +1956,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unity의 Blend Tree는 입력 파라미터로 클립을 연속 혼합합니다. 상태 머신의 전이 자체와 동일한 기능은 아닙니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2053,7 +2008,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 Root Motion 문서의 루트 변환과 이동 적용 설명을 확인했습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/RootMotion.html",
@@ -2103,7 +2057,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "끝점 목표로 관절 자세를 계산하는 개념을 확인했습니다. 사용한 IK 솔버에 따라 관절 제한과 도달 불가능 목표 처리가 다릅니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2156,7 +2109,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "관절 회전을 부모에서 자식으로 합성해 끝점 위치를 계산합니다. 목표 위치를 주고 관절을 푸는 IK와 방향이 반대입니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2206,7 +2158,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "동작의 골격 간 전달을 확인했습니다. 서로 다른 체형에 대한 자동 완성이나 완벽한 발 접촉을 보장하지 않습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2258,7 +2209,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "레이어·마스크·혼합 방식이 포즈를 구성합니다. 별도 신체 기능을 처리하더라도 최종 포즈의 영향 순서는 확인해야 합니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2310,7 +2260,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "가산 혼합은 기준에 대한 동작 차이를 합성합니다. Unity 문서는 레이어 사이 애니메이션 속성 구성이 맞아야 한다고 설명합니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationLayers.html",
@@ -2361,7 +2310,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "클립의 지정 시점 이벤트 호출을 확인했습니다. 공격 판정의 서버 권한과 중복 방지까지 제공하는 기능은 아닙니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2412,7 +2360,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "강체는 변형을 계산하지 않는 물체 모델입니다. 렌더 메시와 충돌 형태, 질량·관성은 독립적으로 지정될 수 있습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2468,7 +2415,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "콜라이더는 충돌 모양이며 눈에 보이는 메시와 같을 필요가 없습니다. 복잡한 형태와 동적 강체의 지원 제약은 엔진별로 확인합니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2519,7 +2465,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity OnTrigger 이벤트는 겹침을 감지하는 기능입니다. 설정한 콜라이더·강체 조건이 맞아야 이벤트가 발생합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/collider-interactions-ontrigger.html",
@@ -2570,7 +2515,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity Raycast의 시작점이 콜라이더 내부인 경우 그 콜라이더를 감지하지 않는 제한이 문서에 있습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Physics.Raycast.html",
@@ -2621,7 +2565,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity SphereCast는 시작부터 겹쳐 있는 콜라이더를 감지하지 않습니다. 초기 겹침은 별도 Overlap 검사로 구분합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Physics.SphereCast.html",
@@ -2674,7 +2617,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "CCD는 이동 사이의 충돌 누락을 줄이는 기능입니다. 모든 충돌 쌍·회전·모드에 동일한 보장을 주지는 않습니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2727,7 +2669,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "레이어 충돌 매트릭스와 질의의 LayerMask는 서로 다른 적용 지점입니다. 두 설정을 혼동하지 않습니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/LayerBasedCollision.html",
@@ -2778,7 +2719,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 Configurable Joint 상세 문서에서 축별 Motion과 Limit·Drive 설정을 대조했습니다. 일반 조인트 제약 원리와 컴포넌트를 구분합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-ConfigurableJoint.html",
@@ -2835,7 +2775,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 Spring Joint의 복원력과 상대 속도에 비례하는 Damper 설명을 확인했습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-SpringJoint.html",
@@ -2886,7 +2825,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "물리 재질은 마찰과 반발을 정합니다. 시각 재질의 금속·거칠기 입력과는 별개입니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -2938,7 +2876,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unreal Behavior Tree 기능을 확인했습니다. 성공·실패·진행 중 결과와 중단 정책은 실제 노드 구성을 따라야 합니다.",
     "reviewVersion": "Unreal Engine 5.8 문서",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine",
@@ -2990,7 +2927,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unreal Blackboard는 행동 판단에 사용할 키 값을 저장합니다. 저장만으로 지각이나 행동이 자동 실행되지는 않습니다.",
     "reviewVersion": "Unreal Engine 5.8 문서",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---user-guide",
@@ -3040,7 +2976,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 NavMesh의 경로·표면 질의 API를 확인했습니다. 생성에는 별도 내비게이션 데이터가 필요합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AI.NavMesh.html",
@@ -3090,7 +3025,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 NavMeshAgent.obstacleAvoidanceType의 회피 품질 설정을 확인했습니다. 전역 경로 생성 기능과 구분합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AI.NavMeshAgent-obstacleAvoidanceType.html",
@@ -3140,7 +3074,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Craig Reynolds의 원저자 자료에서 목표 추종·장애물 회피와 행동 조합을 확인했습니다. 단일 엔진 내장 기능명이 아닙니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://www.red3d.com/cwr/steer/",
@@ -3192,7 +3125,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unreal EQS는 후보 데이터를 생성하고 검사·점수화하는 기능입니다. 질의 결과를 행동에 적용하는 코드는 별도입니다.",
     "reviewVersion": "Unreal Engine 5.8 문서",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/environment-query-system-in-unreal-engine",
@@ -3244,7 +3176,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "상태 복제는 여러 머신의 상태 공유입니다. 전송 빈도·관심 대상·권한을 설계해야 합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/networking-overview-for-unreal-engine",
@@ -3296,7 +3227,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unreal RPC는 다른 머신에서 실행할 호출이며 일반 반환값이 없습니다. 다른 프레임워크의 RPC 의미와 구분합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/remote-procedure-calls-in-unreal-engine",
@@ -3348,7 +3278,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "서버가 최종 판단하는 모델입니다. 검증 로직이 없으면 서버 권한이라는 이름만으로 잘못된 요청을 막지 못합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gafferongames.com/post/what_every_programmer_needs_to_know_about_game_networking/",
@@ -3402,7 +3331,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "클라이언트에서 입력 결과를 먼저 계산하는 방식입니다. 보정 없이 예측만 사용하는 것으로 설명하지 않습니다.",
     "reviewVersion": "원저자 자료",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gafferongames.com/post/networked_physics_2004/",
@@ -3454,7 +3382,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Gaffer On Games의 입력 기록을 되감아 재적용하는 보정 설명을 확인했습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gafferongames.com/post/what_every_programmer_needs_to_know_about_game_networking/",
@@ -3506,7 +3433,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "수신한 상태를 버퍼에 보관하고 사이를 보간합니다. 지터 완화와 표시 지연 사이 절충을 확인했습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gafferongames.com/post/snapshot_interpolation/",
@@ -3558,7 +3484,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Valve 개발자 원문 검색 본문에서 과거 상태 되감기 판정을 확인했습니다. 직접 페이지 접근은 차단되었습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://developer.valvesoftware.com/w/index.php?title=Latency_Compensating_Methods_in_Client%2FServer_In-game_Protocol_Design_and_Optimization&uselang=en",
@@ -3610,7 +3535,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Gaffer의 스냅샷 보간 설명에서 불규칙한 패킷 도착과 버퍼의 필요성을 확인했습니다. 평균 지연과 구분합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gafferongames.com/post/snapshot_interpolation/",
@@ -3667,7 +3591,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "화면 크기 등에 따라 디테일을 바꾸는 LOD를 확인했습니다. 메시 LOD와 셰이더 LOD는 같은 기능이 아닙니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/LevelOfDetail.html",
@@ -3727,7 +3650,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 컬링 문서에서 기본 시야 범위 검사와 가림 컬링의 차이를 확인했습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/OcclusionCulling.html",
@@ -3784,7 +3706,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 문서에서 가려진 렌더러를 제외하는 기능을 확인했습니다. 카메라·데이터·장면 구조의 제약을 검토합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -3843,7 +3764,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "드로 콜은 제출 단위입니다. 수만 줄여도 모든 장면의 총 처리 비용이 줄어드는 것은 아닙니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html",
@@ -3902,7 +3822,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unity 문서는 같은 재질의 메시 묶기를 설명합니다. 배칭 종류와 렌더러 지원 제약을 함께 확인합니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html",
@@ -3959,7 +3878,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "같은 메시·재질의 여러 객체를 한 그리기 요청으로 처리하는 기능을 확인했습니다. 인스턴스별 값에 지원 제약이 있습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/GPUInstancing.html",
@@ -4016,7 +3934,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "프로파일러에서 구간별 시간과 자원 사용량을 측정하는 기능을 확인했습니다. 실제 대상 기기의 대표 상황으로 검증합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -4073,7 +3990,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity의 관리 힙 회수 기능을 확인했습니다. 모든 네이티브 자원을 대신 정리하는 기능은 아닙니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/performance-garbage-collector.html",
@@ -4130,7 +4046,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Game Programming Patterns 원문에서 위치 기반 자료구조로 주변 객체 검색을 줄이는 패턴을 확인했습니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gameprogrammingpatterns.com/spatial-partition.html",
@@ -4189,7 +4104,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unity 6.0의 mipmap streaming 문서를 확인했습니다. 근거 범위에 맞춰 텍스처 밉 스트리밍으로 좁혔습니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/TextureStreaming.html",
@@ -4239,7 +4153,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity InitState는 생성기 시작 상태를 정합니다. 재현에는 호출 순서·생성기·버전도 일치해야 합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Random.InitState.html",
@@ -4289,7 +4202,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Catlike Coding의 Value Noise 원문에서 좌표별 연속값 생성을 확인했습니다. 모든 노이즈 종류가 같은 성질은 아닙니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://catlikecoding.com/unity/tutorials/pseudorandom-noise/value-noise/",
@@ -4337,7 +4249,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 2018.4의 서로 다른 확률 선택 설명을 확인했습니다. 확률 알고리즘 참고이며 최신 엔진 메뉴 안내가 아닙니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/2018.4/Documentation/Manual/RandomNumbers.html",
@@ -4387,7 +4298,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity Mesh API를 통한 정점·삼각형 생성 기능을 확인했습니다. 충돌 데이터 갱신과 렌더 메시 생성은 구분합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/GeneratingMeshGeometryProcedurally.html",
@@ -4442,7 +4352,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unity 6.0 AudioRolloffMode의 거리 기반 음량 감쇠 모드를 확인했습니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioRolloffMode.html",
@@ -4497,7 +4406,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "위치에 따른 청취 출력과 Unity Spatializer 개념을 확인했습니다. 모든 출력 장치에서 같은 방향 인지를 보장하지 않습니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -4550,7 +4458,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity Reverb Filter의 감쇠 시간과 초기 반사·잔향 설정을 확인했습니다. 원음의 음량 조절과 구분합니다.",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioReverbFilter.html",
@@ -4605,7 +4512,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unity Mixer Group의 신호 혼합·음량·효과 처리를 확인했습니다. 과도한 합산 출력은 별도로 점검합니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AudioMixer.html",
@@ -4662,7 +4568,6 @@ const terms = [
     "reviewType": "기능·개념",
     "reviewScope": "Unity GameObject의 컴포넌트 구성을 확인했습니다. 이 설명은 ECS나 모든 엔진의 객체 모델과 같다는 뜻이 아닙니다.",
     "reviewVersion": "Unity 6.0 (6000.0)",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -4719,7 +4624,6 @@ const terms = [
     "reviewType": "구현·설계 패턴",
     "reviewScope": "원저자 문서에서 이벤트 발송과 처리 시점을 분리하는 큐 패턴을 확인했습니다.",
     "reviewVersion": "원저자 자료",
-    "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://gameprogrammingpatterns.com/event-queue.html",
@@ -4760,7 +4664,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Animation tab",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AnimationClip.html",
@@ -4802,7 +4705,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Use curves to control the timing of animation clips",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationCurvesOnImportedClips.html",
@@ -4844,7 +4746,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Animation Parameters",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationParameters.html",
@@ -4886,7 +4787,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: State Machine Transitions",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/StateMachineTransitions.html",
@@ -4931,7 +4831,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Animator Override Controller",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AnimatorOverrideController.html",
@@ -4973,7 +4872,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Avatar Mask window reference",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AvatarMask.html",
@@ -5015,7 +4913,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Creating models for animation",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UsingHumanoidChars.html",
@@ -5057,7 +4954,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Target Matching",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/TargetMatching.html",
@@ -5099,7 +4995,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Cloth",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Cloth.html",
@@ -5141,7 +5036,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Unity - Scripting API: Rigidbody.centerOfMass",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody-centerOfMass.html",
@@ -5183,7 +5077,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Hinge Joint component reference",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-HingeJoint.html",
@@ -5225,7 +5118,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Fixed Joint component reference",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-FixedJoint.html",
@@ -5267,7 +5159,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Wheel collider component reference",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-WheelCollider.html",
@@ -5308,7 +5199,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Character Controller component reference",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-CharacterController.html",
@@ -5350,7 +5240,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Deferred rendering path in the Built-In Render Pipeline ",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/RenderTech-DeferredShading.html",
@@ -5392,7 +5281,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Forward rendering path in the Built-In Render Pipeline",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/RenderTech-ForwardRendering.html",
@@ -5434,7 +5322,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Cubemaps",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Cubemap-landing.html",
@@ -5476,7 +5363,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Reflection Probe Inspector window reference",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-ReflectionProbe.html",
@@ -5518,7 +5404,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Light Probes",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/LightProbes.html",
@@ -5560,7 +5445,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Set up your scene and lights for baking",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Lightmapping.html",
@@ -5602,7 +5486,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Render Texture Inspector window reference",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-RenderTexture.html",
@@ -5644,7 +5527,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Render Texture Inspector window reference",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-RenderTexture.html",
@@ -5686,7 +5568,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Introduction to shader variants",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/shader-variants.html",
@@ -5728,7 +5609,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Introduction to post-processing",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/PostProcessingOverview.html",
@@ -5770,7 +5650,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Masking sprites",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/sprite/mask/mask-landing.html",
@@ -5812,7 +5691,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Tilemap component reference",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/tilemaps/work-with-tilemaps/tilemap-reference.html",
@@ -5854,7 +5732,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Creating and editing Terrains",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/terrain-UsingTerrains.html",
@@ -5896,7 +5773,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Audio Listener",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioListener.html",
@@ -5938,7 +5814,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Audio Source",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioSource.html",
@@ -5980,7 +5855,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Audio Low Pass Filter",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioLowPassFilter.html",
@@ -6022,7 +5896,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Audio High Pass Filter",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioHighPassFilter.html",
@@ -6064,7 +5937,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Audio",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioManager.html",
@@ -6106,7 +5978,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Prefabs",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Prefabs.html",
@@ -6148,7 +6019,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Programming with the Quaternion class",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Quaternion.html",
@@ -6190,7 +6060,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: The PlayableGraph",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Playables-Graph.html",
@@ -6232,7 +6101,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: IL2CPP scripting back end",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/scripting-backends-il2cpp.html",
@@ -6274,7 +6142,6 @@ const terms = [
     "reviewedAt": "2026-10-14",
     "reviewStatus": "source-reviewed",
     "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Choose a GPU texture format by platform",
-    "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/texture-choose-format-by-platform.html",
@@ -6322,7 +6189,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: 1D Blending · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/BlendTree-1DBlending.html",
@@ -6371,7 +6237,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: 2D Blending · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/BlendTree-2DBlending.html",
@@ -6420,7 +6285,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: 2D game development · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Unity2D.html",
@@ -6469,7 +6333,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to GameObjects · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/GameObjects.html",
@@ -6518,7 +6381,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to Unity Accelerator · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UnityAccelerator.html",
@@ -6567,7 +6429,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Lighting window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/lighting-window.html",
@@ -6616,7 +6477,6 @@ const terms = [
     "reviewVersion": "Unity 서비스 문서 (2026-10-14 확인)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Unity Analytics • Analytics • Unity Docs · Unity 서비스 문서 (2026-10-14 확인)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity.com/ugs/en-us/manual/analytics/manual/overview",
@@ -6665,7 +6525,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Android Player settings · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-PlayerSettingsAndroid.html#projectkeystore",
@@ -6714,7 +6573,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Work with blend shapes · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/BlendShapes.html",
@@ -6763,7 +6621,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Animation Blend Trees · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-BlendTree.html",
@@ -6812,7 +6669,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Animation tab · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AnimationClip.html#AssetProperties",
@@ -6861,7 +6717,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Use Animation curves · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/animeditor-AnimationCurves.html",
@@ -6910,7 +6765,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Animation state machine · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationStateMachines.html",
@@ -6962,7 +6816,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to Animator Controllers · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AnimatorController.html",
@@ -7011,7 +6864,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to Animator Controllers · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AnimatorController.html",
@@ -7060,7 +6912,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Animator window · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AnimatorWindow.html",
@@ -7109,7 +6960,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Texture.anisoLevel · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Texture-anisoLevel.html",
@@ -7158,7 +7008,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Scripting back ends · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/scripting-backends.html",
@@ -7207,7 +7056,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Build your application for Android · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/android-BuildProcess.html",
@@ -7256,7 +7104,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: AR development in Unity · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AROverview.html",
@@ -7308,7 +7155,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Distribute assets as packages · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AssetPackages.html",
@@ -7357,7 +7203,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to assets in Unity · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AssetWorkflow.html",
@@ -7406,7 +7251,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Audio Clip Import Settings reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioClip.html",
@@ -7455,7 +7299,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Audio Distortion Filter · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioDistortionFilter.html",
@@ -7507,7 +7350,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Use audio effects · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioEffectMixer.html",
@@ -7556,7 +7398,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Use audio filters · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AudioEffect.html",
@@ -7605,7 +7446,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Importing a model with humanoid animations · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/ConfiguringtheAvatar.html",
@@ -7654,7 +7494,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Billboard Renderer component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-BillboardRenderer.html",
@@ -7703,7 +7542,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Animation Blend Trees · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-BlendTree.html",
@@ -7752,7 +7590,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: How Root Motion works · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/RootMotion.html",
@@ -7801,7 +7638,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to Rigidbody 2D · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/2d-physics/rigidbody/introduction-to-rigidbody-2d.html",
@@ -7850,7 +7686,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Box collider component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-BoxCollider.html",
@@ -7899,7 +7734,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to build profiles · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/build-profiles.html",
@@ -7948,7 +7782,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to building · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/building-introduction.html",
@@ -7997,7 +7830,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to normal maps (bump mapping) · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/StandardShaderMaterialParameterNormalMap.html",
@@ -8046,7 +7878,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to cameras · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/CamerasOverview.html",
@@ -8095,7 +7926,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Capsule collider component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-CapsuleCollider.html",
@@ -8144,7 +7974,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: ProfilerCategory · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Profiling.ProfilerCategory.html",
@@ -8193,7 +8022,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Character Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-CharacterJoint.html",
@@ -8242,7 +8070,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Camera Inspector window reference for the Built-In Render Pipeline · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Camera.html",
@@ -8291,7 +8118,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to collision · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/CollidersOverview.html",
@@ -8340,7 +8166,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to collision · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/CollidersOverview.html",
@@ -8389,7 +8214,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Use components · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UsingComponents.html",
@@ -8438,7 +8262,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Choose a GPU texture format by platform · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/texture-choose-format-by-platform.html",
@@ -8487,7 +8310,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Console window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Console.html",
@@ -8536,7 +8358,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Constant Force component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-ConstantForce.html",
@@ -8585,7 +8406,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Configurable Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-ConfigurableJoint.html",
@@ -8634,7 +8454,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Character Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-CharacterJoint.html",
@@ -8683,7 +8502,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Fixed Joint 2D component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/2d-physics/joints/fixed-joint-2d-reference.html",
@@ -8732,7 +8550,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to building · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/building-introduction.html",
@@ -8781,7 +8598,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Glossary · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -8830,7 +8646,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Direct blending · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/BlendTree-DirectBlending.html",
@@ -8879,7 +8694,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Package dependency and resolution · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/upm-dependencies.html",
@@ -8928,7 +8742,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Rigidbody component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Rigidbody.html",
@@ -8977,7 +8790,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Lighting Mode · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/lighting-mode.html#shadowmask",
@@ -9026,7 +8838,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to batching meshes · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html",
@@ -9075,7 +8886,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Physics Material asset reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-PhysicsMaterial.html",
@@ -9124,7 +8934,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Dynamic Resolution · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/DynamicResolution-landing.html",
@@ -9173,7 +8982,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to packages · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/upm-concepts.html#Embedded",
@@ -9222,7 +9030,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Choose a GPU texture format by platform · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/texture-choose-format-by-platform.html",
@@ -9271,7 +9078,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Runtime UI event system and input handling · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-Runtime-Event-System.html",
@@ -9320,7 +9126,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to importing assets · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/ImportingAssets.html",
@@ -9369,7 +9174,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Feature sets · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/FeatureSets.html",
@@ -9418,7 +9222,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Fixed Joint 2D component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/2d-physics/joints/fixed-joint-2d-reference.html",
@@ -9467,7 +9270,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Scene view navigation · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/SceneViewNavigation.html#flythrough",
@@ -9516,7 +9318,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Rendering Statistics window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/RenderingStatistics.html",
@@ -9565,7 +9366,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Rendering Statistics window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/RenderingStatistics.html",
@@ -9614,7 +9414,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to the camera view · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UnderstandingFrustum.html",
@@ -9663,7 +9462,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: The GameObject class · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-GameObject.html",
@@ -9715,7 +9513,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Global Illumination (GI) cache · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/GICache.html",
@@ -9764,7 +9561,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to packages · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/upm-concepts.html#Git",
@@ -9813,7 +9609,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Gizmos menu reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/GizmosMenu.html#GizmosIcons",
@@ -9862,7 +9657,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Gradle for Android · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/android-gradle-overview.html",
@@ -9911,7 +9705,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Main module reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/PartSysMainModule.html",
@@ -9960,7 +9753,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Halo component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Halo.html",
@@ -10009,7 +9801,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Character Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-CharacterJoint.html",
@@ -10058,7 +9849,6 @@ const terms = [
     "reviewVersion": "Netcode for GameObjects 2.4",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Class NetworkManager\r\n | Netcode for GameObjects | 2.4.4  · Netcode for GameObjects 2.4",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@2.4/api/Unity.Netcode.NetworkManager.html",
@@ -10107,7 +9897,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Human Template window · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-HumanTemplate.html",
@@ -10156,7 +9945,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Importing a model with humanoid animations · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/ConfiguringtheAvatar.html",
@@ -10205,7 +9993,6 @@ const terms = [
     "reviewVersion": "Unity 서비스 문서 (2026-10-14 확인)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Unity In-App Purchasing • In-App Purchasing • Unity Docs · Unity 서비스 문서 (2026-10-14 확인)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity.com/en-us/iap",
@@ -10258,7 +10045,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Package dependency and resolution · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/upm-dependencies.html",
@@ -10307,7 +10093,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: KeyCode · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/KeyCode.html",
@@ -10358,7 +10143,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Input Manager · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-InputManager.html",
@@ -10407,7 +10191,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Inspector window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UsingTheInspector.html",
@@ -10456,7 +10239,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Lightmap Parameters Asset Inspector window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-LightmapParameters.html",
@@ -10505,7 +10287,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Lightmap Parameters Asset Inspector window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-LightmapParameters.html",
@@ -10554,7 +10335,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to joints · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Joints.html",
@@ -10605,7 +10385,6 @@ const terms = [
     "reviewVersion": "Unity 2018.4 (역사·레거시 자료)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료:  Input Manager · Unity 2018.4 (역사·레거시 자료)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/2018.4/Documentation/Manual/class-InputManager.html",
@@ -10654,7 +10433,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Animation tab · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AnimationClip.html#AssetProperties",
@@ -10703,7 +10481,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Assign GameObjects to layers · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Layers.html",
@@ -10752,7 +10529,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Assign GameObjects to layers · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Layers.html",
@@ -10801,7 +10577,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Lens Flare component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-LensFlare.html",
@@ -10850,7 +10625,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Set the Mode of a Light · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/LightModes.html",
@@ -10899,7 +10673,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Place Light Probes with the Editor · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-LightProbeGroup.html",
@@ -10948,7 +10721,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to Light Probe Proxy Volumes in the Built-In Render Pipeline · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-LightProbeProxyVolume.html",
@@ -10997,7 +10769,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to lightmaps and baking · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Lightmappers.html",
@@ -11046,7 +10817,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Line Renderer component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-LineRenderer.html",
@@ -11095,7 +10865,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Install a UPM package from a local folder · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/upm-ui-local.html",
@@ -11144,7 +10913,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: LOD Group component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-LODGroup.html",
@@ -11193,7 +10961,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Animation tab · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AnimationClip.html",
@@ -11242,7 +11009,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Character Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-CharacterJoint.html",
@@ -11291,7 +11057,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Integrating third-party code libraries (plug-ins) · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/plug-ins.html",
@@ -11340,7 +11105,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Project manifest file · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/upm-manifestPrj.html",
@@ -11389,7 +11153,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Profiler markers reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/profiler-markers.html",
@@ -11438,7 +11201,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Material Inspector window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Material.html",
@@ -11487,7 +11249,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Mesh collider component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-MeshCollider.html",
@@ -11536,7 +11297,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Mesh Filter component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-MeshFilter.html",
@@ -11585,7 +11345,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Mesh Renderer component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-MeshRenderer.html",
@@ -11634,7 +11393,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Meshes · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/mesh.html",
@@ -11683,7 +11441,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Setting a light as realtime or baked · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/LightModes-landing.html",
@@ -11732,7 +11489,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Model file formats reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/3D-formats.html",
@@ -11781,7 +11537,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Model file formats reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/3D-formats.html",
@@ -11830,7 +11585,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Scripting back ends · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/scripting-backends.html",
@@ -11879,7 +11633,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Avatar Muscle   Settings tab reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/MuscleDefinitions.html",
@@ -11928,7 +11681,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Install a UPM package from a local folder · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/upm-ui-local.html",
@@ -11977,7 +11729,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Integrating third-party code libraries (plug-ins) · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/plug-ins.html",
@@ -12026,7 +11777,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Camera.nearClipPlane · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Camera-nearClipPlane.html",
@@ -12075,7 +11825,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Multiplayer · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/multiplayer.html",
@@ -12124,7 +11873,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Mesh.normals · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mesh-normals.html",
@@ -12173,7 +11921,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: App thinning · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AppThinning.html",
@@ -12222,7 +11969,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: 2D and 3D projects · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/2Dor3D.html",
@@ -12271,7 +12017,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Package manifest file · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/upm-manifestPkg.html",
@@ -12320,7 +12065,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Transforms · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Transform.html#parent",
@@ -12369,7 +12113,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Particle System component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-ParticleSystem.html",
@@ -12418,7 +12161,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Particle System component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-ParticleSystem.html",
@@ -12467,7 +12209,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Perforce Integration · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/perForceIntegration.html",
@@ -12516,7 +12257,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: PhotoCapture · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Windows.WebCam.PhotoCapture.html",
@@ -12565,7 +12305,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Physics · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/PhysicsSection.html",
@@ -12614,7 +12353,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Physics Material 2D reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/2d-physics/physics-material-2d-reference.html",
@@ -12663,7 +12401,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Glossary · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -12712,7 +12449,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: AudioSource.playOnAwake · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioSource-playOnAwake.html",
@@ -12761,7 +12497,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Playables API · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Playables.html",
@@ -12810,7 +12545,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Log files reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/log-files.html#player",
@@ -12859,7 +12593,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Player project settings reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-PlayerSettings.html",
@@ -12908,7 +12641,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Integrating third-party code libraries (plug-ins) · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/plug-ins.html",
@@ -12957,7 +12689,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to post-processing · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/PostProcessingOverview.html",
@@ -13006,7 +12737,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Project manifest file · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/upm-manifestPrj.html",
@@ -13055,7 +12785,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Project Settings reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/comp-ManagerGroup.html",
@@ -13104,7 +12833,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Project window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/ProjectView.html",
@@ -13153,7 +12881,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Glossary · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -13202,7 +12929,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Use Property Drawers with IMGUI to customize the Inspector · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/editor-PropertyDrawers.html",
@@ -13251,7 +12977,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Glossary · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -13300,7 +13025,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Primitive and placeholder objects · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/PrimitiveObjects.html",
@@ -13349,7 +13073,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Light Modes · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/LightModes-introduction.html#realtime",
@@ -13398,7 +13121,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Relative Joint 2D component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/2d-physics/joints/relative-joint-2d-reference.html",
@@ -13447,7 +13169,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Render pipelines · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/render-pipelines.html",
@@ -13496,7 +13217,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to rendering paths in the Built-In Render Pipeline · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/RenderingPaths.html",
@@ -13545,7 +13265,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Rig tab Import Settings reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/FBXImporter-Rig.html",
@@ -13594,7 +13313,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Creating models for animation · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UsingHumanoidChars.html",
@@ -13643,7 +13361,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Animation tab · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-AnimationClip.html#AllClipProperties",
@@ -13692,7 +13409,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: How Root Motion works · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/RootMotion.html",
@@ -13741,7 +13457,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Scene view reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UsingTheSceneView.html",
@@ -13790,7 +13505,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to scenes · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/CreatingScenes.html",
@@ -13839,7 +13553,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Scripting back ends · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/scripting-backends.html",
@@ -13888,7 +13601,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Configure custom events in the Editor · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UnityEvents.html",
@@ -13937,7 +13649,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Creating scripts · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/creating-scripts.html",
@@ -13986,7 +13697,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: ScrollView · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-uxml-element-ScrollView.html",
@@ -14035,7 +13745,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Cloth · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Cloth.html",
@@ -14084,7 +13793,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Unity Services · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UnityServices.html",
@@ -14133,7 +13841,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Shader object fundamentals · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/shader-objects.html",
@@ -14182,7 +13889,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Custom shaders · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Shaders.html",
@@ -14231,7 +13937,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Shader block in ShaderLab reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/SL-Shader.html",
@@ -14280,7 +13985,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Lighting Mode · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/lighting-mode.html#shadowmask",
@@ -14329,7 +14033,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Sky · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/sky-landing.html",
@@ -14378,7 +14081,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Standard Particle Shaders Material Inspector window reference for the Built-In Render Pipeline · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/shader-StandardParticleShaders.html",
@@ -14427,7 +14129,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Continuous collision detection (CCD) · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/ContinuousCollisionDetection.html",
@@ -14476,7 +14177,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Sphere collider component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-SphereCollider.html",
@@ -14525,7 +14225,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Spring Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-SpringJoint.html",
@@ -14574,7 +14273,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Sprite Renderer component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/sprite/renderer/sprite-renderer-reference.html",
@@ -14623,7 +14321,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Sprites · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/sprite/sprite-landing.html",
@@ -14672,7 +14369,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: State Machine Behaviours · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/StateMachineBehaviours.html",
@@ -14721,7 +14417,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to batching meshes · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/DrawCallBatching.html",
@@ -14770,7 +14465,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Mesh Renderer component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-MeshRenderer.html",
@@ -14819,7 +14513,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to surface shaders in the Built-In Render Pipeline · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/SL-SurfaceShaders.html",
@@ -14868,7 +14561,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Character Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-CharacterJoint.html",
@@ -14917,7 +14609,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Character Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-CharacterJoint.html",
@@ -14966,7 +14657,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Configurable Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-ConfigurableJoint.html",
@@ -15015,7 +14705,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Configurable Joint component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-ConfigurableJoint.html",
@@ -15064,7 +14753,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Terrain collider component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-TerrainCollider.html",
@@ -15115,7 +14803,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Text Mesh component reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-TextMesh.html",
@@ -15164,7 +14851,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: IMGUI Controls · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/gui-Controls.html",
@@ -15213,7 +14899,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Choose a GPU texture format by platform · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/texture-choose-format-by-platform.html",
@@ -15262,7 +14947,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Texture Import Settings window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-TextureImporter.html",
@@ -15311,7 +14995,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: TextureImporterPlatformSettings · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/TextureImporterPlatformSettings.html",
@@ -15360,7 +15043,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Texture Import Settings window reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-TextureImporter.html",
@@ -15409,7 +15091,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Create a custom tile that runs a script · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/tilemaps/tiles-for-tilemaps/scriptable-tiles/scriptable-tiles-landing.html",
@@ -15458,7 +15139,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Time project settings reference · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-TimeManager.html",
@@ -15507,7 +15187,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Toggle · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-uxml-element-Toggle.html",
@@ -15556,7 +15235,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: The Toolbar · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Toolbar.html",
@@ -15605,7 +15283,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Transforms · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Transform.html",
@@ -15656,7 +15333,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Create trees with Tree Editor · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Tree.html",
@@ -15705,7 +15381,6 @@ const terms = [
     "reviewVersion": "Unity 서비스 문서 (2026-10-14 확인)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Unity Build Automation • Build Automation • Unity Docs · Unity 서비스 문서 (2026-10-14 확인)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity.com/devops/en/manual/unity-build-automation",
@@ -15754,7 +15429,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Unity Remote · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UnityRemote5.html",
@@ -15803,7 +15477,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Get started with packages · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Packages.html",
@@ -15852,7 +15525,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Version Control · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/VersionControl.html",
@@ -15901,7 +15573,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: VideoCapture · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Windows.WebCam.VideoCapture.html",
@@ -15950,7 +15621,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: VR and MR development in Unity · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/VROverview.html",
@@ -16002,7 +15672,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Introduction to visual elements and the visual tree · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-VisualTree.html",
@@ -16051,7 +15720,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Web · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/webgl.html",
@@ -16100,7 +15768,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Add wind zones to trees · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-WindZone.html",
@@ -16149,7 +15816,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: XR · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/XR.html",
@@ -16198,7 +15864,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Camera.fieldOfView · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Camera-fieldOfView.html",
@@ -16247,7 +15912,6 @@ const terms = [
     "reviewVersion": "PhysX 5.5.0",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Rigid Body Collision   physx 5.5.0 documentation · PhysX 5.5.0",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/docs/RigidBodyCollision.html",
@@ -16296,7 +15960,6 @@ const terms = [
     "reviewVersion": "PhysX 5.5.0",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Rigid Body Collision   physx 5.5.0 documentation · PhysX 5.5.0",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/docs/RigidBodyCollision.html",
@@ -16345,7 +16008,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Upgrade Sprite Atlas V1 assets · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/sprite/atlas/v2/v2-landing.html",
@@ -16394,7 +16056,6 @@ const terms = [
     "reviewVersion": "Unity 6.0 (6000.0)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Audio Spatializer SDK · Unity 6.0 (6000.0)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/AudioSpatializerSDK.html",
@@ -16445,7 +16106,6 @@ const terms = [
     "reviewVersion": "Unity 2018.4 (역사·레거시 자료)",
     "reviewType": "기본 용어 정의",
     "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료:  C# compiler · Unity 2018.4 (역사·레거시 자료)",
-    "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
     "reviewSources": [
       {
         "url": "https://docs.unity3d.com/2018.4/Documentation/Manual/CSharpCompiler.html",

@@ -23,7 +23,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "원저자 문서에서 객체 재사용·풀 용량·초기화 문제를 확인했습니다. 풀 사용의 성능 이득은 대상 환경에서 측정해야 합니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://gameprogrammingpatterns.com/object-pool.html",
@@ -81,6 +80,5 @@ https://gameprogrammingpatterns.com/object-pool.html
 
 원저자 문서에서 객체 재사용·풀 용량·초기화 문제를 확인했습니다. 풀 사용의 성능 이득은 대상 환경에서 측정해야 합니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://gameprogrammingpatterns.com/object-pool.html

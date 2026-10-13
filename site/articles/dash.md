@@ -24,7 +24,6 @@
   "reviewType": "구현·설계 패턴",
   "reviewScope": "Celeste 개발자 공개 Player.cs의 Dash 상태·속도 처리를 확인했습니다. 예제는 동일 게임 구현이 아닙니다.",
   "reviewVersion": "개발자 공개 Celeste 소스",
-  "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs",
@@ -122,6 +121,5 @@ https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs
 
 Celeste 개발자 공개 Player.cs의 Dash 상태·속도 처리를 확인했습니다. 예제는 동일 게임 구현이 아닙니다.
 
-구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.
 
 확인 자료: https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs

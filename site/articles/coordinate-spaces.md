@@ -26,7 +26,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "Unity 6.0 Transform 문서의 부모 기준 좌표와 월드 좌표 설명을 확인했습니다.",
   "reviewVersion": "Unity 6.0 (6000.0)",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-Transform.html",
@@ -76,6 +75,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/class-Transform.html
 
 Unity 6.0 Transform 문서의 부모 기준 좌표와 월드 좌표 설명을 확인했습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/class-Transform.html

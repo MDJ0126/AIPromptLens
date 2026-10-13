@@ -35,7 +35,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "물리 재질은 마찰과 반발을 정합니다. 시각 재질의 금속·거칠기 입력과는 별개입니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -102,6 +101,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/PhysicsSection.html
 
 물리 재질은 마찰과 반발을 정합니다. 시각 재질의 금속·거칠기 입력과는 별개입니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

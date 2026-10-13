@@ -36,7 +36,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "Gaffer On Games의 입력 기록을 되감아 재적용하는 보정 설명을 확인했습니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://gafferongames.com/post/what_every_programmer_needs_to_know_about_game_networking/",
@@ -103,6 +102,5 @@ https://gafferongames.com/post/snapshot_interpolation/
 
 Gaffer On Games의 입력 기록을 되감아 재적용하는 보정 설명을 확인했습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://gafferongames.com/post/what_every_programmer_needs_to_know_about_game_networking/

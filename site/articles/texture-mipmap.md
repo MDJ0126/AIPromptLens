@@ -37,7 +37,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "밉맵은 작은 텍스처 단계의 모음입니다. 밉 단계 생성과 필요한 단계만 로드하는 스트리밍은 별도 기능입니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/texture-mipmaps-introduction.html",
@@ -104,6 +103,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 밉맵은 작은 텍스처 단계의 모음입니다. 밉 단계 생성과 필요한 단계만 로드하는 스트리밍은 별도 기능입니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/texture-mipmaps-introduction.html

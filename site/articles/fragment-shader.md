@@ -37,7 +37,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "프래그먼트는 항상 최종 화면 픽셀과 일대일로 대응하지 않습니다. 가림과 샘플 처리 등으로 결과가 달라질 수 있습니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/writing-shader-writing-shader-programs-hlsl.html",
@@ -104,6 +103,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 프래그먼트는 항상 최종 화면 픽셀과 일대일로 대응하지 않습니다. 가림과 샘플 처리 등으로 결과가 달라질 수 있습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/writing-shader-writing-shader-programs-hlsl.html

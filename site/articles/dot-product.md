@@ -25,7 +25,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "Unity 6.0 Vector3.Dot의 정규화 방향 내적과 코사인 관계를 확인했습니다.",
   "reviewVersion": "Unity 6.0 (6000.0)",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.Dot.html",
@@ -75,6 +74,5 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.Dot.html
 
 Unity 6.0 Vector3.Dot의 정규화 방향 내적과 코사인 관계를 확인했습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.Dot.html

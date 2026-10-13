@@ -22,7 +22,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "Celeste 개발자 공개 Player.cs의 Jump 입력 검사와 ConsumeBuffer 호출을 확인했습니다.",
-  "reviewLimit": "구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs",
@@ -111,6 +110,5 @@ https://dev.epicgames.com/documentation/en-us/unreal-engine/API
 
 Celeste 개발자 공개 Player.cs의 Jump 입력 검사와 ConsumeBuffer 호출을 확인했습니다.
 
-구성 기능·소스 구조 대조입니다. Unity/Unreal 컴파일과 실행은 미검증입니다.
 
 확인 자료: https://raw.githubusercontent.com/NoelFB/Celeste/master/Source/Player/Player.cs

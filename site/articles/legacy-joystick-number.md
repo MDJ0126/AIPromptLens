@@ -33,7 +33,6 @@
   "reviewVersion": "Unity 2018.4 (역사·레거시 자료)",
   "reviewType": "기본 용어 정의",
   "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료:  Input Manager · Unity 2018.4 (역사·레거시 자료)",
-  "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/2018.4/Documentation/Manual/class-InputManager.html",
@@ -84,4 +83,3 @@ https://docs.unity3d.com/2018.4/Documentation/Manual/class-InputManager.html
 
 기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료:  Input Manager · Unity 2018.4 (역사·레거시 자료)
 
-기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.

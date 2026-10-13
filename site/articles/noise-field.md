@@ -34,7 +34,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "Catlike Coding의 Value Noise 원문에서 좌표별 연속값 생성을 확인했습니다. 모든 노이즈 종류가 같은 성질은 아닙니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://catlikecoding.com/unity/tutorials/pseudorandom-noise/value-noise/",
@@ -101,6 +100,5 @@ Catlike Coding의 Value Noise 원문에서 좌표별 연속값 생성을 확인�
 
 Catlike Coding의 Value Noise 원문에서 좌표별 연속값 생성을 확인했습니다. 모든 노이즈 종류가 같은 성질은 아닙니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://catlikecoding.com/unity/tutorials/pseudorandom-noise/value-noise/

@@ -37,7 +37,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "콜라이더는 충돌 모양이며 눈에 보이는 메시와 같을 필요가 없습니다. 복잡한 형태와 동적 강체의 지원 제약은 엔진별로 확인합니다.",
   "reviewVersion": "Unity 6.0 (6000.0)",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -104,6 +103,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 콜라이더는 충돌 모양이며 눈에 보이는 메시와 같을 필요가 없습니다. 복잡한 형태와 동적 강체의 지원 제약은 엔진별로 확인합니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

@@ -41,7 +41,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "Unity GameObject의 컴포넌트 구성을 확인했습니다. 이 설명은 ECS나 모든 엔진의 객체 모델과 같다는 뜻이 아닙니다.",
   "reviewVersion": "Unity 6.0 (6000.0)",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -108,6 +107,5 @@ Unity GameObject의 컴포넌트 구성을 확인했습니다. 이 설명은 ECS
 
 Unity GameObject의 컴포넌트 구성을 확인했습니다. 이 설명은 ECS나 모든 엔진의 객체 모델과 같다는 뜻이 아닙니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

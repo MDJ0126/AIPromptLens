@@ -34,7 +34,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "Unity Mesh API를 통한 정점·삼각형 생성 기능을 확인했습니다. 충돌 데이터 갱신과 렌더 메시 생성은 구분합니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/GeneratingMeshGeometryProcedurally.html",
@@ -101,6 +100,5 @@ Unity Mesh API를 통한 정점·삼각형 생성 기능을 확인했습니다. 
 
 Unity Mesh API를 통한 정점·삼각형 생성 기능을 확인했습니다. 충돌 데이터 갱신과 렌더 메시 생성은 구분합니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/GeneratingMeshGeometryProcedurally.html

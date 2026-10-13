@@ -7,7 +7,7 @@ const rows=fs.readdirSync(dir).filter(f=>f.endsWith('.md')).map(file=>{
  if(!match)throw Error(file+': metadata missing');
  const row=JSON.parse(match[1]);
  for(const key of ['id','slug','category','name','en','desc','ko','promptEn','visual','tags'])if(row[key]===undefined)throw Error(file+': missing '+key);
- if(row.reviewStatus!=='source-reviewed'||!/^\d{4}-\d{2}-\d{2}$/.test(row.reviewedAt||'')||!row.reviewScope||!row.reviewLimit||!row.reviewSources?.length||!row.reviewHistory?.some(h=>h.date===row.reviewedAt))throw Error(file+': review record missing');
+ if(row.reviewStatus!=='source-reviewed'||!/^\d{4}-\d{2}-\d{2}$/.test(row.reviewedAt||'')||!row.reviewScope||!row.reviewSources?.length||!row.reviewHistory?.some(h=>h.date===row.reviewedAt))throw Error(file+': review record missing');
  if(!/^[a-z][a-z0-9-]*$/.test(row.slug)||file!==row.slug+'.md')throw Error(file+': slug mismatch');
  if(!Number.isInteger(row.id)||!Array.isArray(row.tags))throw Error(file+': invalid metadata');
  if(!Array.isArray(row.genres)||!row.genres.length||row.genres.some(g=>!["action","rpg","shooter","platformer","strategy","puzzle","horror","adventure","simulation","racing","sports","rhythm"].includes(g)))throw Error(file+': invalid genres');

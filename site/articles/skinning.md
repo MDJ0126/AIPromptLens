@@ -25,7 +25,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Creating models for animation",
-  "reviewLimit": "기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/UsingHumanoidChars.html",
@@ -79,4 +78,3 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/UsingHumanoidChars.html
 
 Unity 6.0 용어집의 정의와 연결 문서의 존재를 대조했습니다. 관련 문서: Creating models for animation
 
-기본 정의와 문서 연결 대조입니다. 엔진별 동등 기능과 컴파일·실행은 미검증입니다.

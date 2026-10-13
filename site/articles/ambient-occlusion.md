@@ -39,7 +39,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "AO는 주변 가림에 대한 근사입니다. 화면 기반 SSAO와 사전 계산된 AO는 사용할 수 있는 장면 정보가 다릅니다.",
   "reviewVersion": "Unity 6.0 (6000.0)",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -106,6 +105,5 @@ AO는 주변 가림에 대한 근사입니다. 화면 기반 SSAO와 사전 계�
 
 AO는 주변 가림에 대한 근사입니다. 화면 기반 SSAO와 사전 계산된 AO는 사용할 수 있는 장면 정보가 다릅니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

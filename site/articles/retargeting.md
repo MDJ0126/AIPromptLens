@@ -34,7 +34,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "동작의 골격 간 전달을 확인했습니다. 서로 다른 체형에 대한 자동 완성이나 완벽한 발 접촉을 보장하지 않습니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -101,6 +100,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/AnimationOverview.html
 
 동작의 골격 간 전달을 확인했습니다. 서로 다른 체형에 대한 자동 완성이나 완벽한 발 접촉을 보장하지 않습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

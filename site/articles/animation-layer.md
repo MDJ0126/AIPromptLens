@@ -36,7 +36,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "레이어·마스크·혼합 방식이 포즈를 구성합니다. 별도 신체 기능을 처리하더라도 최종 포즈의 영향 순서는 확인해야 합니다.",
   "reviewVersion": "Unity 6.0 (6000.0)",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -103,6 +102,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 레이어·마스크·혼합 방식이 포즈를 구성합니다. 별도 신체 기능을 처리하더라도 최종 포즈의 영향 순서는 확인해야 합니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

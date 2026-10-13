@@ -34,7 +34,7 @@ test('Engine tabs, code copy and out-of-order article loads use the correct arti
  function el(id){if(!elements.has(id))elements.set(id,create('div'));return elements.get(id);}
  const doc={getElementById:el,querySelectorAll:()=>[],createElement:create,querySelector:el,addEventListener(){},body:create('body'),activeElement:{tagName:'BODY'}};
  const ctx=vm.createContext({document:doc,parseArticle,Map,localStorage:{getItem:()=>null,setItem(){}},setTimeout:()=>0,clearTimeout(){},navigator:{clipboard:{writeText:async text=>copy.push(text)}},toast(){},fetch:url=>new Promise(resolve=>requests.set(url,resolve))});
- vm.runInContext(fs.readFileSync('site/syntax.js','utf8')+'\n'+fs.readFileSync('site/articles-ui.js','utf8')+'\nglobalThis.ui={loadArticle};',ctx);
+ vm.runInContext(fs.readFileSync('site/clipboard.js','utf8')+'\n'+fs.readFileSync('site/syntax.js','utf8')+'\n'+fs.readFileSync('site/articles-ui.js','utf8')+'\nglobalThis.ui={loadArticle};',ctx);
  const article=(slug)=>parseArticle(fs.readFileSync('site/articles/'+slug+'.md','utf8')).metadata;
  const first=ctx.ui.loadArticle(article('hit')),second=ctx.ui.loadArticle(article('dash'));
  requests.get('articles/dash.md')({ok:true,text:async()=>fs.readFileSync('site/articles/dash.md','utf8')});await second;

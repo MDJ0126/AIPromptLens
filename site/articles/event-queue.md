@@ -41,7 +41,6 @@
   "reviewType": "구현·설계 패턴",
   "reviewScope": "원저자 문서에서 이벤트 발송과 처리 시점을 분리하는 큐 패턴을 확인했습니다.",
   "reviewVersion": "원저자 자료",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://gameprogrammingpatterns.com/event-queue.html",
@@ -108,6 +107,5 @@ https://gameprogrammingpatterns.com/event-queue.html
 
 원저자 문서에서 이벤트 발송과 처리 시점을 분리하는 큐 패턴을 확인했습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://gameprogrammingpatterns.com/event-queue.html

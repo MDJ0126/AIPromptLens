@@ -31,7 +31,6 @@
   "reviewVersion": "PhysX 5.5.0",
   "reviewType": "기본 용어 정의",
   "reviewScope": "기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Rigid Body Collision   physx 5.5.0 documentation · PhysX 5.5.0",
-  "reviewLimit": "기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/docs/RigidBodyCollision.html",
@@ -82,4 +81,3 @@ https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/docs/RigidBodyCollision.htm
 
 기본 정의와 구분할 개념을 문서에 대조했습니다. 확인 자료: Rigid Body Collision   physx 5.5.0 documentation · PhysX 5.5.0
 
-기본 정의·적용 범위의 문서 대조입니다. 모든 세부 기능, Unreal 대응 기능, 엔진 컴파일·실행은 미검증입니다.

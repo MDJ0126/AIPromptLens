@@ -36,7 +36,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "Unreal EQS는 후보 데이터를 생성하고 검사·점수화하는 기능입니다. 질의 결과를 행동에 적용하는 코드는 별도입니다.",
   "reviewVersion": "Unreal Engine 5.8 문서",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/environment-query-system-in-unreal-engine",
@@ -103,6 +102,5 @@ Unreal EQS는 후보 데이터를 생성하고 검사·점수화하는 기능입
 
 Unreal EQS는 후보 데이터를 생성하고 검사·점수화하는 기능입니다. 질의 결과를 행동에 적용하는 코드는 별도입니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://dev.epicgames.com/documentation/en-us/unreal-engine/environment-query-system-in-unreal-engine

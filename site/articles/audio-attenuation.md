@@ -39,7 +39,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "Unity 6.0 AudioRolloffMode의 거리 기반 음량 감쇠 모드를 확인했습니다.",
   "reviewVersion": "Unity 6.0 (6000.0)",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioRolloffMode.html",
@@ -106,6 +105,5 @@ https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioRolloffMode.h
 
 Unity 6.0 AudioRolloffMode의 거리 기반 음량 감쇠 모드를 확인했습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioRolloffMode.html

@@ -16,8 +16,8 @@ function renderArticleEngine(){
  const metadata=loadedArticle.metadata;
  const review=document.getElementById('article-review');
  review.innerHTML='';
- const date=document.createElement('p'),scope=document.createElement('p'),limit=document.createElement('p');
- date.textContent='최근 업데이트 · '+(metadata.updatedAt||metadata.reviewedAt);scope.textContent=metadata.reviewScope;limit.textContent=metadata.reviewLimit;review.append(date,scope,limit);
+ const date=document.createElement('p'),scope=document.createElement('p');
+ date.textContent='최근 업데이트 · '+(metadata.updatedAt||metadata.reviewedAt);scope.textContent=metadata.reviewScope;review.append(date,scope);
  const concept=metadata.kind==='concept';
  document.getElementById('article-engines').hidden=concept;
  document.getElementById('copy-code').hidden=concept;
@@ -53,7 +53,7 @@ async function loadArticle(term){
    articleCache.set(term.slug,article);
   }
   if(request!==articleRequest)return;
-  loadedArticle=article;status.textContent=article.metadata.kind==='concept'?'개념 설명 · 비교 도식과 설계 질문':'구조를 설명하는 최소 예제 · 엔진 컴파일/실행 미검증';
+  loadedArticle=article;status.textContent=article.metadata.kind==='concept'?'개념 설명 · 비교 도식과 설계 질문':'구조를 이해하기 위한 학습 예제';
   renderArticleEngine();
  }catch(error){if(request!==articleRequest)return;status.textContent='예제를 불러오지 못했습니다. Markdown 원문을 열거나 페이지를 다시 시도해 주세요.';}
 }
@@ -64,6 +64,5 @@ document.getElementById('article-engines').addEventListener('click',event=>{
 document.getElementById('copy-code').addEventListener('click',async()=>{
  if(!loadedArticle)return;
  const code=loadedArticle.blocks.filter(b=>b.type==='code'&&b.section===articleEngine).map(b=>b.text).join('\n\n');
- try{await navigator.clipboard.writeText(code);toast(articleEngine+' 코드를 복사했습니다.');}
- catch{toast('복사 권한이 없습니다. 코드를 직접 선택해 주세요.');}
+ const copied=await copyToClipboard(code);toast(copied?articleEngine+' 코드를 복사했습니다.':'복사 권한이 없습니다. 코드를 직접 선택해 주세요.');
 });

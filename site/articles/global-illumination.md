@@ -37,7 +37,6 @@
   "reviewedAt": "2026-10-14",
   "reviewStatus": "source-reviewed",
   "reviewScope": "전역 조명은 직접광·간접광을 다루는 기법의 범주입니다. 베이크 여부와 동적 장면 반영은 선택한 시스템에 따라 다릅니다.",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html",
@@ -104,6 +103,5 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html
 
 전역 조명은 직접광·간접광을 다루는 기법의 범주입니다. 베이크 여부와 동적 장면 반영은 선택한 시스템에 따라 다릅니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://docs.unity3d.com/6000.0/Documentation/Manual/Glossary.html

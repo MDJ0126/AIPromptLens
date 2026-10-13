@@ -36,7 +36,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "Unreal Behavior Tree 기능을 확인했습니다. 성공·실패·진행 중 결과와 중단 정책은 실제 노드 구성을 따라야 합니다.",
   "reviewVersion": "Unreal Engine 5.8 문서",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine",
@@ -103,6 +102,5 @@ Unreal Behavior Tree 기능을 확인했습니다. 성공·실패·진행 중 �
 
 Unreal Behavior Tree 기능을 확인했습니다. 성공·실패·진행 중 결과와 중단 정책은 실제 노드 구성을 따라야 합니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine

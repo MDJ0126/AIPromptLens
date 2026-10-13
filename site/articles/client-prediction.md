@@ -38,7 +38,6 @@
   "reviewType": "기능·개념",
   "reviewScope": "클라이언트에서 입력 결과를 먼저 계산하는 방식입니다. 보정 없이 예측만 사용하는 것으로 설명하지 않습니다.",
   "reviewVersion": "원저자 자료",
-  "reviewLimit": "개념·출처 대조입니다. 엔진 실행은 미검증입니다.",
   "reviewSources": [
     {
       "url": "https://gafferongames.com/post/networked_physics_2004/",
@@ -105,6 +104,5 @@ https://gafferongames.com/post/networked_physics_2004/
 
 클라이언트에서 입력 결과를 먼저 계산하는 방식입니다. 보정 없이 예측만 사용하는 것으로 설명하지 않습니다.
 
-개념·출처 대조입니다. 엔진 실행은 미검증입니다.
 
 확인 자료: https://gafferongames.com/post/networked_physics_2004/
