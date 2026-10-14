@@ -8,6 +8,8 @@
 
 만들고 싶은 움직임과 연출을 탐색하고, 필요한 기술을 골라 AI에 전달할 요청 문장으로 조합하는 웹 도구입니다.
 
+**[🌐 사이트 바로가기](https://mdj0126.github.io/GamePrompt/)**
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![SVG](https://img.shields.io/badge/SVG-Animated%20Diagrams-FFB13B?style=for-the-badge&logo=svg&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
